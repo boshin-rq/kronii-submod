@@ -1,0 +1,44 @@
+﻿capital = 252
+
+oob = "PN2"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_convoys = 100
+add_manpower = 100000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	motorised_infantry = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+	construction3 = 1
+	excavation3 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+add_ideas = {
+	ominous_influence
+}
+
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+set_popularities = {
+	monster = 100
+}

@@ -1,0 +1,45 @@
+﻿capital = 657
+
+oob = "TWH"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_convoys = 100
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Wither King"
+	desc = "POLITICS_WITHER_KING_DESC"
+	picture = "Portrait_Wither_Dominion_Wither_King.dds"
+	ideology = regency_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Wither King"
+	desc = "POLITICS_WITHER_KING_DESC"
+	picture = "Portrait_Wither_Dominion_Wither_King.dds"
+	ideology = wither_skeleton_ideology
+	traits = { }
+}

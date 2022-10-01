@@ -1,0 +1,116 @@
+﻿capital = 356
+
+oob = "TUL"
+
+
+set_research_slots = 2
+set_stability = 0.70
+set_war_support = 0.4
+add_manpower = 650000
+#add_political_power = 100
+set_convoys = 100
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+}
+add_ideas = {
+	sheep_mentality
+}
+
+
+set_politics = {
+	ruling_party = monster
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	monster = 100
+}
+
+# DIPLOMACY
+declare_war_on = { type = annex_everything    target = FKE }
+declare_war_on = { type = annex_everything    target = VNX }
+declare_war_on = { type = annex_everything    target = VN9 }
+declare_war_on = { type = annex_everything    target = VN8 }
+declare_war_on = { type = annex_everything    target = FLV }
+
+create_country_leader = {
+ name = "The Zombie Horde"
+ desc = ""
+ picture = "portrait_horde.tga"
+ ideology = zombie_ideology
+}
+
+ create_corps_commander = {
+	name = "Zombro"
+	picture = "portrait_zombie.tga" 
+	traits = {  }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+ create_corps_commander = {
+	name = "Zombruh"
+	picture = "portrait_zombie.tga" 
+	traits = {  }
+	skill = 3
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+ create_corps_commander = {
+	name = "Zombruv"
+	picture = "portrait_zombie.tga" 
+	traits = {  }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+ create_corps_commander = {
+	name = "Zombreh"
+	picture = "portrait_zombie.tga" 
+	traits = {  }
+	skill = 2
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+ create_corps_commander = {
+	name = "Zomigo"
+	picture = "portrait_zombie.tga" 
+	traits = {  }
+	skill = 1
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}

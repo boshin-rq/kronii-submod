@@ -1,0 +1,17 @@
+﻿capital = 463
+
+oob = "LAS"
+
+set_politics = {
+	ruling_party = monster
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	monster = 100
+}
+
+add_ideas = {
+	nether_isolation
+}

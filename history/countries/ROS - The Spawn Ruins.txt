@@ -1,0 +1,28 @@
+﻿capital = 106
+
+oob = "ROS"
+
+set_research_slots = 2
+set_stability = 0
+set_war_support = 0
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+add_ideas = {
+	anarchy
+}
+
+# DIPLOMACY
+
+create_country_leader = {
+ name = "Anarchy"
+ desc = ""
+ picture = "portrait_abandoned.tga"
+ ideology = anarchism
+}

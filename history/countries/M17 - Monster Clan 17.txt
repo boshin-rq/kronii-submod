@@ -1,0 +1,31 @@
+﻿capital = 284
+
+oob = "M17"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_convoys = 100
+add_manpower = 10000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 100
+}

@@ -1,0 +1,308 @@
+﻿capital = 97
+
+oob = "RED"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "RED_naval_mtg"
+	else = {
+		set_naval_oob = "RED_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.3
+set_convoys = 100
+
+add_ideas = {
+	limited_conscription
+	free_trade
+	monopolies
+	RED_legacy_of_the_march_idea
+	RED_strong_opposition_idea
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	electronic_mechanical_engineering = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+	construction3 = 1
+	excavation3 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "633.6.21"
+	elections_allowed = no
+}
+
+set_popularities = {
+	villagism = 33
+	socialism = 5
+	neutrality = 45
+	supremacism = 15
+	monster = 2
+}
+
+201 = {
+	add_dynamic_modifier = { modifier = RED_ja_hol_resistance_modifier }
+}
+
+add_to_tech_sharing_group = RED_trade_association
+DWI = { add_to_tech_sharing_group = RED_trade_association }
+
+set_country_flag = RED_advisors_1_flag #Government flag
+set_country_flag = RED_advisors_2_flag #Monster flag
+set_country_flag = RED_advisors_3_flag #ProCrafter flag
+set_country_flag = RED_advisors_4_flag #Crafter flag
+
+add_opinion_modifier = {  target = DWI modifier = friends }
+DWI = { add_opinion_modifier = {  target = RED modifier = friends } }
+give_guarantee = DWI
+add_ai_strategy = {
+	type = befriend
+	id = "DWI"
+	value = 50
+}
+add_ai_strategy = {
+	type = send_volunteers_desire
+	id = "DWI"
+	value = 100
+}
+add_ai_strategy = {
+	type = support
+	id = "DWI"
+	value = 100
+}
+
+create_country_leader = {
+	name = "Polski Crafter"
+	desc = "POLITICS_POLSKI_CRAFTER_DESC"
+	picture = "Portrait_Red_Rose_Polski_Crafter.dds"
+	ideology = oligarchism
+	traits = {
+		hedonist
+		incompetent_leader
+	}
+}
+
+create_country_leader = {
+	name = "Puzonekk"
+	desc = "POLITICS_PUZONEKK_DESC"
+	picture = "Portrait_Red_Rose_Puzonekk.dds"
+	ideology = irredentism
+	traits = {
+		divided_interests
+	}
+}
+
+create_country_leader = {
+	name = "Ja Hol"
+	desc = "POLITICS_JA_HOL_DESC"
+	picture = "Portrait_Red_Rose_Ja_Hol.dds"
+	ideology = liberal_socialism
+	traits = {
+		man_of_the_nation
+	}
+}
+
+create_country_leader = {
+	name = "Ja Hol's Wife"
+	desc = "POLITICS_JA_HOLS_WIFE_DESC"
+	picture = "Portrait_Red_Rose_Ja_Hol_Wife.dds"
+	ideology = pro_monster_government
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Skarabii"
+	desc = "POLITICS_SKARABII_DESC"
+	picture = "Portrait_Red_Rose_Skarabii.dds"
+	ideology = social_villagism 
+	traits = {
+		freedom_fighter
+	}
+}
+
+create_corps_commander = {
+	name = "Ja Hol"
+	desc = "POLITICS_JA_HOL_DESC"
+	picture = "Portrait_Red_Rose_Ja_Hol_Military.dds"
+	id = 22
+	traits = {
+		politically_connected
+		trickster
+		trait_RED_monster_clans
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Clarice"
+	picture = "Portrait_Red_Rose_Clarice.dds"
+	traits = {
+		trait_reckless
+		infantry_officer
+		trait_RED_monster_clans
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Puzonekk"
+	desc = "POLITICS_PUZONEKK_DESC"
+	picture = "Portrait_Red_Rose_Puzonekk.dds"
+	id = 21
+	traits = {
+		politically_connected
+		harsh_leader
+		infantry_officer
+		trait_RED_crazy_warrior
+	}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Budziu"
+	picture = "Portrait_Red_Rose_Budziu.dds"
+	id = 23
+	traits = {
+		politically_connected
+		infantry_leader
+		ambusher
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Polski Crafter"
+	desc = "POLITICS_POLSKI_CRAFTER_DESC"
+	picture = "Portrait_Red_Rose_Polski_Crafter_Military.dds"
+	id = 20
+	traits = {
+		politically_connected
+		infantry_officer
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Chaos"
+	picture = "Portrait_Red_Rose_Chaos.dds"
+	traits = {
+		seawolf
+		ironside
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+### VARIANTS ###
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Chaos Class"				
+		type = ship_hull_light_1
+		name_group = RED_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Brudziu Class"
+		type = ship_hull_cruiser_1
+		name_group = RED_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

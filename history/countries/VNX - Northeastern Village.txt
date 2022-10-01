@@ -1,0 +1,45 @@
+﻿capital = 383
+
+oob = "VNX"
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.4
+add_manpower = 70000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+	construction3 = 1
+	excavation3 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+	motorised_infantry = 1
+}
+
+set_politics = {
+	ruling_party = villagism
+	last_election = "648.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	villagism = 100
+}
+
+add_ideas = {
+	idea_village_lifestyle
+}

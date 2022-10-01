@@ -1,0 +1,67 @@
+﻿capital = 99
+
+oob = "SOS"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_convoys = 100
+add_manpower = 30000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 50
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Lyron Dolos"
+	desc = "POLITICS_LYRON_DOLOS_DESC"
+	picture = "Portrait_Slimes_of_the_Swamp_Lyron_Dolos.dds"
+	ideology = irredentism
+	traits = {
+		exiled_revolutionary
+	}
+}
+
+create_country_leader = {
+	name = "Slime King"
+	desc = "POLITICS_SLIME_KING_DESC"
+	picture = "Portrait_Slimes_of_the_Swamp_Slime_King.dds"
+	ideology = slime_ideology
+	traits = {
+		underage_monarch
+	}
+}
+
+create_country_leader = {
+	name = "Slime King"
+	desc = "POLITICS_SLIME_KING_DESC"
+	picture = "Portrait_Slimes_of_the_Swamp_Slime_King.dds"
+	ideology = constitutional_monarchy
+	traits = {
+		underage_monarch
+	}
+}
+
+create_corps_commander = {
+	name = "Slime Boy"
+	picture = "Portrait_Slimes_of_the_Swamp_Slime_Boy.dds"
+	traits = {
+		trait_reckless
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

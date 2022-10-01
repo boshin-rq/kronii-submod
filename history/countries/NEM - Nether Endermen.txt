@@ -1,0 +1,87 @@
+﻿capital = 477
+
+oob = "NEM"
+
+set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+set_popularities = {
+	monster = 65
+	villagism = 30
+	neutrality = 5
+}
+
+add_ideas = {
+	NEM_end_outcasts_idea
+}
+
+create_country_leader = {
+	name = "Nox"
+	desc = "POLITICS_NOX_DESC"
+	picture = "Portrait_Nether_Endermen_Nox.dds"
+	ideology = despotism 
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Novus"
+	desc = "POLITICS_NOVUS_DESC"
+	picture = "Portrait_Nether_Endermen_Novus.dds"
+	ideology = enderman_ideology 
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Caesco"
+	desc = "POLITICS_CAESCO_DESC"
+	picture = "Portrait_Nether_Endermen_Caesco.dds"
+	ideology = social_villagism 
+	traits = { }
+}
+
+create_corps_commander = {
+	name = "Evionne"
+	picture = "Portrait_Nether_Endermen_Evionne.dds"
+	traits = {
+		trait_reckless
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "O'dian"
+	picture = "Portrait_Nether_Endermen_O_dian.dds"
+	traits = {
+		offensive_doctrine
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}

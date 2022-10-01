@@ -1,0 +1,42 @@
+﻿capital = 573
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Vibis"
+	desc = "POLITICS_VIBIS_DESC"
+	picture = "Portrait_Servio_Vibis.dds"
+	ideology = constitutional_monarchy
+	traits = {
+		legitimate_heir
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandar Vucic"
+	desc = "POLITICS_ALEKSANDAR_VUCIC_DESC"
+	picture = "gfx/leaders/Player/Portrait_Generic_Player_Male_1.dds"
+	ideology = liberalism
+	traits = {
+		minister_of_information
+	}
+}
