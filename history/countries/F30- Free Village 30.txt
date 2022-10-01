@@ -1,0 +1,31 @@
+﻿capital = 24
+
+oob = "F30"
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = villagism
+	last_election = "648.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	villagism = 100
+}
+
+add_ideas = {
+	idea_village_lifestyle
+	villages_economy
+}

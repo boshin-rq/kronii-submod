@@ -1,0 +1,84 @@
+﻿capital = 652
+
+oob = "ENH"
+
+set_stability = 0.55
+set_war_support = 0.80
+set_convoys = 20
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	gw_artillery = 1
+	mass_assault = 1
+}
+
+set_variable = {
+	var = ENH_gold_amount 
+	value = 41
+}
+
+set_politics = {
+	ruling_party = monster
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	monster = 100
+}
+
+add_ideas = {
+	war_economy
+	service_by_requirement
+	closed_economy
+	ENH_loser_of_first_nether_war
+	ENH_mob_infighting_1
+	ENH_widespread_famine_level_3
+}
+
+create_country_leader = {
+	name = "Hades"
+	desc = ""
+	picture = "portrait_hades.tga"
+	ideology = multi_monster
+}
+
+
+create_field_marshal = {
+	name = "Hades"
+	picture = "portrait_hades.tga"
+	traits = { logistics_wizard }
+	skill = 5
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hoglin"
+	picture = "Portrait_Generic_Piglin_Male_1.dds"
+	traits = { substance_abuser }
+	skill = 5
+
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Zoglin"
+	picture = "Portrait_Generic_Piglin_Male_2.dds"
+	traits = { career_officer }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

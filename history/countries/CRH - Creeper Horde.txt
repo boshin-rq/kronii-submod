@@ -1,0 +1,69 @@
+﻿capital = 389
+
+oob = "CRH"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_convoys = 100
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	gw_artillery = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 70
+	villagism = 30
+}
+
+create_country_leader = {
+	name = "Creeper King"
+	desc = "POLITICS_CREEPER_KING_DESC"
+	picture = "Portrait_Creeper_Horde_Creeper_King.dds"
+	ideology = creeper_ideology 
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Creeper King"
+	desc = "POLITICS_CREEPER_KING_DESC"
+	picture = "Portrait_Creeper_Horde_Creeper_King.dds"
+	ideology = absolute_monarchy 
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Poppy Doodle"
+	desc = "POLITICS_POPPY_DOODLE_DESC"
+	picture = "Portrait_Creeper_Horde_Poppy_Doodle.dds"
+	ideology = social_villagism 
+	traits = { }
+}
+
+create_corps_commander = {
+	name = "Rodd Creeper"
+	picture = "Portrait_Creeper_Horde_Rodd_Creeper.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

@@ -1,0 +1,45 @@
+﻿capital = 407
+
+oob = "ICE"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+add_manpower = 10000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 100
+}
+
+create_country_leader = {
+	name = "Iceologer"
+	desc = "POLITICS_ICEOLOGER_DESC"
+	picture = "Portrait_Ice_Peaks_Iceologer_4.dds"
+	ideology = illager_ideology
+	traits = { }
+}
+
+create_corps_commander = {
+	name = "Subutai"
+	desc = "POLITICS_SUBUTAI_DESC"
+	picture = "Portrait_Ice_Peaks_Subutai.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}

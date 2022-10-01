@@ -1,0 +1,56 @@
+﻿capital = 322
+
+oob = "DOG"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 100
+}
+
+create_country_leader = {
+	name = "Sven Svenson"
+	desc = "POLITICS_SVEN_SVENSON_DESC"
+	picture = "Portrait_Wolfland_Sven.dds"
+	ideology = multi_monster
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Sven Svenson"
+	desc = "POLITICS_SVEN_SVENSON_DESC"
+	picture = "Portrait_Wolfland_Sven.dds"
+	ideology = conservatism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Alabama Svenson"
+	desc = "POLITICS_ALABAMA_SVENSON_DESC"
+	picture = "Portrait_Wolfland_Alabama.dds"
+	ideology = anarchist_communism
+	traits = { }
+}
+
+create_corps_commander = {
+	name = "Travis"
+	picture = "Portrait_Wolfland_Travis.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}

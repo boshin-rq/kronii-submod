@@ -1,0 +1,30 @@
+﻿capital = 56
+
+oob = "BEA"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+add_manpower = 30000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 100
+}
+
+create_country_leader = {
+	name = "Ravager"
+	desc = "POLITICS_RAVAGER_DESC"
+	picture = "Portrait_Beast_Forest_Ravager_1.dds"
+	ideology = ravager_ideology
+	traits = { }
+}

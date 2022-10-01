@@ -1,0 +1,95 @@
+﻿capital = 594
+
+oob = "FEC"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_convoys = 100
+add_manpower = 30000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	socialism = 45
+	supremacism = 10
+	monster = 45
+}
+
+add_ideas = {
+	FEC_socialist_texts_idea
+	FEC_foreign_influence_idea
+}
+
+create_country_leader = {
+	name = "Yang"
+	desc = "POLITICS_YANG_DESC"
+	picture = "Portrait_Free_Endermens_Commune_Yang.dds"
+	ideology = enderman_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Yang"
+	desc = "POLITICS_YANG_DESC"
+	picture = "Portrait_Free_Endermens_Commune_Yang.dds"
+	ideology = utopian_socialism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kara"
+	desc = "POLITICS_KARA_DESC"
+	picture = "Portrait_Free_Endermens_Commune_Kara.dds"
+	ideology = revolutionary_nationalism
+	traits = {
+		princess_of_terror
+	}
+}
+
+create_country_leader = {
+	name = "Daster"
+	desc = "POLITICS_DASTER_DESC"
+	picture = "Portrait_Free_Endermens_Commune_Daster.dds"
+	ideology = authoritarian_democracy
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "Kara"
+	desc = "POLITICS_KARA_DESC"
+	picture = "Portrait_Free_Endermens_Commune_Kara.dds"
+	traits = {
+		desert_fox
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Shaden"
+	picture = "Portrait_Free_Endermens_Commune_Shaden.dds" 
+	traits = { }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

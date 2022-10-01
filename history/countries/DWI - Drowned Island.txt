@@ -1,0 +1,145 @@
+﻿capital = 79
+
+oob = "DWI"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "DWI_naval_mtg"
+	else = {
+		set_naval_oob = "DWI_naval_legacy"
+	}
+}
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.7
+set_convoys = 100
+add_manpower = 10000
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+	construction3 = 1
+	excavation3 = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 75
+	neutrality = 25
+}
+
+add_ai_strategy = {
+	type = befriend
+	id = "RED"
+	value = 50
+}
+add_ai_strategy = {
+	type = send_volunteers_desire
+	id = "RED"
+	value = 100
+}
+add_ai_strategy = {
+	type = support
+	id = "RED"
+	value = 100
+}
+
+create_country_leader = {
+	name = "Rotten Flesh"
+	desc = "POLITICS_ROTTEN_FLESH_DESC"
+	picture = "Portrait_Drowned_Island_Rotten_Flesh.dds"
+	ideology = drowned_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Rotten Flesh"
+	desc = "POLITICS_ROTTEN_FLESH_DESC"
+	picture = "Portrait_Drowned_Island_Rotten_Flesh.dds"
+	ideology = centrism
+	traits = { }
+}
+
+create_navy_leader = {
+	name = "Sloppy Joe"
+	picture = "Portrait_Drowned_Island_Sloppy_Joe.dds"
+	traits = {
+		green_water_expert
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Drim"
+	picture = "Portrait_Drowned_Island_Drim.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+### VARIANTS ###
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Chaos Class"				
+		type = ship_hull_light_1
+		name_group = DWI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}

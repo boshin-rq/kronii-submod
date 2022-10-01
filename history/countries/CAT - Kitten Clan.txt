@@ -1,0 +1,98 @@
+﻿capital = 311
+
+oob = "CAT"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = monster
+	elections_allowed = no
+}
+
+set_popularities = {
+	monster = 100
+}
+
+create_country_leader = {
+	name = "Furdolf fon Meowler"
+	desc = "POLITICS_FURDOLF_FON_MEOWLER_DESC"
+	picture = "Portrait_Kitten_Clan_Furdolf_fon_Meowler.dds"
+	ideology = multi_monster
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Ulla Britta"
+	desc = "POLITICS_ULLA_BRITTA_DESC"
+	picture = "Portrait_Kitten_Clan_Ulla_Britta.dds"
+	ideology = social_villagism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Maui"
+	desc = "POLITICS_MAUI_DESC"
+	picture = "Portrait_Kitten_Clan_Maui.dds"
+	ideology = anarchism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Patches"
+	desc = "POLITICS_PATCHES_DESC"
+	picture = "Portrait_Kitten_Clan_Patches.dds"
+	ideology = revolutionary_nationalism
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "Furdolf fon Meowler"
+	desc = "POLITICS_FURDOLF_FON_MEOWLER_DESC"
+	picture = "Portrait_Kitten_Clan_Furdolf_fon_Meowler.dds" 
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Hero"
+	picture = "Portrait_Kitten_Clan_Hero.dds" 
+	traits = {
+		war_hero
+		infantry_officer
+		offensive_doctrine
+	}
+	skill = 6
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 6
+}
+
+create_corps_commander = {
+	name = "Patches"
+	#desc = "POLITICS_PATCHES_DESC"
+	picture = "Portrait_Kitten_Clan_Patches.dds"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		trait_TWN_dream_team
+	}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}

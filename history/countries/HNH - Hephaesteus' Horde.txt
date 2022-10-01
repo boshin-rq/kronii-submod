@@ -1,0 +1,123 @@
+﻿capital = 658
+
+oob = "HNH"
+
+set_politics = {
+	ruling_party = monster
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	monster = 100
+}
+
+add_ideas = {
+	nether_isolation
+}
+
+create_country_leader = {
+ 	name = "Hephaestus"
+ 	desc = ""
+ 	picture = "portrait_piglinking.tga"
+ 	ideology = multi_monster
+}
+
+
+create_field_marshal = {
+	name = "Hephaestus"
+	picture = "portrait_piglinking.tga"
+	traits = { logistics_wizard }
+	skill = 5
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hoglin"
+	picture = "portrait_general.tga" 
+	traits = { substance_abuser }
+	skill = 5
+
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Poglin"
+	id = 502
+	picture = "portrait_general.tga" 
+	traits = { career_officer }
+	skill = 3
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Zoglin"
+	picture = "portrait_general.tga" 
+	traits = { career_officer }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Doglin"
+	picture = "portrait_general.tga" 
+	traits = {  }
+	skill = 4
+
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Woglin"
+	picture = "portrait_general.tga" 
+	traits = {  }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+
+create_corps_commander = {
+	name = "Toglin"
+	picture = "portrait_general.tga" 
+	traits = {  }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+
+create_corps_commander = {
+	name = "Loglin"
+	picture = "portrait_general.tga" 
+	traits = {  }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}

@@ -1,0 +1,147 @@
+﻿capital = 174
+
+oob = "HER"
+
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.2
+set_convoys = 100
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	motorised_infantry = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "8.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+	socialism = 20
+	villagism = 15
+	neutrality = 50
+	supremacism = 10
+	monster = 5
+}
+
+add_manpower = 5000
+
+create_country_leader = {
+	name = "Xisuma"
+	desc = "POLITICS_XISUMA_DESC"
+	picture = "Portrait_Hermitcraft_Xisumavoid.dds"
+	ideology = utopian_socialism
+	traits = {
+		socialite_connections
+	}
+}
+
+create_country_leader = {
+	name = "Mumbo Jumbo"
+	desc = "POLITICS_MUMBO_JUMBO_DESC"
+	picture = "Portrait_Hermitcraft_Mumbo_Jumbo.dds"
+	ideology = direct_democracy
+	traits = {
+		the_gentleman_president
+	}
+}
+
+create_country_leader = {
+	name = "Scar"
+	desc = "POLITICS_SCAR_DESC"
+	picture = "Portrait_Hermitcraft_GoodTimesWithScar.dds"
+	ideology = despotism
+	traits = {
+		great_architect
+	}
+}
+
+create_country_leader = {
+	name = "Grian"
+	desc = "POLITICS_GRIAN_DESC"
+	picture = "Portrait_Hermitcraft_Grian.dds"
+	ideology = revolutionary_nationalism
+	traits = {
+		warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Cleo"
+	desc = "POLITICS_CLEO_DESC"
+	picture = "Portrait_Hermitcraft_ZombieCleo.dds"
+	ideology = pro_monster_government
+	traits = {
+		hawk
+	}
+}
+
+create_field_marshal = {
+	name = "False"
+	picture = "Portrait_Hermitcraft_FalseSymmetry.dds"
+	traits = {
+		media_personality
+		brilliant_strategist
+	}
+	skill = 5
+	attack_skill = 8
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Etho"
+	picture = "Portrait_Hermitcraft_EthosLab.dds"
+	traits = {
+		media_personality
+		cavalry_officer
+	}
+	skill = 4
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wels"
+	picture = "Portrait_Hermitcraft_Welsknight.dds"
+	traits = {
+		media_personality
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Hypno"
+	picture = "Portrait_Hermitcraft_Hypnotizd.dds"
+	traits = {
+		media_personality
+		cuts_corners
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 1
+}

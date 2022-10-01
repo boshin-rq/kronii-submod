@@ -1,0 +1,117 @@
+﻿capital = 91
+
+oob = "HYP"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 100
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	coal_storages = 1
+	charcoal_manufacture_experiments = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "8.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 65
+	socialism = 15
+	villagism = 10
+	supremacism = 5
+	monster = 5
+}
+
+create_country_leader = {
+	name = "Dante"
+	desc = "POLITICS_DANTE_DESC"
+	picture = "Portrait_Hypixel_Dante.dds"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Seraphine"
+	desc = "POLITICS_SERAPHINE_DESC"
+	picture = "Portrait_Hypixel_Seraphine.dds"
+	ideology = direct_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Simon Collins-Laflamme"
+	desc = "POLITICS_SIMON_COLLINS_LAFLAMME_DESC"
+	picture = "Portrait_Hypixel_Simon_Collins_Laflamme.dds"
+	ideology = moderatism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Diana"
+	desc = "POLITICS_DIANA_DESC"
+	picture = "Portrait_Hypixel_Diana.dds"
+	ideology = pro_monster_government
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Jerry"
+	desc = "POLITICS_JERRY_DESC"
+	picture = "gfx/leaders/Villager/Portrait_Generic_Villager_Male_2.dds"
+	ideology = agrarian_socialism
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "Dante"
+	desc = "POLITICS_DANTE_DESC"
+	picture = "Portrait_Hypixel_Dante.dds"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Aatrox"
+	picture = "Portrait_Hypixel_Aatrox.dds"
+	traits = {
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Marina"
+	picture = "Portrait_Hypixel_Marina.dds"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
