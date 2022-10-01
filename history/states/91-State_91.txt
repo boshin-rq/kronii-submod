@@ -1,0 +1,25 @@
+state={
+	id=91
+	name="STATE_91"
+	provinces={
+		1553 2709 3674 4188 5144 5978 6008 6036 9251 
+	}
+	history = {
+		victory_points = { 9251 20 }
+		victory_points = { 5144 3 }
+		victory_points = { 6008 5 }
+		owner = HYP
+		add_core_of = HYP
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
+			9251 = {
+				naval_base = 2
+			}
+		}
+	}
+	manpower=2000000
+	state_category=large_city
+}

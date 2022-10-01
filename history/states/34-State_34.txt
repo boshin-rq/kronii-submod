@@ -1,0 +1,21 @@
+state={
+	id=34
+	name="STATE_34"
+	provinces={
+		584 730 1834 2352 2877 3247 3384 3683 4440 4460 6040 6042 6044 6069 6076 6081 6087 6124 6135 6150 
+	}
+	history = {
+		owner = VN7
+		add_core_of = VN7
+		victory_points = {
+			4440 25
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=1200000
+	state_category=town
+}

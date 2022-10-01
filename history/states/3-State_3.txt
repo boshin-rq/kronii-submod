@@ -1,0 +1,17 @@
+state = {
+	id = 3
+	name = "STATE_3"
+	provinces = {
+		1337 1340 1714 1988 3435 3698 4434 5598 5601 5608 9212 9213 9214 9215 
+	}
+	history = {
+		victory_points = { 3435 2 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower = 61432
+	state_category = rural
+}

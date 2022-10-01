@@ -1,0 +1,24 @@
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		337 497 840 906 1840 1998 2951 3321 3675 4043 4581 4830 4945 5234 6085 6094 6104 6122 6125 6128 6146 6151 6155 6168 6177 6188 6200 6204 6209 6221 6232 
+	}
+	resources = {
+		coal = 4
+		redstone = 8
+		iron = 7
+	}
+	history = {
+		victory_points = { 6125 1 }
+		owner = VN7
+		add_core_of = VN7
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

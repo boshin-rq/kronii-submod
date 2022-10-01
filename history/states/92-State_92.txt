@@ -1,0 +1,25 @@
+state={
+	id=92
+	name="STATE_92"
+	provinces={
+		107 658 918 1661 2517 3213 3478 4628 4804 5430 6106 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 918 3 }
+		owner = MC6
+		add_core_of = MC6
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

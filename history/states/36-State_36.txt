@@ -1,0 +1,19 @@
+state={
+	id=36
+	name="STATE_36"
+	provinces={
+		116 874 1011 1871 1928 1936 2971 3774 5618 5624 5631 5641 9231 
+	}
+	history = {
+		victory_points = { 5624 5 }
+		owner = F34
+		add_core_of = F34
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

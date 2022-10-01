@@ -1,0 +1,24 @@
+state={
+	id=56
+	name="STATE_56"
+	provinces={
+		595 734 1023 1662 3007 5675 5696 5733 9237 
+	}
+	resources = {
+		wood = 20
+		iron = 2
+		diamonds = 1
+	}
+	history = {
+		victory_points = { 595 3 }
+		owner = BEA
+		add_core_of = BEA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=147124
+	state_category=town
+}

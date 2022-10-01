@@ -1,0 +1,18 @@
+state={
+	id=77
+	name="STATE_77"
+	provinces={
+		332 810 1628 2155 2304 2637 4618 5642 
+	}
+	history = {
+		victory_points = { 332 4 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=92487
+	state_category=rural
+}

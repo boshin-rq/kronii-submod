@@ -1,0 +1,24 @@
+state={
+	id=64
+	name="STATE_64"
+	provinces={
+		128 166 246 445 609 923 1235 2338 3452 3652 3721 3825 3935 5704 5751 5770 9242 
+	}
+	history = {
+		victory_points = { 2338 5 }
+		owner = IMP
+		add_core_of = NIC
+		add_core_of = IMP
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			2338 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

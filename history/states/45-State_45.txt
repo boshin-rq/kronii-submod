@@ -1,0 +1,18 @@
+state={
+	id=45
+	name="STATE_45"
+	provinces={
+		558 1394 1500 1728 1782 2140 3445 4403 5241 5630 5633 5636 
+	}
+	history = {
+		victory_points = { 3445 2 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=53091
+	state_category=rural
+}

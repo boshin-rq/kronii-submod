@@ -1,0 +1,22 @@
+state={
+	id=41
+	name="STATE_41"
+	provinces={
+		1444 2513 2565 2775 3004 3018 3216 3360 4864 5089 5469 5990 6015 6028 
+	}
+	resources = {
+		gunpowder = 1
+	}
+	history = {
+		victory_points = { 2513 1 }
+		owner = VN7
+		add_core_of = VN7
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

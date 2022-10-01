@@ -1,0 +1,24 @@
+state={
+	id=14
+	name="STATE_14"
+	provinces={
+		648 1824 4726 5193 5588 7155 7172 7220 7309 7344 9283 
+	}
+	resources = {
+		coal = 6
+		iron = 10
+		lazurite = 2
+	}
+	history={
+		victory_points = { 9283 1 }
+		owner = SPE
+		add_core_of = SPE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,19 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		189 1130 1402 1560 2270 3024 3264 3640 4049 5606 5612 5615 9217 9218 9219 9221 
+	}
+	history = {
+		victory_points = { 3264 15 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=689000
+	state_category=large_city
+}

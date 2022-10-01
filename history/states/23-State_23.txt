@@ -1,0 +1,26 @@
+state={
+	id=23
+	name="STATE_23"
+	provinces={
+		204 1216 1811 2436 2649 2824 2836 4322 4584 4894 4948 5183 5396 6859 6898 6952 6973 7021 7068 7106 7145 7174 7186 7201 7213 7228 
+	}
+	history = {
+	owner = SPE
+	add_core_of = SPE
+	add_core_of = TBR
+	victory_points = {
+		7186 1
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			7186 = {
+				naval_base = 5
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

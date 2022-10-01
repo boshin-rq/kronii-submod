@@ -1,0 +1,19 @@
+state={
+	id=19
+	name="STATE_19"
+	provinces={
+		96 297 3156 3370 4380 4528 5372 9220 9224 
+	}
+	history = {
+		victory_points = { 4380 3 }
+		owner = HBC
+		add_core_of = HBC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,29 @@
+state={
+	id=20
+	name="STATE_20"
+	provinces={
+		43 155 272 656 2482 3597 4029 4272 4970 5175 5377 5490 7182 7190 7227 7246 7265 7268 7282 7297 7318 9280 
+	}
+	resources = {
+		lazurite = 4
+	}
+	history = {
+	owner = SPE
+	add_core_of = SPE
+	victory_points = {
+		7282 1
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			7282 = {
+				naval_base = 5
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

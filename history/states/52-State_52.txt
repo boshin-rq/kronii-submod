@@ -1,0 +1,19 @@
+state={
+	id=52
+	name="STATE_52"
+	provinces={
+		1040 1634 1934 2865 3408 3789 4209 5480 5509 7946 7967 7991 8029 8033 8042 8066 8083 8130 8185 8235 8326 
+	}
+	history = {
+		victory_points = { 8029 5 }
+		owner = DDC
+		add_core_of = DDC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

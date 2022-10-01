@@ -1,0 +1,27 @@
+state={
+	id=79
+	name="STATE_79"
+	provinces={
+		867 
+	}
+	resources = {
+		coal = 1
+		wood = 2
+		iron = 1
+	}
+	history = {
+		victory_points = { 867 1 }
+		owner = DWI
+		add_core_of = DWI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			867 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+		}
+	}
+	manpower = 114000
+	state_category = small_island
+}

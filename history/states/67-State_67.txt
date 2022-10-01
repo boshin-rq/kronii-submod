@@ -1,0 +1,18 @@
+state={
+	id=67
+	name="STATE_67"
+	provinces={
+		289 644 1864 3153 5789 5805 5816 
+	}
+	history = {
+		victory_points = { 3153 3 }
+		owner = EMN
+		add_core_of = EMN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,26 @@
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		1481 1732 2334 3256 3451 4423 4697 4874 5891 5924 5962 6004 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 1732 5 }
+		owner = MC1
+		add_core_of = MC1
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

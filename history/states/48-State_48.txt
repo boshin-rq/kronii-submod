@@ -1,0 +1,19 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		121 287 606 1039 1544 1559 1659 1850 2376 2384 3471 4226 4926 5302 5492 6211 6235 6299 
+	}
+	history = {
+		victory_points = { 121 3 }
+		owner = SN7
+		add_core_of = SN7
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

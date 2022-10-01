@@ -1,0 +1,22 @@
+state={
+	id=11
+	name="STATE_11"
+	provinces={
+		588 1646 1978 2958 3265 3318 3735 4585 5113 5198 5259 7030 7045 7067 7100 7118 7119 
+	}
+	history={
+		owner = SPE
+		add_core_of = SPE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			588 = {
+				naval_base = 3
+			}
+		}
+
+	}
+	manpower=200000
+	state_category=town
+}

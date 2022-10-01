@@ -1,0 +1,22 @@
+state={
+	id=43
+	name="STATE_43"
+	provinces={
+		234 1790 2179 2677 3396 3411 3775 4079 4705 5605 5613 5621 
+	}
+	history = {
+		victory_points = { 2677 5 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			2677 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=151421
+	state_category=town
+}

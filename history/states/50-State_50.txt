@@ -1,0 +1,26 @@
+state={
+	id=50
+	name="STATE_50"
+	provinces={
+		586 695 1153 1374 2633 4453 5094 5850 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 2633 5 }
+		owner = MC4
+		add_core_of = MC4
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

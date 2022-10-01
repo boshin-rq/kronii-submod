@@ -1,0 +1,26 @@
+state={
+	id=81
+	name="STATE_81"
+	provinces={
+		2233 2490 2944 2964 3783 5210 5914 5955 5963 5971 6013 9252 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 5971 5 }
+		owner = MC6
+		add_core_of = MC6
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

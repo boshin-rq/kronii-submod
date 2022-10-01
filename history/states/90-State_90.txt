@@ -1,0 +1,17 @@
+state={
+	id=90
+	name="STATE_90"
+	provinces={
+		1017 1292 1375 1645 1798 1829 1924 2833 3071 3306 3561 4250 5031 5993 6037 6086 6118 6136 9250 
+	}
+	history = {
+		victory_points = { 6086 3 }
+		owner = SN7
+		add_core_of = SN7
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category=wasteland
+}

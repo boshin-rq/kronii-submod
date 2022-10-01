@@ -1,0 +1,19 @@
+state={
+	id=31
+	name="STATE_31"
+	provinces={
+		1775 4342 4479 5619 
+	}
+	history = {
+		victory_points = { 1775 3 }
+		owner = EMN
+		add_core_of = EMN
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

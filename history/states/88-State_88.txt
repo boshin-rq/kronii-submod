@@ -1,0 +1,22 @@
+state={
+	id=88
+	name="STATE_88"
+	provinces={
+		435 1322 1561 1911 2848 4248 4514 5121 5966 5967 5984 5985 6001 6010 6017 6023 6027 6045 6072 9249 
+	}
+	resources = {
+		gunpowder = 3
+	}
+	history = {
+		victory_points = { 9249 1 }
+		owner = VN7
+		add_core_of = VN7
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

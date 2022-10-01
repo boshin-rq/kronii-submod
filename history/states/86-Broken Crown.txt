@@ -1,0 +1,24 @@
+state={
+	id=86
+	name="STATE_86"
+	provinces={
+		474 3205 4077 4435 4825 5131 5364 7307 7426 7451 7482 
+	}
+	resources = {
+		coal = 3
+		wood = 7
+		iron = 3
+		gunpowder = 8
+	}
+	history = {
+		victory_points = { 4825 3 }
+		owner = CRH
+		add_core_of = CRH
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=124962
+	state_category=rural
+}

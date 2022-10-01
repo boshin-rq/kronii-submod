@@ -1,0 +1,25 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		193 627 828 1000 1511 1785 3709 4191 4639 4769 4905 5040 6915 6924 7013 7031 7042 7049 7096 
+	}
+	resources = {
+		wood = 10
+		gunpowder = 6
+		lazurite = 1
+	}
+	history = {
+		victory_points = { 3709 1 }
+		owner = SPE
+		add_core_of = SPE
+		add_core_of = TBR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

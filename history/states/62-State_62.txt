@@ -1,0 +1,19 @@
+state={
+	id=62
+	name="STATE_62"
+	provinces={
+		1367 2133 2509 3702 4307 4846 4910 5002 5734 5742 5749 
+	}
+	history = {
+		victory_points = { 1367 3 }
+		owner = TKE
+		add_core_of = TKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,18 @@
+state={
+	id=66
+	name="STATE_66"
+	provinces={
+		170 180 860 1008 2308 2745 2754 3762 4020 5701 5715 5724 5729 
+	}
+	history={
+		victory_points = { 5715 3 }
+		owner = PN2
+		add_core_of = PN2
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+	}
+	manpower=400000
+	state_category=town
+}

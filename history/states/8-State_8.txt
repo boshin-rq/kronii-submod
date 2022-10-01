@@ -1,0 +1,19 @@
+state={
+	id=8
+	name="STATE_8"
+	provinces={
+		343 347 1905 3549 3779 5763 5769 5776 5785 
+	}
+	history = {
+		victory_points = { 1905 3 }
+		owner = TKE
+		add_core_of = TKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

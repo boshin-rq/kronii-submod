@@ -1,0 +1,19 @@
+state={
+	id=35
+	name="STATE_35"
+	provinces={
+		1931 2021 9233 
+	}
+	history = {
+		victory_points = { 9233 3 }
+		owner = HBC
+		add_core_of = HBC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

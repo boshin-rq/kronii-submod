@@ -1,0 +1,39 @@
+state={
+	id=97
+	name="STATE_97"
+	provinces={
+		85 493 1060 1390 2011 2872 3731 3886 5329 5826 5842 
+	}
+	resources = {
+		coal = 4
+		lazurite = 4
+		redstone = 8
+		gunpowder = 7
+		wood = 4
+		iron = 6
+		diamonds = 3
+		netherite = 2
+	}
+	history = {
+		victory_points = { 5329 25 }
+		victory_points = { 5826 20 }
+		victory_points = { 5842 5 }
+		victory_points = { 3731 1 }
+		owner = PLC
+		add_core_of = PLC
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			5826 = {
+				naval_base = 6
+			}
+			5842 = {
+				naval_base = 2
+			}
+		}
+	}
+	manpower=5385000
+	state_category=megalopolis
+}

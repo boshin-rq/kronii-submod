@@ -1,0 +1,19 @@
+state={
+	id=22
+	name="STATE_22"
+	provinces={
+		617 919 1430 2120 2760 2896 3648 3956 4999 6587 6601 6617 6646 6713 6717 6764 6767 6796 6801 6837 6850 
+	}
+	history={
+		victory_points = { 617 1 }
+		owner = SPE
+		add_core_of = SPE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

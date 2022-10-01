@@ -1,0 +1,19 @@
+state={
+	id=10
+	name="STATE_10"
+	provinces={
+		1329 3065 4402 4741 5162 5351 5735 5736 
+	}
+	history = {
+		victory_points = { 5736 3 }
+		owner = TKE
+		add_core_of = TKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}
