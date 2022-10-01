@@ -1,0 +1,141 @@
+bookmarks = {
+	bookmark = {
+		name = "THE LAST YEAR OF HEGENOMY"
+		desc = "GATHERING_STORM_DESC"
+		date = 648.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SPE"
+		default = yes
+
+		"SPE"={
+			history = "SPE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			disorganised_economy
+			steady_decline
+			}
+			focuses = {
+				SPE_the_first_council_meeting
+				SPE_the_terrifying_rumours
+				SPE_open_new_mines
+			}
+		}
+		"OMN"={
+			history = "OMN_GATHERING_STORM_DESC"
+			ideology = monster
+			ideas = {
+			young_nation
+			}
+			focuses = {
+				OMN_found_the_eastern_outpost
+				OMN_rise_of_the_legion
+				OMN_the_pomachu_declaration
+			}
+		}
+		"ENH"={
+			history = "ENH_GATHERING_STORM_DESC"
+			ideology = monster
+			ideas = {
+				ENH_loser_of_first_nether_war
+				ENH_mob_infighting_1
+				ENH_widespread_famine_level_3
+		    }
+			focuses = {
+				ENH_dealing_with_food_shortages
+				ENH_through_the_portals
+				ENH_extermination
+			}
+		}
+		"VN7"={
+			history = "VN7_GATHERING_STORM_DESC"
+			ideology = monster
+			ideas = {
+			player_outposts
+			}
+			focuses = {
+				VN7_purity
+				VN7_talesofourunion
+				VN7_loyalty
+			}
+		}
+		"FKE"={
+			history = "FKE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			the_last_offensive
+			}
+			focuses = {
+				fke_the_sins_of_the_cohort
+				fke_national_coup
+				fke_jacobs_office
+			}
+		}
+		"F11"={
+			history = "F11_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				volunteer_only
+				disorganised_economy
+			}
+			focuses = {
+				F11_form_a_country
+				F11_union_soldiers
+			}
+		}
+		"IMP"={
+			history = "IMP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			brink_of_collapse
+			}
+		}
+		"TUL"={
+			minor = yes
+			history = "TUL_GATHERING_STORM_DESC"
+			ideology = monster
+			ideas = {
+			sheep_mentality
+			}
+
+		}
+		"SRF"={
+			minor = yes
+			history = "SRF_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+
+		}
+		"LKR"={
+			minor = yes
+			history = "LKR_GATHERING_STORM_DESC"
+			ideology = monster
+			ideas = {
+
+			}
+
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
+           	focuses = {
+				F11_form_a_country
+				F11_union_soldiers
+          	}
+    	}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

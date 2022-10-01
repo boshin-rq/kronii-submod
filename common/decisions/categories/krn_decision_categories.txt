@@ -1,0 +1,54 @@
+F11_investments_cat = {
+	
+	icon = generic_industry
+	
+	allowed = {
+		original_tag = F11
+	}
+	
+	priority = 10
+	
+	visible = {
+		hidden_trigger = {
+			OR = {
+				has_completed_focus = F11_military_mechs
+				has_completed_focus = F11_invest_in_cruisers
+				has_completed_focus = F11_floating_airport
+				has_completed_focus = F11_aircrafts_designs
+				has_completed_focus = F11_economic_regulations
+				has_completed_focus = F11_new_workplaces
+				has_completed_focus = F11_expand_union_port
+				has_completed_focus = F11_buy_trade_fleet
+				has_completed_focus = F11_funds_for_war
+				has_completed_focus = F11_arm_villagers
+			}
+		}
+		has_civil_war = no
+		has_capitulated = no
+	}
+	
+}
+
+F11_integrate_communities_cat = {
+	
+	allowed = {
+		original_tag = F11
+	}
+	
+	visible = {
+		hidden_trigger = {
+			has_completed_focus = F11_integrate_communities
+		}
+		has_civil_war = no
+		is_subject = no
+	}
+	
+}
+
+F11_congress_of_the_new_right_cat = {
+	
+	icon = F11_congress_of_the_new_right
+	
+	priority = 6
+	
+}

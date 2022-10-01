@@ -1,0 +1,5035 @@
+focus_tree = {
+	
+	id = kronii_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = F11
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 25 y = 25 }
+
+	initial_show_position = {
+		focus = F11_renew_the_union
+	}
+	
+	#focus = {
+	#	id = F11_
+	#	icon = GFX_goal_unknown
+	#	prerequisite = { focus =  }
+	#	mutually_exclusive = { focus =  }
+	#	x = 0
+	#	y = 0
+	#	relative_position_id = 
+	#	cost = 10
+	#	
+	#	ai_will_do = {
+	#		base = 5
+	#	}
+	#	
+	#	available = {
+	#		
+	#	}
+	#	
+	#	bypass = {
+	#		
+	#	}
+	#	
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+	#	
+	#	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_ANNEXATION }
+	#	
+	#	completion_reward = {
+	#		
+	#	}
+	#}
+	
+	focus = {
+		id = F11_union_legacy
+		icon = GFX_focus_F11_kroneland
+		x = 0
+		y = 0
+		cost = 2
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = f11.event.1
+		}
+	}
+	
+	focus = {
+		id = F11_betrayal
+		icon = GFX_focus_FKE_why_democracy
+		prerequisite = { focus = F11_union_legacy }
+		x = 0
+		y = 1
+		relative_position_id = F11_union_legacy
+		cost = 2
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = f11.event.2
+		}
+	}
+	
+	focus = {
+		id = F11_renew_the_union
+		icon = GFX_focus_SPE_divided_by_debate
+		prerequisite = { focus = F11_betrayal }
+		x = 0
+		y = 1
+		relative_position_id = F11_betrayal
+		cost = 2
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = f11.event.3
+		}
+	}
+	
+	###################################
+	### LOYAL TO THE Ouro Kronii ###
+	###################################
+	
+	focus = {
+		id = F11_loyal_to_the_crafter
+		icon = GFX_focus_F11_loyaltokronii
+		prerequisite = { focus = F11_renew_the_union }
+		x = -4
+		y = 1
+		relative_position_id = F11_renew_the_union
+		cost = 0
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_flag = F11_revenge_1_flag
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			custom_effect_tooltip = F11_crafter_remains_tt
+		}
+	}
+	
+	####################
+	### DICTATORSHIP ###
+	####################
+	
+	focus = {
+		id = F11_dictatorship
+		icon = GFX_goal_generic_order
+		prerequisite = { focus = F11_loyal_to_the_crafter }
+		mutually_exclusive = { focus = F11_monarchy }
+		x = -2
+		y = 1
+		relative_position_id = F11_loyal_to_the_crafter
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = F11_AI_RANDOM_MONARCHIST
+				has_game_rule = {
+					rule = F11_ai_behavior
+					option = MONARCHIST
+				}
+			}
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			country_event = f11.event.4
+			hidden_effect = {
+				set_cosmetic_tag = F11_monarchist
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_op_only_for_few_people
+		icon = GFX_focus_TWH_players_privileges
+		prerequisite = { focus = F11_dictatorship }
+		x = -1
+		y = 1
+		relative_position_id = F11_dictatorship
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			add_popularity = {  
+				ideology = neutrality
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = monopolies
+				add_idea = civilian_economy
+			}
+			hidden_effect = {
+				set_country_flag = monopolies_flag
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_open_gates
+		icon = GFX_focus_SPE_kicking_out_the_generals
+		prerequisite = { focus = F11_op_only_for_few_people }
+		x = 0
+		y = 1
+		relative_position_id = F11_op_only_for_few_people
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			add_ideas = F11_Open_gates_idea
+		}
+	}
+	
+	focus = {
+		id = F11_new_council
+		icon = GFX_focus_OMN_the_tamers_of_spawn
+		prerequisite = { focus = F11_dictatorship }
+		x = 1
+		y = 1
+		relative_position_id = F11_dictatorship
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 120
+			create_corps_commander = {
+				name = "Yogiri"
+				picture = "Yogiri.dds"
+				traits = {
+					politically_connected
+					old_guard
+				}
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_secret_police
+		icon = GFX_focus_FKE_arrest_of_conspiracy_suspects
+		prerequisite = { focus = F11_new_council }
+		x = 0
+		y = 1
+		relative_position_id = F11_new_council
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = yes
+				else = {
+					add_ideas = F11_secret_police_idea
+				}
+			}
+		}
+	}
+	
+	################
+	### MONARCHY ###
+	################
+	
+	focus = {
+		id = F11_monarchy
+		icon = GFX_goal_generic_monarchy1
+		prerequisite = { focus = F11_loyal_to_the_crafter }
+		mutually_exclusive = { focus = F11_dictatorship }
+		x = 2
+		y = 1
+		relative_position_id = F11_loyal_to_the_crafter
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = F11_AI_RANDOM_NEUTRALITY
+				has_game_rule = {
+					rule = F11_ai_behavior
+					option = NEUTRALITY
+				}
+			}
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Ouro Kronii" }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			country_event = f11.event.5
+			hidden_effect = {
+				set_cosmetic_tag = F11_monarchist
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_regulate_economy
+		icon = GFX_goal_generic_sign_treaty
+		prerequisite = { focus = F11_monarchy }
+		x = -1
+		y = 1
+		relative_position_id = F11_monarchy
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Queen Kronii" }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = monopolies
+				add_idea = civilian_economy
+			}
+			hidden_effect = {
+				set_country_flag = monopolies_flag
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_protect_villagers
+		icon = GFX_goal_generic_protect_state
+		prerequisite = { focus = F11_regulate_economy }
+		x = 0
+		y = 1
+		relative_position_id = F11_regulate_economy
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Queen Kronii" }
+		}
+		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			add_ideas = F11_Protect_villagers_idea
+		}
+	}
+	
+	focus = {
+		id = F11_royal_advisors
+		icon = GFX_goal_generic_monarchy2
+		prerequisite = { focus = F11_monarchy }
+		x = 1
+		y = 1
+		relative_position_id = F11_monarchy
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Queen Kronii" }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = F11_Azki
+		}
+	}
+	
+	focus = {
+		id = F11_crafter_guard
+		icon = GFX_focus_FKE_increasing_the_royal_army
+		prerequisite = { focus = F11_royal_advisors }
+		x = 0
+		y = 1
+		relative_position_id = F11_royal_advisors
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Queen Kronii" }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_ideas = F11_crafter_guard_idea
+		}
+	}
+	
+	###################
+	### BLUE SHIRTS ###
+	###################
+	
+	focus = {
+		id = F11_rally_the_blue_shirts
+		icon = GFX_focus_F11_fallofkronii
+		prerequisite = { focus = F11_renew_the_union }
+		x = 4
+		y = 1
+		relative_position_id = F11_renew_the_union
+		cost = 0
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_flag = F11_revenge_2_flag
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			custom_effect_tooltip = F11_crafter_dethroned_tt
+		}
+	}
+	
+	##########################
+	### SKARABII VILLAGISM ###
+	##########################
+	
+	focus = {
+		id = F11_skarabii_villagism
+		icon = GFX_focus_F11_mumeivillagism
+		prerequisite = { focus = F11_rally_the_blue_shirts }
+		mutually_exclusive = { focus = F11_puzonekk_state }
+		x = -2
+		y = 1
+		relative_position_id = F11_rally_the_blue_shirts
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = F11_AI_RANDOM_SUPREMACIST
+				has_game_rule = {
+					rule = F11_ai_behavior
+					option = SUPREMACIST
+				}
+			}
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mumei" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Mumei" }
+				}
+			}
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			country_event = f11.event.6
+		}
+	}
+	
+	focus = {
+		id = F11_legalize_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = F11_skarabii_villagism }
+		x = -1
+		y = 1
+		relative_position_id = F11_skarabii_villagism
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mumei" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Mumei" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = monopolies
+				add_idea = civilian_economy
+			}
+			hidden_effect = {
+				set_country_flag = monopolies_flag
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_union_banner
+		icon = GFX_focus_F11_banner
+		prerequisite = { focus = F11_legalize_unions }
+		x = 0
+		y = 1
+		relative_position_id = F11_legalize_unions
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mumei" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Mumei" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_ideas = F11_rally_under_crafter_banner_idea
+		}
+	}
+	
+	focus = {
+		id = F11_north_constituency
+		icon = GFX_focus_FKE_writing_the_constitution
+		prerequisite = { focus = F11_skarabii_villagism }
+		x = 1
+		y = 1
+		relative_position_id = F11_skarabii_villagism
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mumei" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Mumei" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_political_power = 100
+			201 = {
+				remove_dynamic_modifier = { modifier = F11_ja_hol_resistance_modifier }
+			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = F11_Aki
+		}
+	}
+	
+	focus = {
+		id = F11_ja_hol_economic_advices
+		icon = GFX_focus_F11_fauna
+		prerequisite = { focus = F11_north_constituency }
+		x = 0
+		y = 1
+		relative_position_id = F11_north_constituency
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mumei" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Mumei" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_ja_hol_economic_advices
+				bonus = 1.0
+				uses = 3
+				category = industry
+			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = F11_Fauna
+		}
+	}
+	
+	#####################
+	### PEKORA STATE ###
+	#####################
+	
+	focus = {
+		id = F11_puzonekk_state
+		icon = GFX_focus_F11_pekorastate
+		prerequisite = { focus = F11_rally_the_blue_shirts }
+		mutually_exclusive = { focus = F11_skarabii_villagism }
+		x = 2
+		y = 1
+		relative_position_id = F11_rally_the_blue_shirts
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = F11_AI_RANDOM_VILLAGIST
+				has_game_rule = {
+					rule = F11_ai_behavior
+					option = VILLAGIST
+				}
+			}
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mumei" }
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			set_politics = {
+				ruling_party = supremacism
+				elections_allowed = no
+			}
+			country_event = f11.event.7
+		}
+	}
+	
+	focus = {
+		id = F11_boost_production
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = F11_puzonekk_state }
+		x = -1
+		y = 1
+		relative_position_id = F11_puzonekk_state
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Pekora" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Pekora" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_boost_production
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_national_socialism
+		icon = GFX_focus_RED_national_socialism
+		prerequisite = { focus = F11_boost_production }
+		x = 0
+		y = 1
+		relative_position_id = F11_boost_production
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Pekora" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Pekora" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = monopolies
+				add_idea = low_economic_mobilisation
+			}
+			hidden_effect = {
+				set_country_flag = monopolies_flag
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_recruit_old_officers
+		icon = GFX_focus_FKE_military_discipline
+		prerequisite = { focus = F11_puzonekk_state }
+		x = 1
+		y = 1
+		relative_position_id = F11_puzonekk_state
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Pekora" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Pekora" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 2000
+			create_corps_commander = {
+				name = "Nene"
+				picture = "Portrait_Nene.dds"
+				traits = {
+					politically_connected
+					old_guard
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Okayu"
+				picture = "Portrait_Okayu.dds"
+				traits = {
+					politically_connected
+					old_guard
+					trait_F11_crazy_warrior
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			custom_effect_tooltip = available_military_high_command
+		    show_ideas_tooltip = F11_aluwa
+			custom_effect_tooltip = available_military_high_command
+		    show_ideas_tooltip = F11_neku
+		}
+	}
+	
+	focus = {
+		id = F11_conscript_noobs
+		icon = GFX_goal_generic_manpower
+		prerequisite = { focus = F11_recruit_old_officers }
+		x = 0
+		y = 1
+		relative_position_id = F11_recruit_old_officers
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Pekora" }
+		}
+		
+		bypass = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = { ruling_only = yes name = "Pekora" }
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_ideas = F11_conscript_noobs_idea
+		}
+	}
+	
+	###################
+	### PREPARATION ###
+	###################
+	
+	focus = {
+		id = F11_preparation
+		icon = GFX_focus_RED_preparation
+		prerequisite = { focus = F11_open_gates focus = F11_protect_villagers focus = F11_union_banner focus = F11_national_socialism }
+		prerequisite = { focus = F11_secret_police focus = F11_crafter_guard focus = F11_ja_hol_economic_advices focus = F11_conscript_noobs }
+		x = 0
+		y = 5
+		relative_position_id = F11_renew_the_union
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		bypass = {
+			is_subject = yes
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			country_event = f11.event.8
+		}
+	}
+	
+	#######################
+	### MILITARY BRANCH ###
+	#######################
+	
+	focus = {
+		id = F11_union_soldiers
+		icon = GFX_focus_F11_kdf
+		prerequisite = { focus = F11_preparation }
+		x = -10
+		y = 1
+		relative_position_id = F11_preparation
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = F11_kronii_union_navy
+		icon = GFX_focus_F11_gura
+		prerequisite = { focus = F11_union_soldiers }
+		x = -4
+		y = 1
+		relative_position_id = F11_union_soldiers
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	
+	focus = {
+		id = F11_invest_in_cruisers
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = F11_kronii_union_navy }
+		x = 0
+		y = 2
+		relative_position_id = F11_kronii_union_navy
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_new_cruiser_designs_decision }
+			unlock_decision_tooltip = { decision = F11_build_cruisers_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_air_force_university
+		icon = GFX_focus_F11_usaken
+		prerequisite = { focus = F11_union_soldiers }
+		x = -2
+		y = 1
+		relative_position_id = F11_union_soldiers
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	
+	focus = {
+		id = F11_floating_airport
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = F11_kronii_union_navy }
+		prerequisite = { focus = F11_air_force_university }
+		x = 1
+		y = 1
+		relative_position_id = F11_kronii_union_navy
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_carrier_designs_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_aircrafts_designs
+		icon = GFX_focus_SPE_unify_the_pact
+		prerequisite = { focus = F11_air_force_university }
+		x = 1
+		y = 1
+		relative_position_id = F11_air_force_university
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_aircrafts_designs_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_air_control
+		icon = GFX_focus_F11_kiara
+		prerequisite = { focus = F11_air_force_university }
+		x = 0
+		y = 2
+		relative_position_id = F11_air_force_university
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = F11_air_control_idea
+			create_corps_commander = {
+				name = "Kiara"
+				picture = "Portrait_Kiara.dds"
+				traits = {
+					cautious
+				}
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_new_age_army
+		icon = GFX_focus_FKE_glorification_of_heroes
+		prerequisite = { focus = F11_union_soldiers }
+		x = 3
+		y = 1
+		relative_position_id = F11_union_soldiers
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_new_age_army
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_better_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = F11_new_age_army }
+		x = 0
+		y = 1
+		relative_position_id = F11_new_age_army
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_better_equipment
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_military_mechs
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = F11_new_age_army }
+		x = -2
+		y = 1
+		relative_position_id = F11_new_age_army
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_tanks_designs_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_rely_on_elites
+		icon = GFX_goal_generic_land_officer
+		prerequisite = { focus = F11_better_equipment }
+		mutually_exclusive = { focus = F11_recruit_monsters }
+		x = -1
+		y = 1
+		relative_position_id = F11_better_equipment
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			NOT = {
+				OR = {
+					has_government = villagism
+					has_government = socialism
+					has_government = monster
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = F11_elite_warriors_idea
+		}
+	}
+	
+	focus = {
+		id = F11_recruit_monsters
+		icon = GFX_focus_TWH_sword_per_skeleton
+		prerequisite = { focus = F11_better_equipment }
+		prerequisite = { focus = F11_players_superiority }
+		mutually_exclusive = { focus = F11_rely_on_elites }
+		x = 1
+		y = 1
+		relative_position_id = F11_better_equipment
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			NOT = {
+				OR  = {
+					has_completed_focus = F11_dictatorship
+					has_government = supremacism
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_ideas = F11_monster_conscription_idea
+		}
+	}
+	
+	focus = {
+		id = F11_blitzkrieg
+		icon = GFX_focus_RED_blitzkrieg
+		prerequisite = { focus = F11_air_control }
+		prerequisite = { focus = F11_rely_on_elites focus = F11_recruit_monsters }
+		mutually_exclusive = { focus = F11_mass_assualt }
+		x = 1
+		y = 1
+		relative_position_id = F11_air_control
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 1
+				OR = {
+					has_tech = superior_firepower
+					has_tech = trench_warfare
+					has_tech = mass_assault
+				}
+			}
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_blitzkrieg
+				bonus = 1.0
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			create_corps_commander = {
+				name = "Subaru"
+				picture = "Portrait_Subaru.dds"
+				traits = {
+					infantry_officer
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_mass_assualt
+		icon = GFX_focus_RED_mass_assult
+		prerequisite = { focus = F11_air_control }
+		prerequisite = { focus = F11_rely_on_elites focus = F11_recruit_monsters }
+		mutually_exclusive = { focus = F11_blitzkrieg }
+		x = 3
+		y = 1
+		relative_position_id = F11_air_control
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 1
+				OR = {
+					has_tech = mobile_warfare
+					has_tech = superior_firepower
+					has_tech = trench_warfare
+				}
+			}
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_mass_assualt
+				bonus = 1.0
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_manifest_destiny
+		icon = GFX_focus_RED_manifest_destiny
+		prerequisite = { focus = F11_blitzkrieg focus = F11_mass_assualt }
+		x = 1
+		y = 1
+		relative_position_id = F11_blitzkrieg
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			328 = {
+				NOT = {
+					is_controlled_by = ROOT
+				}
+			}
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.05
+			add_named_threat = { threat = 5 name = F11_manifest_destiny }
+			custom_effect_tooltip = f11_news_1_tt
+			hidden_effect = {
+				news_event = f11.news.1
+			}
+		}
+	}
+	
+	########################
+	### POLITICAL BRANCH ###
+	########################
+	
+	focus = {
+		id = F11_return_to_home
+		icon = GFX_goal_generic_free_village
+		prerequisite = { focus = F11_preparation }
+		x = 0
+		y = 1
+		relative_position_id = F11_preparation
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			country_event = f11.event.9
+		}
+	}
+	
+	focus = {
+		id = F11_northern_issue
+		icon = GFX_focus_TWH_create_the_government
+		prerequisite = { focus = F11_return_to_home }
+		x = -4
+		y = 1
+		relative_position_id = F11_return_to_home
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			owns_state = 556
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			country_event = f11.event.10
+		}
+	}
+	
+	focus = {
+		id = F11_players_superiority
+		icon = GFX_focus_RED_players_superiority
+		prerequisite = { focus = F11_northern_issue }
+		mutually_exclusive = { focus = F11_pass_monster_rights_act }
+		x = 0
+		y = 1
+		relative_position_id = F11_northern_issue
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			country_event = f11.event.12
+		}
+	}
+	
+	focus = {
+		id = F11_militarize_union
+		icon = GFX_focus_SPE_new_recruits_act
+		prerequisite = { focus = F11_northern_issue }
+		mutually_exclusive = { focus = F11_disregarding }
+		x = 0
+		y = 1
+		relative_position_id = F11_players_superiority
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			320 = {
+				add_core_of = ROOT
+			}
+			create_wargoal = {
+					type = take_state_focus
+					target = F10
+					generator = { 276 272 320 }
+				}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = war_economy
+					}
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_disregarding
+		icon = GFX_focus_OMN_the_illager_lumber_corporation
+		prerequisite = { focus = F11_players_superiority }
+		mutually_exclusive = { focus = F11_militarize_union }
+		x = 2
+		y = 0
+		relative_position_id = F11_militarize_union
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 245 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = partial_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_kronii_union_is_our_land
+		icon = GFX_focus_TWH_kingdom
+		prerequisite = { focus = F11_return_to_home }
+		x = 0
+		y = 1
+		relative_position_id = F11_return_to_home
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+			owns_state = 245
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			country_event = f11.event.13
+		}
+	}
+	
+	focus = {
+		id = F11_case_of_free_market
+		icon = GFX_goal_generic_rich_players
+		prerequisite = { focus = F11_return_to_home }
+		x = 4
+		y = 1
+		relative_position_id = F11_return_to_home
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			country_event = f11.event.14
+		}
+	}
+	
+	focus = {
+		id = F11_privileges_for_support
+		icon = GFX_focus_FKE_inviting_foreign_investors
+		prerequisite = { focus = F11_case_of_free_market }
+		mutually_exclusive = { focus = F11_unions_win }
+		x = -1
+		y = 1
+		relative_position_id = F11_case_of_free_market
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			NOT = {
+				OR = {
+					has_government = villagism
+					has_government = socialism
+					has_government = monster
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = F11_question_of_free_market_idea
+				add_idea = F11_regulated_monopolies_idea
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_funds_for_war
+		icon = GFX_goal_generic_emeralds
+		prerequisite = { focus = F11_privileges_for_support }
+		x = -2
+		y = 1
+		relative_position_id = F11_privileges_for_support
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_sudden_foreign_aid_decision }
+			unlock_decision_tooltip = { decision = F11_medical_mission_decision }
+			unlock_decision_tooltip = { decision = F11_foreign_military_support_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_private_arms_factories
+		icon = GFX_goal_generic_mil_factory
+		prerequisite = { focus = F11_privileges_for_support }
+		x = 0
+		y = 1
+		relative_position_id = F11_privileges_for_support
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 245 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_unions_win
+		icon = GFX_focus_RED_unions_win
+		prerequisite = { focus = F11_case_of_free_market }
+		mutually_exclusive = { focus = F11_privileges_for_support }
+		x = 1
+		y = 1
+		relative_position_id = F11_case_of_free_market
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			NOT = {
+				OR  = {
+					has_completed_focus = F11_dictatorship
+					has_government = supremacism
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = F11_question_of_free_market_idea
+				add_idea = F11_state_overview_over_market_idea
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_arm_villagers
+		icon = GFX_focus_F11_RED_villagers
+		prerequisite = { focus = F11_unions_win focus = F11_talk_with_unions }
+		x = 1
+		y = 1
+		relative_position_id = F11_unions_win
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_arm_villagers_decision }
+		}
+	}
+	
+	#######################
+	### ECONOMIC BRANCH ###
+	#######################
+	
+	focus = {
+		id = F11_economic_regulations
+		icon = GFX_focus_FKE_economic_project
+		prerequisite = { focus = F11_preparation }
+		x = 10
+		y = 1
+		relative_position_id = F11_preparation
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_companies_inspection_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_talk_with_unions
+		icon = GFX_goal_generic_meeting
+		prerequisite = { focus = F11_economic_regulations }
+		x = -3
+		y = 2
+		relative_position_id = F11_economic_regulations
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			country_event = f11.event.15
+		}
+	}
+	
+	focus = {
+		id = F11_fill_the_railway_gaps
+		icon = GFX_focus_F11_transport
+		prerequisite = { focus = F11_economic_regulations }
+		x = 0
+		y = 1
+		relative_position_id = F11_economic_regulations
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+			}
+		}
+		
+		bypass = {
+			NOT = {
+				any_owned_state = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_public_health_care
+		icon = GFX_focus_RED_public_health_care
+		prerequisite = { focus = F11_fill_the_railway_gaps }
+		x = 0
+		y = 1
+		relative_position_id = F11_fill_the_railway_gaps
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = F11_nationalize_arm_production
+		icon = GFX_focus_FKE_expansion_of_arsenal
+		prerequisite = { focus = F11_public_health_care }
+		x = 0
+		y = 1
+		relative_position_id = F11_public_health_care
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 215 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_new_workplaces
+		icon = GFX_goal_generic_help_in_rebuilding_villages
+		prerequisite = { focus = F11_public_health_care }
+		x = -2
+		y = 1
+		relative_position_id = F11_public_health_care
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_build_factory_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_conscript_villagers
+		icon = GFX_focus_TWH_full_nationalization
+		prerequisite = { focus = F11_arm_villagers }
+		prerequisite = { focus = F11_new_workplaces }
+		x = 1
+		y = 1
+		relative_position_id = F11_arm_villagers
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_ideas = F11_national_service_idea
+		}
+	}
+	
+	focus = {
+		id = F11_expand_union_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = F11_economic_regulations }
+		x = 2
+		y = 1
+		relative_position_id = F11_economic_regulations
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			owns_state = 320
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_expand_union_port_decision }
+		}
+	}
+	
+	focus = {
+		id = F11_air_transport
+		icon = GFX_goal_generic_airplane
+		prerequisite = { focus = F11_economic_regulations }
+		x = 4
+		y = 1
+		relative_position_id = F11_economic_regulations
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			OR = {
+				has_tech = early_fighter
+				has_tech = early_bomber
+			}
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 245 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_buy_trade_fleet
+		icon = GFX_focus_FKE_we_must_dig_deeper
+		prerequisite = { focus = F11_expand_union_port }
+		prerequisite = { focus = F11_air_transport }
+		x = 1
+		y = 1
+		relative_position_id = F11_expand_union_port
+		cost = 5
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			unlock_decision_tooltip = { decision = F11_buy_trade_fleet_decision }
+		}
+	}
+	
+	##############################
+	### RETAKE HOMELAND BRANCH ###
+	##############################
+	
+	focus = {
+		id = F11_reversed_long_march
+		icon = GFX_focus_F11_hm
+		prerequisite = { focus = F11_militarize_union focus = F11_disregarding }
+		prerequisite = { focus = F11_kronii_union_is_our_land }
+		prerequisite = { focus = F11_private_arms_factories focus = F11_arm_villagers }
+		x = 0
+		y = 3
+		relative_position_id = F11_kronii_union_is_our_land
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			country_event = f11.event.16
+			create_corps_commander = {
+				name = "Ayame"
+				picture = "Portrait_Ayame.dds" 
+				traits = { harsh_leader }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Fubuki"
+				picture = "Portrait_Fubuki.dds" 
+				traits = { infantry_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "IryS"
+				picture = "Portrait_Irys.dds" 
+				traits = { infantry_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Luna"
+				picture = "Portrait_Luna.dds" 
+				traits = { reckless }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Marine"
+				picture = "Portrait_Marine.dds" 
+				traits = { invader }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Noel"
+				picture = "Portrait_Noel.dds" 
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 5
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Rosalyn"
+				picture = "Portrait_Rosalyn.dds" 
+				traits = { media_personality }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Rushia"
+				picture = "Portrait_Rushia.dds" 
+				traits = { inflexible_strategist }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = F11_Haachama
+			show_ideas_tooltip = F11_Lamy
+			show_ideas_tooltip = F11_Matsuri
+			show_ideas_tooltip = F11_Polka
+			show_ideas_tooltip = F11_Shion
+		}
+	}
+	
+	focus = {
+		id = F11_push_illagers_from_the_peaks
+		icon = GFX_focus_GRE_a_land_of_mountains
+		prerequisite = { focus = F11_reversed_long_march }
+		x = -4
+		y = 1
+		relative_position_id = F11_reversed_long_march
+		cost = 5
+		will_lead_to_war_with = FV9
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			OR = {
+				FV9 = {
+					exists = no
+				}
+				AND = {
+					224 = {
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { 
+								OR = {
+									is_in_faction_with = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
+					235 = {
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { 
+								OR = {
+									is_in_faction_with = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
+		completion_reward = {
+			create_corps_commander = {
+				name = "Suisei"
+				picture = "Portrait_Suisei.dds" 
+				traits = { career_officer }
+				skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			if = {
+				limit = {
+					FV9 = {
+						owns_state = 224
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = FV9
+				}
+			}
+			else_if = {
+				limit = {
+					224 = { CONTROLLER = { not = { is_in_faction_with = ROOT } } }
+				}
+				224 = { 
+					CONTROLLER = {
+						ROOT = {
+							create_wargoal = {
+								type = take_state
+								target = PREV
+								generator = { 235 224 }
+							}
+						}
+					} 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_imprison_the_illagers
+		icon = GFX_focus_FKE_demonstration_of_support
+		prerequisite = { focus = F11_push_illagers_from_the_peaks }
+		mutually_exclusive = { focus = F11_integrate_iceologers }
+		x = -1
+		y = 1
+		relative_position_id = F11_push_illagers_from_the_peaks
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			NOT = {
+				OR = {
+					has_government = villagism
+					has_government = socialism
+					has_government = monster
+				}
+			}
+			235 = {
+				OR = {
+					is_owned_by = ROOT
+					OWNER = { 
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			224 = {
+				OR = {
+					is_owned_by = ROOT
+					OWNER = { 
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			add_ideas = F11_imprisoned_iceologers_idea
+		}
+	}
+	
+	focus = {
+		id = F11_mountain_labor_camps
+		icon = GFX_focus_FKE_annexation_of_villages
+		prerequisite = { focus = F11_imprison_the_illagers }
+		x = 0
+		y = 1
+		relative_position_id = F11_imprison_the_illagers
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_idea = F11_imprisoned_iceologers_idea
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = F11_mountain_labor_camps_idea
+				remove_idea = F11_imprisoned_iceologers_idea
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_integrate_iceologers
+		icon = GFX_GFX_VN7_tales_of_our_union
+		prerequisite = { focus = F11_push_illagers_from_the_peaks }
+		mutually_exclusive = { focus = F11_imprison_the_illagers }
+		x = 1
+		y = 1
+		relative_position_id = F11_push_illagers_from_the_peaks
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			NOT = {
+				OR  = {
+					has_completed_focus = F11_dictatorship
+					has_government = supremacism
+				}
+			}
+			owns_state = 235
+			owns_state = 224
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -50
+			every_state = {
+				limit = {
+					OR = {
+						state = 235
+						state = 224
+					}
+				}
+				add_core_of = ROOT
+			}
+			add_named_threat = { threat = 1 name = F11_integrate_iceologers }
+		}
+	}
+	
+	focus = {
+		id = F11_mountain_villages_expansion
+		icon = GFX_goal_generic_building
+		prerequisite = { focus = F11_integrate_iceologers }
+		x = 0
+		y = 1
+		relative_position_id = F11_integrate_iceologers
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			owns_state = 224
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						state = 224
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			224 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_province_name = { id = 4586 name = "Hololive Shrine" }
+		}
+	}
+	
+	focus = {
+		id = F11_improve_relations_with_drowned_island
+		icon = GFX_focus_TWH_full_nationalization
+		prerequisite = { focus = F11_reversed_long_march }
+		x = 0
+		y = 1
+		relative_position_id = F11_reversed_long_march
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = FV8
+			}
+		}
+		
+		bypass = {
+			OR = {
+				FV8 = {
+					exists = no
+				}
+				237 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { 
+							OR = {
+								is_in_faction_with = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			FV8 = {
+				country_event = f11.event.17
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_annex_by_force
+		icon = GFX_focus_FKE_war_against_the_opposition
+		prerequisite = { focus = F11_improve_relations_with_drowned_island }
+		mutually_exclusive = { focus = F11_welcome_to_the_union }
+		x = -1
+		y = 1
+		relative_position_id = F11_improve_relations_with_drowned_island
+		cost = 5
+		will_lead_to_war_with = FV8
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			has_country_flag = F11_DWI_rejected_flag
+		}
+		
+		bypass = {
+			OR = {
+				FV8 = {
+					exists = no
+				}
+				237 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { 
+							OR = {
+								is_in_faction_with = ROOT
+								AND = {
+									is_subject_of = ROOT
+									NOT = { original_tag = FV8 }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FV8
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_fortify_the_island
+		icon = GFX_goal_generic_military_support_from_neighboring_villages
+		prerequisite = { focus = F11_annex_by_force }
+		x = 0
+		y = 1
+		relative_position_id = F11_annex_by_force
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			owns_state = 237
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			237 = {
+				add_building_construction = {
+					type = bunker
+					province = 5358
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					province = 2414
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_welcome_to_the_union
+		icon = GFX_focus_TWH_diplomacy
+		prerequisite = { focus = F11_improve_relations_with_drowned_island }
+		mutually_exclusive = { focus = F11_annex_by_force }
+		x = 1
+		y = 1
+		relative_position_id = F11_improve_relations_with_drowned_island
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			OR = {
+				OR = {
+					has_country_flag = RED_DWI_accepted_flag
+					FV8 = {
+						is_subject_of = ROOT
+					}
+				}
+				owns_state = 237
+			}
+		}
+		
+		bypass = {
+			237 = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = FV8
+				}
+				annex_country = { 
+					target = FV8
+					transfer_troops = yes
+				}
+			}
+			add_state_core = 237
+		}
+	}
+	
+	focus = {
+		id = F11_expand_the_island
+		icon = GFX_goal_generic_expanding_of_the_villages
+		prerequisite = { focus = F11_welcome_to_the_union }
+		x = 0
+		y = 1
+		relative_position_id = F11_welcome_to_the_union
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			owns_state = 237
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			237 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4904
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_continue_north_campaign
+		icon = GFX_goal_generic_an_unyielding_shield
+		prerequisite = { focus = F11_reversed_long_march }
+		x = 4
+		y = 1
+		relative_position_id = F11_reversed_long_march
+		cost = 5
+		will_lead_to_war_with = F19
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			OR = {
+				F19 = {
+					exists = no
+				}
+				AND = {
+					248 = {
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { 
+								OR = {
+									is_in_faction_with = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
+		completion_reward = {
+			create_corps_commander = {
+				name = "Towa"
+				picture = "Portrait_Towa.dds" 
+				traits = { war_hero }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			if = {
+				limit = {
+					F19 = {
+						owns_state = 248
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = F19
+				}
+			}
+			else_if = {
+				limit = {
+					248 = { CONTROLLER = { not = { is_in_faction_with = ROOT } } }
+				}
+				248 = { 
+					CONTROLLER = {
+						ROOT = {
+							create_wargoal = {
+								type = take_state
+								target = PREV
+								generator = { 248 }
+							}
+						}
+					} 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_slay_the_beasts
+		icon = GFX_focus_SPE_great_slaughter
+		prerequisite = { focus = F11_continue_north_campaign }
+		mutually_exclusive = { focus = F11_mount_the_beasts }
+		x = -1
+		y = 1
+		relative_position_id = F11_continue_north_campaign
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			NOT = {
+				OR = {
+					has_government = villagism
+					has_government = socialism
+					has_government = monster
+				}
+			}
+			248 = {
+				OR = {
+					is_owned_by = ROOT
+					OWNER = { 
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+			248 = {
+				is_core_of = ROOT
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -100
+			every_state = {
+				limit = {
+					OR = {
+						state = 248
+					}
+				}
+				add_core_of = ROOT
+			}
+			add_named_threat = { threat = -2.5 name = F11_slay_the_beasts }
+		}
+	}
+	
+	focus = {
+		id = F11_rebuild_cities
+		icon = GFX_focus_FKE_rebuild_the_broken_nation
+		prerequisite = { focus = F11_slay_the_beasts }
+		x = 0
+		y = 1
+		relative_position_id = F11_slay_the_beasts
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			owns_state = 248
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						state = 248
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			248 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_province_name = { id = 913 name = "Mumei Woods" }
+			set_province_name = { id = 3453 name = "Haachamachama" }
+		}
+	}
+	
+	focus = {
+		id = F11_mount_the_beasts
+		icon = GFX_goal_generic_mount_up
+		prerequisite = { focus = F11_continue_north_campaign }
+		mutually_exclusive = { focus = F11_slay_the_beasts }
+		x = 1
+		y = 1
+		relative_position_id = F11_continue_north_campaign
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			NOT = {
+				OR  = {
+					has_completed_focus = F11_dictatorship
+					has_government = supremacism
+				}
+			}
+			F19 = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+			248 = {
+				OR = {
+					is_owned_by = ROOT
+					OWNER = { 
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = -25
+			every_state = {
+				limit = {
+					OR = {
+						state = 248
+					}
+				}
+				add_compliance = 50
+			}
+			add_ideas = F11_ravager_riders_idea # IN THE FUTURE WE WILL ADD RAVAGER UNITS AND THIS FOCUS WILL UNLOCK IT FOR F11.
+			add_named_threat = { threat = 1 name = F11_mount_the_beasts }
+		}
+	}
+	
+	focus = {
+		id = F11_ravager_sanctuary
+		icon = GFX_goal_generic_graveyard
+		prerequisite = { focus = F11_mount_the_beasts }
+		x = 0
+		y = 1
+		relative_position_id = F11_mount_the_beasts
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			248 = {
+				OR = {
+					is_owned_by = ROOT
+					OWNER = { 
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						state = 248
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_compliance = 10
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_destroy_fec
+		icon = GFX_focus_RED_destroy_fec
+		prerequisite = { focus = F11_integrate_enderian_villages }
+		mutually_exclusive = { focus = F11_ultimatum_to_fec }
+		x = 1
+		y = 2
+		relative_position_id = F11_mountain_villages_expansion
+		cost = 5
+		will_lead_to_war_with = SRF
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+			SRF = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		
+		bypass = {
+			SRF = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SRF
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_ultimatum_to_fec
+		icon = GFX_focus_spr_crush_the_revolution
+		prerequisite = { focus = F11_integrate_enderian_villages }
+		mutually_exclusive = { focus = F11_destroy_fec }
+		x = 1
+		y = 2
+		relative_position_id = F11_expand_the_island
+		cost = 5
+		will_lead_to_war_with = SRF
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+			SRF = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		
+		bypass = {
+			SRF = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
+		completion_reward = {
+			SRF = {
+				country_event = f11.event.20
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_integrate_enderian_villages 
+		icon = GFX_focus_F11_bunkeronii
+		prerequisite = { focus = F11_fortify_the_island focus = F11_expand_the_island }
+		prerequisite = { focus = F11_mountain_labor_camps focus = F11_mountain_villages_expansion }
+		prerequisite = { focus = F11_rebuild_cities focus = F11_ravager_sanctuary }
+		x = 1
+		y = 1
+		relative_position_id = F11_fortify_the_island
+		cost = 10
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+      
+            248 = {
+                OR = {
+                    is_owned_by = ROOT
+                    OWNER = { 
+                        OR = {
+                            is_in_faction_with = ROOT
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+            237 = {
+                OR = {
+                    is_owned_by = ROOT
+                    OWNER = { 
+                        OR = {
+                            is_in_faction_with = ROOT
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+
+			237 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6060
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6059
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4130
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4425
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1037
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = F11_against_the_world
+		icon = GFX_focus_RED_against_the_world
+		prerequisite = { focus = F11_destroy_fec focus = F11_ultimatum_to_fec }
+		x = 0
+		y = 2
+		relative_position_id = F11_integrate_enderian_villages
+		cost = 5
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = F11_against_the_world_idea
+			hidden_effect = {
+				add_ideas = F11_warmonger_idea
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = MC1
+							original_tag = MC2
+							original_tag = MC4
+							original_tag = MC6
+							original_tag = MC8
+							original_tag = M10
+							original_tag = M11
+							original_tag = M12
+							original_tag = M13
+							original_tag = M14
+							original_tag = M15
+							original_tag = M17
+							original_tag = M18
+							original_tag = M19
+							original_tag = M21
+							original_tag = M22
+							original_tag = M24
+							original_tag = M25
+							original_tag = M26
+							original_tag = M27
+							original_tag = M28
+							original_tag = FV8
+							original_tag = FV9
+							original_tag = F19
+							original_tag = FEC
+							original_tag = SKU
+							original_tag = LKR
+							original_tag = DDC
+							original_tag = ROT
+							original_tag = WDL
+							original_tag = CAT
+							original_tag = DOG
+							original_tag = SOS
+							original_tag = CRH
+							original_tag = IMP
+						}
+					}
+					ROOT = {
+						add_ai_strategy = {
+							type = conquer
+							id = PREV
+							value = 100
+						}
+					}
+				}
+			}
+		}
+	}
+
+	############################
+	### INTERNATIONAL BRANCH ###
+	############################
+	
+	focus = {
+		id = F11_alliance
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = F11_against_the_world }
+		x = 0
+		y = 1
+		relative_position_id = F11_against_the_world
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		
+		available = {
+			is_subject = no
+			if = {
+				limit = {
+					original_tag = EMN
+				}
+				NOT = {
+					original_tag = EMN
+				}
+			}
+		}
+		
+		bypass = {
+			is_faction_leader = yes
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 150
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = TWN_Ranboo
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_ally_spe
+		icon = GFX_goal_generic_ally_SPE
+		prerequisite = { focus = F11_alliance }
+		mutually_exclusive = { focus = F11_ally_imp focus = F11_on_our_own focus = F11_ally_red focus = F11_ally_fke }
+		x = -4
+		y = 1
+		relative_position_id = F11_alliance
+		cost = 10
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		
+		available = {
+			is_subject = no
+			country_exists = SPE
+			SPE = {
+				is_faction_leader = yes
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			any_owned_state = {
+				is_on_continent = west_overworld
+			}
+		}
+		
+		bypass = {
+			is_in_faction_with = SPE
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			SPE = {
+				country_event = generic.2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_spe_advisors
+		icon = GFX_goal_generic_military_advisors
+		prerequisite = { focus = F11_ally_spe }
+		prerequisite = { focus = F11_land_reform }
+		x = 0
+		y = 3
+		relative_position_id = F11_ally_spe
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_in_faction_with = SPE
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = TWN
+						original_tag = EMN
+					}
+				}
+				custom_effect_tooltip = available_theorist
+				show_ideas_tooltip = generic_player_naval_theorist
+			}
+			else_if = {
+				limit = {
+					original_tag = HER
+				}
+				custom_effect_tooltip = available_chief_of_navy
+				show_ideas_tooltip = generic_player_navy_anti_submarine
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = TWN
+						original_tag = HER
+						original_tag = EMN
+					}
+				}
+				custom_effect_tooltip = available_theorist
+				show_ideas_tooltip = generic_player_military_theorist
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_ally_imp
+		icon = GFX_goal_generic_ally_IMP
+		prerequisite = { focus = F11_alliance }
+		mutually_exclusive = { focus = F11_ally_spe focus = F11_on_our_own focus = F11_ally_red focus = F11_ally_fke }
+		x = -2
+		y = 1
+		relative_position_id = F11_alliance
+		cost = 10
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		
+		available = {
+			is_subject = no
+			country_exists = IMP
+			has_global_flag = IMP_civil_war_end_flag
+			IMP = {
+				is_faction_leader = yes
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			any_owned_state = {
+				is_on_continent = west_overworld
+			}
+		}
+		
+		bypass = {
+			is_in_faction_with = IMP
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			IMP = {
+				country_event = generic.2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_imp_researchers
+		icon = GFX_goal_unknown
+		prerequisite = { focus = F11_ally_imp }
+		prerequisite = { focus = F11_land_reform }
+		x = 0
+		y = 3
+		relative_position_id = F11_ally_imp
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_in_faction_with = IMP
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = F11_economic_advisors
+		icon = GFX_goal_generic_help_in_rebuilding_villages
+		prerequisite = { focus = F11_ally_spe focus = F11_ally_imp }
+		x = 1
+		y = 1
+		relative_position_id = F11_ally_spe
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			OR = {
+				is_in_faction_with = SPE
+				is_in_faction_with = IMP
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					original_tag = IMP
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = IMP
+					}
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_player_technocrat
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_player_editor
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_land_reform
+		icon = GFX_goal_generic_build_farms
+		prerequisite = { focus = F11_economic_advisors }
+		x = 0
+		y = 1
+		relative_position_id = F11_economic_advisors
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			OR = {
+				is_in_faction_with = SPE
+				is_in_faction_with = IMP
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_on_our_own
+		icon = GFX_goal_generic_our_own_path
+		prerequisite = { focus = F11_alliance }
+		mutually_exclusive = { focus = F11_ally_spe focus = F11_ally_imp focus = F11_ally_red focus = F11_ally_fke }
+		x = 0
+		y = 1
+		relative_position_id = F11_alliance
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	
+	focus = {
+		id = F11_project_iron_golem
+		icon = GFX_goal_generic_project_iron_golem
+		prerequisite = { focus = F11_on_our_own }
+		x = 0
+		y = 1
+		relative_position_id = F11_on_our_own
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = idea_protected_by_iron_golem
+		}
+	}
+	
+	focus = {
+		id = F11_study_crafting
+		icon = GFX_focus_FKE_economic_project
+		prerequisite = { focus = F11_project_iron_golem }
+		x = 0
+		y = 1
+		relative_position_id = F11_project_iron_golem
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = VIL_form_a_country
+		icon = GFX_focus_F11_bunkeronii
+		prerequisite = { focus = F11_study_crafting }
+		x = 0
+		y = 1
+		relative_position_id = F11_study_crafting
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			add_stability = 0.1
+			if = {
+				limit = {
+					NOT = {
+						original_tag = NAB
+						original_tag = SAB
+						original_tag = SRF
+						original_tag = ANP
+						original_tag = TWN
+						original_tag = HYP
+						original_tag = HER
+						original_tag = SER
+						original_tag = ROS
+						original_tag = TAH
+						original_tag = TKE
+						original_tag = HBC
+						original_tag = IMP
+						original_tag = NIC
+						original_tag = ZAC
+						original_tag = WEK
+						original_tag = VAE
+						original_tag = VIR
+						original_tag = BRY
+						original_tag = VN1
+						original_tag = VN2
+						original_tag = VN3
+						original_tag = VN4
+						original_tag = VN5
+						original_tag = VN6
+						original_tag = VN8
+						original_tag = VN9
+						original_tag = VNX
+						original_tag = FLV
+						original_tag = SPC
+						original_tag = SN1
+						original_tag = SN2
+						original_tag = SN3
+						original_tag = SN4
+						original_tag = SN5
+						original_tag = SN6
+						original_tag = SN7
+						original_tag = EMN
+						original_tag = PN1
+						original_tag = PN2
+						original_tag = TSL
+						original_tag = SWL
+					}
+				}
+				set_cosmetic_tag = F11_STATE
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = SN1
+						original_tag = SN2
+						original_tag = SN3
+						original_tag = SN4
+						original_tag = SN5
+						original_tag = SN6
+						original_tag = SN7
+					}
+				}
+				set_cosmetic_tag = SAND_STATE
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = PN1
+						original_tag = PN2
+					}
+				}
+				set_cosmetic_tag = ILLAGER_STATE
+			}
+			if = {
+				limit = {
+					has_idea = idea_village_lifestyle
+				}
+				remove_ideas = idea_village_lifestyle
+			}
+			if = {
+				limit = {
+					has_idea = villages_economy
+				}
+				swap_ideas = {
+					remove_idea = villages_economy
+					add_idea = civilian_economy
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_ally_red
+		icon = GFX_goal_generic_ally_RED
+		prerequisite = { focus = F11_alliance }
+		mutually_exclusive = { focus = F11_ally_spe focus = F11_ally_imp focus = F11_on_our_own focus = F11_ally_fke }
+		x = 2
+		y = 1
+		relative_position_id = F11_alliance
+		cost = 10
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		
+		available = {
+			is_subject = no
+			is_in_faction = no
+			country_exists = RED
+			RED = {
+				is_faction_leader = yes
+				has_government = ROOT
+				has_civil_war = no
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			any_owned_state = {
+				is_on_continent = east_overworld
+			}
+		}
+		
+		bypass = {
+			is_in_faction_with = RED
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			RED = {
+				country_event = generic.2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_join_kronii_union_trade_association
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = F11_ally_red }
+		prerequisite = { focus = F11_military_support }
+		x = 0
+		y = 3
+		relative_position_id = F11_ally_red
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_in_faction_with = RED
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_to_tech_sharing_group = RED_trade_association
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = TWN_Punz
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_ally_fke
+		icon = GFX_goal_generic_invite_FKE
+		prerequisite = { focus = F11_alliance }
+		mutually_exclusive = { focus = F11_ally_spe focus = F11_ally_imp focus = F11_on_our_own focus = F11_ally_red }
+		x = 4
+		y = 1
+		relative_position_id = F11_alliance
+		cost = 10
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		
+		available = {
+			is_subject = no
+			is_in_faction = no
+			country_exists = FKE
+			FKE = {
+				is_faction_leader = yes
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			any_owned_state = {
+				is_on_continent = east_overworld
+			}
+		}
+		
+		bypass = {
+			is_in_faction_with = FKE
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			FKE = {
+				country_event = generic.2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_fke_weaponsmiths
+		icon = GFX_focus_FKE_expansion_of_arsenal
+		prerequisite = { focus = F11_military_support }
+		prerequisite = { focus = F11_ally_fke }
+		x = 0
+		y = 3
+		relative_position_id = F11_ally_fke
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			is_in_faction_with = FKE
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_economic_aid
+		icon = GFX_focus_FKE_foreign_aid
+		prerequisite = { focus = F11_ally_red focus = F11_ally_fke }
+		x = 1
+		y = 1
+		relative_position_id = F11_ally_red
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			OR = {
+				is_in_faction_with = RED
+				is_in_faction_with = FKE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					original_tag = IMP
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = IMP
+					}
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_player_technocrat
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_player_editor
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_military_support
+		icon = GFX_goal_generic_manpower
+		prerequisite = { focus = F11_economic_aid }
+		x = 0
+		y = 1
+		relative_position_id = F11_economic_aid
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			OR = {
+				is_in_faction_with = RED
+				is_in_faction_with = FKE
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = F11_new_beginning
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = F11_preparation }
+		x = 14
+		y = 0
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			if = {
+				limit = {
+					original_tag = ANP
+				}
+				NOT = { original_tag = ANP }
+			}
+			if = {
+				limit = {
+					original_tag = NAB
+				}
+				NOT = { original_tag = NAB }
+			}
+			if = {
+				limit = {
+					original_tag = SAB
+				}
+				NOT = { original_tag = SAB }
+			}
+			if = {
+				limit = {
+					original_tag = ROS
+				}
+				NOT = { original_tag = ROS }
+			}
+			if = {
+				limit = {
+					original_tag = TSL
+				}
+				NOT = { original_tag = TSL }
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			country_event = hom.generic.1
+		}
+	}
+	
+	###################
+	### ARMY BRANCH ###
+	###################
+	
+	focus = {
+		id = F11_army_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = F11_new_beginning }
+		x = -3
+		y = 1
+		relative_position_id = F11_new_beginning
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = F11_focus_on_defense
+		icon = GFX_focus_RED_preparation
+		prerequisite = { focus = F11_army_effort }
+		mutually_exclusive = { focus = F11_focus_on_attack }
+		x = -1
+		y = 1
+		relative_position_id = F11_army_effort
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = TWN_Astelic
+			}
+			else_if = {
+				limit = {
+					original_tag = HYP
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = HYP_Hannahxxrose
+			}
+			else_if = {
+				limit = {
+					original_tag = HER
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = HER_Welsknight
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = TWN
+						original_tag = HYP
+						original_tag = HER
+					}
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = generic_villager_army_chief_def
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_support_equipment
+		icon = GFX_focus_RED_new_age_army
+		prerequisite = { focus = F11_focus_on_defense }
+		x = -1
+		y = 1
+		relative_position_id = F11_focus_on_defense
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_support_equipment
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_construct_fortifications
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = F11_support_equipment }
+		x = 0
+		y = 1
+		relative_position_id = F11_support_equipment
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = TWN_XNestorio
+			}
+			else_if = {
+				limit = {
+					original_tag = HYP
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = HYP_Armorsmith
+			}
+			else_if = {
+				limit = {
+					original_tag = HER
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = HER_TangoTek
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = TWN
+						original_tag = HYP
+						original_tag = HER
+					}
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_villager_fortification_engineer
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_focus_on_attack
+		icon = GFX_focus_RED_mass_assult
+		prerequisite = { focus = F11_army_effort }
+		mutually_exclusive = { focus = F11_focus_on_defense }
+		x = 1
+		y = 1
+		relative_position_id = F11_army_effort
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		
+		completion_reward = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = TWN_Nihachu
+			}
+			else_if = {
+				limit = {
+					original_tag = HYP
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = HYP_Manhal_IQ_
+			}
+			else_if = {
+				limit = {
+					original_tag = HER
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = HER_FalseSymmetry
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = TWN
+						original_tag = HYP
+						original_tag = HER
+					}
+				}
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = generic_villager_army_chief_off
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_tnt_cannons
+		icon = GFX_focus_SPE_implement_tnt_mining_machine
+		prerequisite = { focus = F11_focus_on_attack }
+		x = 1
+		y = 1
+		relative_position_id = F11_focus_on_attack
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_tnt_cannons
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_army_mobilization
+		icon = GFX_goal_generic_mount_up
+		prerequisite = { focus = F11_tnt_cannons }
+		x = 0
+		y = 1
+		relative_position_id = F11_tnt_cannons
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_army_mobilization
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_new_high_command
+		icon = GFX_goal_generic_land_officer
+		prerequisite = { focus = F11_focus_on_defense focus = F11_focus_on_attack }
+		x = 1
+		y = 1
+		relative_position_id = F11_focus_on_defense
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 150
+			create_corps_commander = {
+				name = "Robocco"
+				picture = "Portrait_Robocco.dds"
+				traits = {
+					politically_connected
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_better_weapons
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = F11_new_high_command }
+		x = 0
+		y = 1
+		relative_position_id = F11_new_high_command
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_better_weapons
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_doctrine_effort
+		icon = GFX_focus_FKE_command_office
+		prerequisite = { focus = F11_construct_fortifications focus = F11_army_mobilization }
+		prerequisite = { focus = F11_better_weapons }
+		x = 0
+		y = 1
+		relative_position_id = F11_better_weapons
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_doctrine_effort
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#######################
+	### ECONOMIC BRANCH ###
+	#######################
+	
+	focus = {
+		id = F11_expand_the_village
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = F11_new_beginning }
+		x = 4
+		y = 1
+		relative_position_id = F11_new_beginning
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_expand_the_village
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_fund_steelworks
+		icon = GFX_focus_FKE_turn_into_military_factories
+		prerequisite = { focus = F11_expand_the_village }
+		x = -3
+		y = 1
+		relative_position_id = F11_expand_the_village
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = iron
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_research_the_redstone
+		icon = GFX_goal_unknown
+		prerequisite = { focus = F11_fund_steelworks }
+		x = 0
+		y = 1
+		relative_position_id = F11_fund_steelworks
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_research_the_redstone
+				bonus = 1.0
+				uses = 1
+				category = computing_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_new_tools
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = F11_expand_the_village }
+		x = 3
+		y = 1
+		relative_position_id = F11_expand_the_village
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_new_tools
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_production_effort
+		icon = GFX_goal_generic_expanding_the_army
+		prerequisite = { focus = F11_new_tools }
+		x = 0
+		y = 1
+		relative_position_id = F11_new_tools
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_arm_citizens
+		icon = GFX_focus_RED_arm_villagers
+		prerequisite = { focus = F11_expand_the_village }
+		mutually_exclusive = { focus = F11_aid_citizens }
+		x = -1
+		y = 1
+		relative_position_id = F11_expand_the_village
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = TWN_Michael_Fulton
+			}
+			else_if = {
+				limit = {
+					original_tag = HYP
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = HYP_Weaponsmith
+			}
+			else_if = {
+				limit = {
+					original_tag = HER
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = HER_GeminiTay
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = TWN
+						original_tag = HYP
+						original_tag = HER
+					}
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_villager_war_industrialist
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_aid_citizens
+		icon = GFX_focus_SPE_develop_our_villager_allies
+		prerequisite = { focus = F11_expand_the_village }
+		mutually_exclusive = { focus = F11_arm_citizens }
+		x = 1
+		y = 1
+		relative_position_id = F11_expand_the_village
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = TWN
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = TWN_Wilbur_Soot
+			}
+			else_if = {
+				limit = {
+					original_tag = HYP
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = HYP_Builder
+			}
+			else_if = {
+				limit = {
+					original_tag = HER
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = HER_Keralis
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						original_tag = TWN
+						original_tag = HYP
+						original_tag = HER
+					}
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = generic_villager_captain_of_industry
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_open_mines
+		icon = GFX_focus_SPE_open_new_mines
+		prerequisite = { focus = F11_arm_citizens focus = F11_aid_citizens }
+		x = 1
+		y = 1
+		relative_position_id = F11_arm_citizens
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = F11_open_mines
+				bonus = 1.0
+				uses = 1
+				category = excavation_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_infrastructure_effort
+		icon = GFX_goal_generic_infrastructure
+		prerequisite = { focus = F11_research_the_redstone }
+		prerequisite = { focus = F11_open_mines }
+		x = 1
+		y = 1
+		relative_position_id = F11_research_the_redstone
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+			}
+		}
+		
+		bypass = {
+			NOT = {
+				any_owned_state = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = F11_construction_effort
+		icon = GFX_focus_FKE_expansion_of_the_industry
+		prerequisite = { focus = F11_open_mines }
+		prerequisite = { focus = F11_production_effort }
+		x = 2
+		y = 1
+		relative_position_id = F11_open_mines
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+

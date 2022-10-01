@@ -1,0 +1,287 @@
+F11_align_focuses_effect = {
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_union_soldiers }
+		}
+		unlock_national_focus = F11_union_soldiers
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_red_rose_navy }
+		}
+		unlock_national_focus = F11_red_rose_navy
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_invest_in_cruisers }
+		}
+		complete_national_focus = F11_invest_in_cruisers
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_air_force_university }
+		}
+		unlock_national_focus = F11_air_force_university
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_floating_airport }
+		}
+		complete_national_focus = F11_floating_airport
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_aircrafts_designs }
+		}
+		complete_national_focus = F11_aircrafts_designs
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_air_control }
+		}
+		unlock_national_focus = F11_air_control
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_new_age_army }
+		}
+		unlock_national_focus = F11_new_age_army
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_better_equipment }
+		}
+		unlock_national_focus = F11_better_equipment
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_military_mechs }
+		}
+		complete_national_focus = F11_military_mechs
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_recruit_monsters }
+		}
+		unlock_national_focus = F11_recruit_monsters
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_blitzkrieg }
+		}
+		unlock_national_focus = F11_blitzkrieg
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_mass_assualt }
+		}
+		unlock_national_focus = F11_mass_assualt
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_manifest_destiny }
+		}
+		unlock_national_focus = F11_manifest_destiny
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_return_to_home }
+		}
+		unlock_national_focus = F11_return_to_home
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_red_rose_is_our_land }
+		}
+		unlock_national_focus = F11_red_rose_is_our_land
+	}
+	if = {
+		limit = {
+			F11 = {
+				has_completed_focus = F11_case_of_free_market
+				has_completed_focus = F11_unions_win
+			}
+		}
+		unlock_national_focus = F11_case_of_free_market
+		unlock_national_focus = F11_unions_win
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_arm_villagers }
+		}
+		complete_national_focus = F11_arm_villagers
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_economic_regulations }
+		}
+		complete_national_focus = F11_economic_regulations
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_talk_with_unions }
+		}
+		unlock_national_focus = F11_talk_with_unions
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_fill_the_railway_gaps }
+		}
+		unlock_national_focus = F11_fill_the_railway_gaps
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_public_health_care }
+		}
+		unlock_national_focus = F11_public_health_care
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_nationalize_arm_production }
+		}
+		unlock_national_focus = F11_nationalize_arm_production
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_new_workplaces }
+		}
+		complete_national_focus = F11_new_workplaces
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_conscript_villagers }
+		}
+		unlock_national_focus = F11_conscript_villagers
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_expand_union_port }
+		}
+		complete_national_focus = F11_expand_union_port
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_air_transport }
+		}
+		unlock_national_focus = F11_air_transport
+	}
+	if = {
+		limit = {
+			F11 = { has_completed_focus = F11_buy_trade_fleet }
+		}
+		complete_national_focus = F11_buy_trade_fleet
+	}
+	unlock_national_focus = F11_pass_monster_rights_act
+}
+
+F11_remove_wrong_ideas_effect = {
+	if = {
+		limit = {
+			has_idea = F11_open_gates_idea
+		}
+		remove_ideas = F11_open_gates_idea
+	}
+	if = {
+		limit = {
+			has_idea = F11_protect_villagers_idea
+		}
+		remove_ideas = F11_protect_villagers_idea
+	}
+	if = {
+		limit = {
+			has_idea = F11_crafter_guard_idea
+		}
+		remove_ideas = F11_crafter_guard_idea
+	}
+	if = {
+		limit = {
+			has_idea = F11_conscript_noobs_idea
+		}
+		remove_ideas = F11_conscript_noobs_idea
+	}
+	if = {
+		limit = {
+			has_idea = F11_elite_warriors_idea
+		}
+		remove_ideas = F11_elite_warriors_idea
+	}
+	if = {
+		limit = {
+			has_idea = F11_regulated_monopolies_idea
+		}
+		remove_ideas = F11_regulated_monopolies_idea
+	}
+}
+
+F11_signed_congress_of_the_new_right_treaty_effect = {
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = greater_than }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = greater_than }
+				check_variable = { F11_support_private_sector_variable = 0 compare = greater_than }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_1
+	}
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = less_than_or_equals }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = greater_than }
+				check_variable = { F11_support_private_sector_variable = 0 compare = greater_than }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_2
+	}
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = less_than_or_equals }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = less_than_or_equals }
+				check_variable = { F11_support_private_sector_variable = 0 compare = greater_than }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_3
+	}
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = greater_than }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = less_than_or_equals }
+				check_variable = { F11_support_private_sector_variable = 0 compare = greater_than }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_4
+	}
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = greater_than }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = greater_than }
+				check_variable = { F11_support_private_sector_variable = 0 compare = less_than_or_equals }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_5
+	}
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = greater_than }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = less_than_or_equals }
+				check_variable = { F11_support_private_sector_variable = 0 compare = less_than_or_equals }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_6
+	}
+	if = {
+		limit = {
+			F11 = {
+				check_variable = { F11_interdimensional_trade_variable = 0 compare = less_than_or_equals }
+				check_variable = { F11_discrimination_in_free_market_variable = 0 compare = greater_than }
+				check_variable = { F11_support_private_sector_variable = 0 compare = less_than_or_equals }
+			}
+		}
+		add_ideas = F11_congress_treaty_idea_7
+	}
+}

@@ -1,0 +1,254 @@
+﻿##### F11 ROSE NAME LISTS #####
+
+### REGULAR DESTROYER NAMES###
+F11_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+	
+	for_countries = { F11 }
+	
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	
+	prefix = "RRS "
+	fallback_name = "Destroyer %d"
+	
+	unique = {
+		"Thunder" "Bolt" "Lightning" "Storm" "Skeleton" "Zombie" "Slime" "Cat" "Illager" "Ravager" "Witch" "Spike" 
+		"Tempest" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+F11_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { F11 }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "RRS "
+	fallback_name = "Light Cruiser %d"
+
+	unique = {
+		"Dragon" "Conrad" "Chaos" "Puzonekk" "Crazy Adventure" "Union City" "Union Port" "Silver City" "Brudziu Town"
+		"Long March" "Fishy Port"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+F11_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { F11 }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "RRS "
+	fallback_name = "Heavy Cruiser %d"
+
+	unique = {
+		"Dragon" "Conrad" "Chaos" "Puzonekk" "Crazy Adventure" "Union City" "Union Port" "Silver City" "Brudziu Town"
+		"Long March" "Fishy Port"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+F11_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { F11 }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "RRS "
+	fallback_name = "Battleship %d"
+	
+	unique = {
+		"Polski Crafter" "Puzonekk" "Ja Hol" "Neku" "Aluwa" "Budziu" "Dagon"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+F11_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { F11 }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "RRS "
+	fallback_name = "Battle Cruiser %d"
+	
+	unique = {
+		"Polski Crafter" "Puzonekk" "Ja Hol" "Neku" "Aluwa" "Budziu" "Dagon"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+F11_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { F11 }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "RRS "
+	fallback_name = "Carrier %d"
+	
+	unique = {
+		"Polski Crafter" "Puzonekk" "Ja Hol" "Neku" "Aluwa" "Budziu" "Dagon"
+	}
+}
+
+### SUBMARINES ###
+F11_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { F11 }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "RRS "
+	fallback_name = "Submarine %d"
+	
+	unique = {
+		"Eagle" "Vulture" "Falcon" "Boar" "Hawk" "Lynx" "Wolf" "Wildcat" "Condor" "Sea Eagle" 
+		"Slime" "Ravager" "Illager" "Zombie" "Skeleton" "Spike"
+	}
+}
+### HISTORICAL FIGURES ###
+F11_THEME_HISTORICAL_FIGURES = {
+	name = NAME_THEME_HISTORICAL_FIGURES
+
+	for_countries = { F11 }
+
+	can_use = { 
+		not = { has_government = socialism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }
+	
+	prefix = "RRS "
+
+	unique = {
+		"Polski Crafter"
+		"Skarabii"
+		"Puzonekk"
+		"Ja Hol"
+		"Budziu"
+		"Neku"
+		"Dagon"
+	}
+}
+
+### WEATHER ###
+F11_THEME_WEATHER = {
+	name = NAME_THEME_WEATHER
+
+	for_countries = { F11 }
+
+	type = ship
+	
+	prefix = "RRS "
+
+	unique = {
+		"Tempest"
+		"Bolt"
+		"Storm"
+		"Hailstorm"
+		"Whirlwind"
+		"Lightning"
+		"Tornado"
+		"Aurora"
+		"Hurricane"
+		"Thunder"
+		"Blizzard"
+		"Southerly Wind"
+		"Blast"
+		"Squall"
+	}
+}
+
+### ANIMALS ###
+F11_THEME_ANIMALS = {
+	name = NAME_THEME_ANIMALS
+
+	for_countries = { F11 }
+
+	type = ship
+	
+	prefix = "RRS "
+
+	unique = {
+		"Wolf"
+		"Eagle"
+		"Shark"
+		"Griffin"
+		"Lynx"
+		"Pike"
+		"Heron"
+		"Albatros"
+		"Seagull"
+		"Cormorant"
+		"Wildcat"
+		"Vulture"
+		"Lapwing"
+		"Swallow"
+		"Crane"
+		"Falcon"
+		"Sea Eagle"
+		"Tiger"
+		"Lion"
+		"Panther"
+		"Bear"
+		"Boar"
+		"Hawk"
+	}
+}
+
+### REGIONS ###
+F11_THEME_REGIONS = {
+	name = NAME_THEME_REGIONS
+
+	for_countries = { F11 }
+
+	type = ship
+	
+	prefix = "RRS "
+
+	unique = {
+		"Siedlce"
+		"Crazy Adventure"
+		"Clans' Forest"
+		"Brudziuland"
+	}
+}
+
+### CITIES ###
+F11_THEME_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { F11 }
+
+	type = ship
+	
+	prefix = "RRS "
+
+	unique = {
+		"Union City"
+		"Union Port"
+		"Fishy Port"
+		"Treholia"
+		"Brudziu Town"
+		"Crazy Adventure"
+		"Silver City"
+	}
+}

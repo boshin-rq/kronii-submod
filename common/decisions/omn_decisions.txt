@@ -1,0 +1,453 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+expansion_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work
+	expansion_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 324 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.	
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion_decision"
+			F12 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F12
+			puppet = F12
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	
+	expansion3_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 266 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			F13 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F13
+			puppet = F13
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion4_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 558 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			F15 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F15
+			puppet = F15
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion5_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 319 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			F16 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F16
+			puppet = F16
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion6_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 293 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			F17 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F17
+			puppet = F17
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion7_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 243 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			F18 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F18
+			puppet = F18
+			}
+		}
+	}
+	expansion10_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 238 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			F23 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = F23
+			puppet = F23
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion11_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 110 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			FV3 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = FV3
+			puppet = FV3
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion12_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 323 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			FV1 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = FV1
+			puppet = FV1
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+	expansion13_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prospect_for_resources		#The left side icon to show for this decision.
+
+	#Determiens if the decision should only show up as an icon on the world map or as a decision bar in the decision interface too.
+		highlight_states = { state = 286 }	
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		allowed = { tag = OMN }
+		available = {
+		has_country_flag = expansionism	#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+		original_tag = OMN		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				
+			}
+			                  
+		}		
+
+		cost = 100		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision expansion3_decision"
+			FV7 = {
+			add_ideas = ominous_influence
+			set_cosmetic_tag = FV_OMN
+			}
+			OMN = {
+			add_to_faction = FV7
+			puppet = FV7
+			}
+		}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100		
+		}
+	}
+}

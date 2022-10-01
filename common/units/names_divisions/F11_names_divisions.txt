@@ -1,0 +1,457 @@
+F11_INF_01 =  {
+	
+	name = "Time Keepers"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "%dth Infantry Division"
+	
+	ordered = {
+		1 = { "%dst Infantry Division" }
+		2 = { "%dnd Infantry Division" }
+		3 = { "%drd Infantry Division" }
+		4 = { "%dth Infantry Division" }
+		5 = { "%dth Infantry Division" }
+		6 = { "%dth Infantry Division" }
+		7 = { "%dth Infantry Division" }
+		8 = { "%dth Infantry Division" }
+		9 = { "%dth Infantry Division" }
+		10 = { "%dth Infantry Division" }
+		11 = { "%dth Infantry Division" }
+		12 = { "%dth Infantry Division" }
+		13 = { "%dth Infantry Division" }
+		14 = { "%dth Infantry Division" }
+		15 = { "%dth Infantry Division" }
+		16 = { "%dth Infantry Division" }
+		17 = { "%dst Infantry Division" }
+		18 = { "%dnd Infantry Division" }
+		19 = { "%drd Infantry Division" }
+		20 = { "%dth Infantry Division" }
+		21 = { "%dst Infantry Division" }
+		22 = { "%dnd Infantry Division" }
+		23 = { "%drd Infantry Division" }
+	}
+	
+}
+
+F11_INFB_01 =  {
+	
+	name = "Infantry Brigade"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "%dth Infantry Brigade"
+	
+	ordered = {
+		1 = { "%dst Infantry Brigade" }
+		2 = { "%dnd Infantry Brigade" }
+		3 = { "%drd Infantry Brigade" }
+		4 = { "%dth Infantry Brigade" }
+		5 = { "%dth Infantry Brigade" }
+		6 = { "%dth Infantry Brigade" }
+		7 = { "%dth Infantry Brigade" }
+		8 = { "%dth Infantry Brigade" }
+		9 = { "%dth Infantry Brigade" }
+		10 = { "%dth Infantry Brigade" }
+		11 = { "%dth Infantry Brigade" }
+		12 = { "%dth Infantry Brigade" }
+		13 = { "%dth Infantry Brigade" }
+		14 = { "%dth Infantry Brigade" }
+		15 = { "%dth Infantry Brigade" }
+		16 = { "%dth Infantry Brigade" }
+		17 = { "%dst Infantry Brigade" }
+		18 = { "%dnd Infantry Brigade" }
+		19 = { "%drd Infantry Brigade" }
+		20 = { "%dth Infantry Brigade" }
+		21 = { "%dst Infantry Brigade" }
+		22 = { "%dnd Infantry Brigade" }
+		23 = { "%drd Infantry Brigade" }
+	}
+	
+}
+
+F11_CITY_MILITIA_01 =  {
+	
+	name = "City Militia"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "%dth City Militia"
+	
+	ordered = {
+		1 = { "%dst City Militia" }
+		2 = { "%dnd City Militia" }
+		3 = { "%drd City Militia" }
+		4 = { "%dth City Militia" }
+		5 = { "%dth City Militia" }
+		6 = { "%dth City Militia" }
+		7 = { "%dth City Militia" }
+		8 = { "%dth City Militia" }
+		9 = { "%dth City Militia" }
+		10 = { "%dth City Militia" }
+		11 = { "%dth City Militia" }
+		12 = { "%dth City Militia" }
+		13 = { "%dth City Militia" }
+		14 = { "%dth City Militia" }
+		15 = { "%dth City Militia" }
+		16 = { "%dth City Militia" }
+		17 = { "%dst City Militia" }
+		18 = { "%dnd City Militia" }
+		19 = { "%drd City Militia" }
+		20 = { "%dth City Militia" }
+		21 = { "%dst City Militia" }
+		22 = { "%dnd City Militia" }
+		23 = { "%drd City Militia" }
+	}
+	
+}
+
+F11_CLAN_MILITIA_01 =  {
+	
+	name = "Clan Militia"
+	
+	for_countries = { F11 }
+	
+	can_use = { always = yes }
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "%dth Clan Militia"
+	
+	ordered = {
+		1 = { "%dst Clan Militia" }
+		2 = { "%dnd Clan Militia" }
+		3 = { "%drd Clan Militia" }
+		4 = { "%dth Clan Militia" }
+		5 = { "%dth Clan Militia" }
+		6 = { "%dth Clan Militia" }
+		7 = { "%dth Clan Militia" }
+		8 = { "%dth Clan Militia" }
+		9 = { "%dth Clan Militia" }
+		10 = { "%dth Clan Militia" }
+		11 = { "%dth Clan Militia" }
+		12 = { "%dth Clan Militia" }
+		13 = { "%dth Clan Militia" }
+		14 = { "%dth Clan Militia" }
+		15 = { "%dth Clan Militia" }
+		16 = { "%dth Clan Militia" }
+		17 = { "%dst Clan Militia" }
+		18 = { "%dnd Clan Militia" }
+		19 = { "%drd Clan Militia" }
+		20 = { "%dth Clan Militia" }
+		21 = { "%dst Clan Militia" }
+		22 = { "%dnd Clan Militia" }
+		23 = { "%drd Clan Militia" }
+	}
+	
+}
+
+F11_CAV_01 = {
+	
+	name = "Cavalry Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "motorized" }
+	
+	fallback_name = "%dth Cavalry Division"
+	
+	ordered = {
+		1 = { "%dst Cavalry Division" }
+		2 = { "%dnd Cavalry Division" }
+		3 = { "%drd Cavalry Division" }
+		4 = { "%dth Cavalry Division" }
+		5 = { "%dth Cavalry Division" }
+		6 = { "%dth Cavalry Division" }
+		7 = { "%dth Cavalry Division" }
+		8 = { "%dth Cavalry Division" }
+		9 = { "%dth Cavalry Division" }
+		10 = { "%dth Cavalry Division" }		
+	}
+	
+}
+
+F11_CAV_BRIGADE_01 = {
+	
+	name = "Cavalry Brigade"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "motorized" }
+	
+	fallback_name = "%dth Cavalry Brigade"
+	
+	ordered = {
+		1 = { "%dst Cavalry Brigade" }
+		2 = { "%dnd Cavalry Brigade" }
+		3 = { "%drd Cavalry Brigade" }
+		4 = { "%dth Cavalry Brigade" }
+		5 = { "%dth Cavalry Brigade" }
+		6 = { "%dth Cavalry Brigade" }
+		7 = { "%dth Cavalry Brigade" }
+		8 = { "%dth Cavalry Brigade" }
+		9 = { "%dth Cavalry Brigade" }
+		10 = { "%dth Cavalry Brigade" }		
+	}
+	
+}
+
+F11_MEC_01 = {
+	
+	name = "Armor Cavalry Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "mechanized" }
+	
+	link_numbering_with = { F11_INF_01 }
+	
+	fallback_name = "%dth Armor Cavalry Division"
+	
+	ordered = {
+		1 = { "%dst Armor Cavalry Division" }
+		2 = { "%dnd Armor Cavalry Division" }
+		3 = { "%drd Armor Cavalry Division" }
+		4 = { "%dth Armor Cavalry Division" }
+		5 = { "%dth Armor Cavalry Division" }
+		6 = { "%dth Armor Cavalry Division" }
+		7 = { "%dth Armor Cavalry Division" }	
+		8 = { "%dth Armor Cavalry Division" }
+		9 = { "%dth Armor Cavalry Division" }
+		10 = { "%dth Armor Cavalry Division" }		
+	}
+}
+
+F11_ARM_01 = {
+	
+	name = "Armored Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	
+	fallback_name = "%dth Armored Division"
+	
+	ordered = {
+		1 = { "%dst Armored Division" }
+		2 = { "%dnd Armored Division" }
+		3 = { "%drd Armored Division" }
+		4 = { "%dth Armored Division" }
+		5 = { "%dth Armored Division" }
+		6 = { "%dth Armored Division" }
+		7 = { "%dth Armored Division" }
+		8 = { "%dth Armored Division" }
+		9 = { "%dth Armored Division" }
+		10 = { "%dth Armored Division" }
+	}
+	
+}
+
+F11_ARM_BRIGADE_01 = {
+	
+	name = "Tank Brigade"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	
+	fallback_name = "%dth Tank Brigade"
+	
+	ordered = {
+		1 = { "%dst Tank Brigade" }
+		2 = { "%dnd Tank Brigade" }
+		3 = { "%drd Tank Brigade" }
+		4 = { "%dth Tank Brigade" }
+		5 = { "%dth Tank Brigade" }
+		6 = { "%dth Tank Brigade" }
+		7 = { "%dth Tank Brigade" }
+		8 = { "%dth Tank Brigade" }
+		9 = { "%dth Tank Brigade" }
+		10 = { "%dth Tank Brigade" }
+	}
+	
+}
+
+F11_PAR_01 = {
+	
+	name = "Airborne Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "paratrooper" }
+	
+	link_numbering_with = { F11_INF_01 }
+	
+	fallback_name = "%dth Airborne Division"
+	
+	ordered = {
+		1 = { "%dst Airborne Division" }
+		2 = { "%dnd Airborne Division" }
+		3 = { "%drd Airborne Division" }
+		4 = { "%dth Airborne Division" }
+		5 = { "%dth Airborne Division" }
+		6 = { "%dth Airborne Division" }
+		7 = { "%dth Airborne Division" }
+		8 = { "%dth Airborne Division" }
+		9 = { "%dth Airborne Division" }
+		10 = { "%dth Airborne Division" }
+	}
+	
+}
+
+F11_MAR_01 = {
+	
+	name = "Marine Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "marine" }
+	
+	link_numbering_with = { F11_INF_01 }
+	
+	fallback_name = "%dth Marine Division"
+	
+	ordered = {
+		1 = { "%dst Marine Division" }
+		2 = { "%dnd Marine Division" }
+		3 = { "%drd Marine Division" }
+		4 = { "%dth Marine Division" }
+		5 = { "%dth Marine Division" }
+		6 = { "%dth Marine Division" }
+		7 = { "%dth Marine Division" }
+		8 = { "%dth Marine Division" }
+		9 = { "%dth Marine Division" }
+		10 = { "%dth Marine Division" }
+	}
+	
+}
+
+F11_MNT_01 = {
+	
+	name = "Mountain Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "mountaineers" }
+	
+	link_numbering_with = { F11_INF_01 }
+	
+	fallback_name = "%dth Mountain Division"
+	
+	ordered = {
+		1 = { "%dst Mountain Division" }
+		2 = { "%dnd Mountain Division" }
+		3 = { "%drd Mountain Division" }
+		4 = { "%dth Mountain Division" }
+		5 = { "%dth Mountain Division" }
+		6 = { "%dth Mountain Division" }
+		7 = { "%dth Mountain Division" }
+		8 = { "%dth Mountain Division" }
+		9 = { "%dth Mountain Division" }
+		10 = { "%dth Mountain Division" }	
+	}
+	
+}
+
+F11_GAR_01 = {
+	
+	name = "Garrison Division"
+	
+	for_countries = { F11 }
+	
+	can_use = {
+		NOT = {
+			has_idea = clan_economy
+		}
+	}
+	
+	division_types = { "infantry" }
+	
+	fallback_name = "%dth Garrison Division"
+	
+	ordered = {
+		1 = { "%dst Garrison Division" }
+		2 = { "%dnd Garrison Division" }
+		3 = { "%drd Garrison Division" }
+		4 = { "%dth Garrison Division" }
+		5 = { "%dth Garrison Division" }
+		6 = { "%dth Garrison Division" }
+		7 = { "%dth Garrison Division" }
+		8 = { "%dth Garrison Division" }
+		9 = { "%dth Garrison Division" }
+		10 = { "%dth Garrison Division" }		
+	}
+	
+}
