@@ -1,0 +1,25 @@
+state={
+	id=241
+	name="STATE_241"
+	provinces={
+		1675 2137 2168 2562 3390 3791 3839 4696 6025 6103 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 3390 3 }
+		owner = WDL
+		add_core_of = WDL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

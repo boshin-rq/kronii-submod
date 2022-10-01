@@ -1,0 +1,25 @@
+state={
+	id=275
+	name="STATE_275"
+	provinces={
+		202 296 1015 1128 1434 1621 3135 3460 3487 4613 5292 5434 5500 5532 6311 6333 6342 6380 6387 6388 6405 6414 6420 6437 
+	}
+	resources = {
+		wood = 2
+	}
+	history = {
+		owner = VN4
+		add_core_of = VN4
+		victory_points = {
+			1128 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

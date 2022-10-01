@@ -1,0 +1,22 @@
+state={
+	id=210
+	name="STATE_210"
+	provinces={
+		782 848 1191 1875 2521 2556 3442 4082 4325 4801 5216 5417 5828 5843 
+	}
+	resources = {
+		iron = 3
+		redstone = 1
+	}
+	history = {
+		victory_points = { 848 3 }
+		owner = SRF
+		add_core_of = SRF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

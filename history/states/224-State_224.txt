@@ -1,0 +1,22 @@
+state={
+	id=224
+	name="STATE_224"
+	provinces={
+		1134 1181 1848 2573 2634 2770 2905 2946 3461 4088 4375 4732 5519 5927 5939 5940 5983 5986 5998 6003 
+	}
+	resources = {
+		netherite = 1
+	}
+	history = {
+		victory_points = { 5986 5 }
+		owner = FV9
+		add_core_of = FV9
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=100000
+	state_category=town
+}

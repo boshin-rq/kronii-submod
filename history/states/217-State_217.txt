@@ -1,0 +1,19 @@
+state={
+	id=217
+	name="STATE_217"
+	provinces={
+		105 317 490 698 1491 1885 1891 2645 3571 3697 4351 5044 5102 5264 5879 5898 5911 5915 5936 5942 5954 5965 
+	}
+	history = {
+		victory_points = { 5911 3 }
+		owner = SRF
+		add_core_of = SRF
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,22 @@
+state={
+	id=207
+	name="STATE_207"
+	provinces={
+		822 1352 2911 3088 3633 5779 5808 5817 
+	}
+	resources = {
+		coal = 4
+		wood = 1
+		lazurite = 2
+		iron = 6
+		redstone = 3
+		diamonds = 1
+	}
+	history = {
+		owner = ICE
+		add_core_of = ICE
+	}
+	manpower=1
+	state_category=wasteland
+	impassable = yes
+}

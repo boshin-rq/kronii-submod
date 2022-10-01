@@ -1,0 +1,24 @@
+state={
+	id=260
+	name="STATE_260"
+	provinces={
+		1599 2392 2934 3642 3701 3867 4014 4064 4148 5562 6234 6262 6264 6280 6288 6305 6353 6386 
+	}
+	resources = {
+		coal = 6
+		redstone = 4
+		iron = 5
+	}
+	history = {
+		victory_points = { 6288 3 }
+		owner = VN4
+		add_core_of = VN4
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,25 @@
+state={
+	id=219
+	name="STATE_219"
+	provinces={
+		261 363 948 1772 1901 2263 3251 4124 4376 4408 5058 5546 5902 5958 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 5058 3 }
+		owner = WDL
+		add_core_of = WDL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

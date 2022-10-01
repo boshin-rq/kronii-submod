@@ -1,0 +1,18 @@
+state={
+	id=292
+	name="STATE_292"
+	provinces={
+		264 453 757 1119 1580 2236 2296 2473 2512 2586 2702 2893 2968 2977 3285 3596 3629 4523 4695 4734 4896 5224 6721 6762 6774 6931 6947 7071 
+	}
+	history = {
+		victory_points = { 2296 3 }
+		owner = SN6
+		add_core_of = SN6
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

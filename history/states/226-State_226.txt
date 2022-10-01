@@ -1,0 +1,27 @@
+state={
+	id=226
+	name="STATE_226"
+	provinces={
+		145 778 1356 1946 2084 3069 4092 4477 4742 5387 5515 5829 5832 5853 5862 
+	}
+	resources = {
+		gunpowder = 5
+		iron = 4
+	}
+	history = {
+		victory_points = { 4742 1 }
+		owner = IMP
+		add_core_of = IMP
+		add_core_of = VIR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			4742 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

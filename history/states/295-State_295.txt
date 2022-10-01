@@ -1,0 +1,26 @@
+state={
+	id=295
+	name="STATE_295"
+
+	history={
+		owner = SPE
+		add_core_of = SPE
+		victory_points = {
+			5401 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		575 1062 2462 3119 3885 4186 4782 4795 5401 6441 6469 6493 6497 6508 6532 6577 6598 6648 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

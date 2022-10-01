@@ -1,0 +1,22 @@
+state={
+	id=265
+	name="STATE_265"
+	provinces={
+		294 1223 2026 3375 3748 4057 6246 6278 6290 6308 6316 6321 6341 6364 6365 6398 6403 6412 6429 
+	}
+	history = {
+		victory_points = { 6246 3 }
+		owner = VN6
+		add_core_of = VN6
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			6246 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

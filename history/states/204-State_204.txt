@@ -1,0 +1,23 @@
+state={
+	id=204
+	name="STATE_204"
+	provinces={
+		423 501 503 602 956 1321 1407 1644 1781 4924 5762 5774 
+	}
+	resources = {
+		wood = 4
+	}
+	history = {
+		victory_points = { 5762 3 }
+		owner = IMP
+		add_core_of = IMP
+		add_core_of = WEK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

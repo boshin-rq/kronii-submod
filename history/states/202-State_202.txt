@@ -1,0 +1,26 @@
+state={
+	id=202
+	name="STATE_202"
+	provinces={
+		1031 1747 2819 3139 3438 3981 4135 4861 5683 5690 5720 5754 
+	}
+	resources = {
+		coal = 6
+		gunpowder = 3
+		iron = 15
+		redstone = 20
+	}
+	history = {
+		victory_points = { 4135 3 }
+		owner = IMP
+		add_core_of = IMP
+		add_core_of = ZAC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,28 @@
+state={
+	id=255
+	name="STATE_255"
+	provinces={
+		172 491 1863 1896 2449 3379 3600 3693 5529 6038 6084 6121 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 2449 3 }
+		owner = M19
+		add_core_of = M19
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			2449 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

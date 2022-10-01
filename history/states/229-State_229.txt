@@ -1,0 +1,18 @@
+state={
+	id=229
+	name="STATE_229"
+	provinces={
+		205 1502 2121 2368 2766 2838 3560 3676 4385 5389 5925 5944 5952 5964 5973 5996 6005 6019 6032 
+	}
+	history = {
+		victory_points = { 5964 3 }
+		owner = SRF
+		add_core_of = SRF
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+state={
+	id=211
+	name="STATE_211"
+	provinces={
+		354 692 1299 1909 2047 2453 2803 2931 2985 3278 3786 5811 5827 5835 5847 5856 
+	}
+	history = {
+		victory_points = { 2453 3 }
+		owner = SRF
+		add_core_of = SRF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

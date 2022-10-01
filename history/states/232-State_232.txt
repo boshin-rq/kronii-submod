@@ -1,0 +1,28 @@
+state={
+	id=232
+	name="STATE_232"
+	provinces={
+		54 214 241 583 1694 1874 2156 3177 3311 3837 4172 4220 4626 4934 5177 6101 6110 6169 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 5177 3 }
+		owner = WDL
+		add_core_of = WDL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			5177 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

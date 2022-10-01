@@ -1,0 +1,21 @@
+state={
+	id=220
+	name="STATE_220"
+	provinces={
+		252 1069 1664 2199 2662 3003 3150 3567 3938 4075 4298 4481 5459 5860 5873 5876 5878 5894 
+	}
+	history = {
+		victory_points = { 5459 5 }
+		owner = IMP
+		add_core_of = IMP
+		add_core_of = VIR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,29 @@
+state={
+	id=218
+	name="STATE_218"
+	provinces={
+		60 345 1065 1489 1964 2429 4954 5033 5335 5887 5895 5923 
+	}
+	resources = {
+		coal = 4
+		gunpowder = 1
+		iron = 10
+		redstone = 14
+	}
+	history = {
+		victory_points = { 1489 5 }
+		owner = IMP
+		add_core_of = IMP
+		add_core_of = VIR
+		add_core_of = SRF
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		set_demilitarized_zone = yes
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

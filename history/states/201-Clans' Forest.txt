@@ -1,0 +1,27 @@
+state={
+	id=201
+	name="STATE_201"
+	provinces={
+		198 488 916 1534 2776 4271 4582 5737 5760 5800 
+	}
+	resources = {
+		coal = 3
+		redstone = 11
+		gunpowder = 9
+		wood = 13
+		iron = 2
+	}
+	history = {
+		victory_points = { 4271 5 }
+		victory_points = { 488 1 }
+		owner = PLC
+		add_core_of = PLC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+	manpower=1274000
+	state_category=large_town
+}

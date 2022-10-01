@@ -1,0 +1,21 @@
+state={
+	id=221
+	name="STATE_221"
+	provinces={
+		439 992 1199 1616 2009 2617 3578 3907 5201 5433 5886 5892 5904 5921 5932 5933 5946 5956 
+	}
+	history = {
+		victory_points = { 5904 10 }
+		owner = IMP
+		add_core_of = IMP
+		add_core_of = BRY
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

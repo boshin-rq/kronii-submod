@@ -1,0 +1,26 @@
+state={
+	id=290
+	name="STATE_290"
+	provinces={
+		335 1723 1948 2699 3383 3882 4203 5055 5441 5550 6339 6375 6390 6480 6522 6536 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 1723 5 }
+		owner = M13
+		add_core_of = M13
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

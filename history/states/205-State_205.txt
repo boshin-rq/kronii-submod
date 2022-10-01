@@ -1,0 +1,19 @@
+state={
+	id=205
+	name="STATE_205"
+	provinces={
+		917 1009 1192 1206 2452 2769 3313 3713 5764 5792 
+	}
+	history = {
+		victory_points = { 917 3 }
+		owner = F27
+		add_core_of = F27
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

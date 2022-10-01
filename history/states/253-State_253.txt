@@ -1,0 +1,19 @@
+state={
+	id=253
+	name="STATE_253"
+	provinces={
+		1080 1420 1492 1576 3136 3468 4518 4640 5066 5284 6097 6107 6152 6157 6180 6190 6191 6219 6242 6263 6271 
+	}
+	history = {
+		victory_points = { 3136 5 }
+		owner = FV5
+		add_core_of = FV5
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

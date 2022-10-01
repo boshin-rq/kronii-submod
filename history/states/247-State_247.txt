@@ -1,0 +1,26 @@
+state={
+	id=247
+	name="STATE_247"
+	provinces={
+		64 819 877 963 1749 2017 2365 2603 3292 3368 3524 4671 4842 5415 5504 6156 6175 6248 6249 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 963 5 }
+		owner = WDL
+		add_core_of = WDL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

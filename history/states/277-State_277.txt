@@ -1,0 +1,24 @@
+state={
+	id=277
+	name="STATE_277"
+	provinces={
+		568 1063 1388 1522 2019 2484 2783 4498 4688 4968 5209 5261 5323 6303 6304 6322 6331 6361 6366 6379 6401 6413 6425 6466 
+	}
+	resources = {
+		coal = 1
+		gunpowder = 1
+		iron = 1
+	}
+	history = {
+		victory_points = { 6361 5 }
+		owner = VN6
+		add_core_of = VN6
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

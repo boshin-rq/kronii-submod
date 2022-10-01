@@ -1,0 +1,22 @@
+state={
+	id=209
+	name="STATE_209"
+	provinces={
+		262 618 1823 1917 2029 2569 3254 4167 4269 4466 5110 5793 5806 5833 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 4167 3 }
+		owner = F25
+		add_core_of = F25
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

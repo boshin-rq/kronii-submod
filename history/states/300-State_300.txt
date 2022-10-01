@@ -1,0 +1,26 @@
+state={
+	id=300
+	name="STATE_300"
+	provinces={
+		437 574 2098 2758 2935 2936 3778 4292 4405 6586 6642 6691 6716 6763 6807 6852 6878 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 4292 5 }
+		owner = M14
+		add_core_of = M14
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

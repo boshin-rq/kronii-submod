@@ -1,0 +1,26 @@
+state={
+	id=298
+	name="STATE_298"
+	provinces={
+		171 443 863 1230 1239 1460 1655 2406 3223 3294 3624 3729 4602 5260 6477 6545 6546 6606 6658 6730 6791 6854 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 443 5 }
+		owner = M10
+		add_core_of = M10
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

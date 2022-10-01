@@ -1,0 +1,27 @@
+state={
+	id=215
+	name="STATE_215"
+	provinces={
+		803 1149 1914 2343 2697 3546 4133 5929 
+	}
+	resources = {
+		coal = 1
+		gunpowder = 2
+		wood = 7
+		iron = 2
+	}
+	history = {
+		victory_points = { 2697 3 }
+		owner = PLC
+		add_core_of = PLC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			2697 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=758000
+	state_category=town
+}

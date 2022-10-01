@@ -1,0 +1,19 @@
+state={
+	id=258
+	name="STATE_258"
+	provinces={
+		902 1510 1641 2390 2433 2531 2613 3666 4495 5174 6197 6237 6243 6247 6277 
+	}
+	history = {
+		victory_points = { 6197 3 }
+		owner = FV8
+		add_core_of = FV8
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

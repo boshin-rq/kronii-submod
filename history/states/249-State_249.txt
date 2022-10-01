@@ -1,0 +1,35 @@
+state={
+	id=249
+	name="STATE_249"
+	provinces={
+		1945 2197 2610 3326 4343 4360 5046 6160 6173 6187 6212 6220 6255 6284 6261 
+	}
+	history = {
+	owner = SPE
+	add_core_of = SPE
+	victory_points = {
+		6187 50
+	}
+	victory_points = {
+		6212 5
+	}
+	buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 2
+		6187 = {
+			bunker = 10
+		}
+		6212 = {
+			bunker = 5
+		}
+		6160 = {
+			naval_base = 5
+		}
+		}
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

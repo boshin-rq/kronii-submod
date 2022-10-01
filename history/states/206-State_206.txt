@@ -1,0 +1,26 @@
+state={
+	id=206
+	name="STATE_206"
+	provinces={
+		115 461 1152 1274 1319 1753 3976 4359 4412 4829 5202 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 3976 5 }
+		owner = MC2
+		add_core_of = MC2
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

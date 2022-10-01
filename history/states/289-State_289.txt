@@ -1,0 +1,25 @@
+state={
+	id=289
+	name="STATE_289"
+	provinces={
+		1295 2122 2291 2331 2465 2494 3218 4330 4881 4972 5354 6376 6517 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 5354 3 }
+		owner = M12
+		add_core_of = M12
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

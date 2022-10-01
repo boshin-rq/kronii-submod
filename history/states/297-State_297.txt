@@ -1,0 +1,25 @@
+state={
+	id=297
+	name="STATE_297"
+	provinces={
+		690 1666 2061 2280 2981 5585 6347 6362 6385 6448 6496 6504 6556 6596 6605 6641 6657 6675 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 2061 3 }
+		owner = M17
+		add_core_of = M17
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

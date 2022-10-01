@@ -1,0 +1,19 @@
+state={
+	id=271
+	name="STATE_271"
+	provinces={
+		6 1306 2441 2568 3559 3876 4296 4300 4335 4880 5182 6276 6292 6309 6367 6393 6402 6406 6434 6447 6449 6458 6499 
+	}
+	history = {
+		victory_points = { 5182 5 }
+		owner = FV4
+		add_core_of = FV4
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,22 @@
+state={
+	id=244
+	name="STATE_244"
+	provinces={
+		359 946 1350 1417 1570 1741 2891 3469 4011 4467 4635 4904 5476 6046 6050 6070 6080 6113 6147 6171 6174 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 4904 3 }
+		owner = FV8
+		add_core_of = FV8
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

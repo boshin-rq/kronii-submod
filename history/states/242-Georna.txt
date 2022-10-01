@@ -1,0 +1,23 @@
+state={
+	id=242
+	name="STATE_242"
+	provinces={
+		1285 1750 1837 1974 2548 2689 2881 5454 5557 6031 6057 6091 6093 6127 6141 6142 6176 
+	}
+	resources = {
+		gunpowder = 2
+		wood = 16
+	}
+	history = {
+		victory_points = { 2881 2 }
+		victory_points = { 5557 1 }
+		victory_points = { 6031 1 }
+		owner = FEC
+		add_core_of = FEC
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower=243000
+	state_category=rural
+}

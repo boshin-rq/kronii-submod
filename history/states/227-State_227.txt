@@ -1,0 +1,24 @@
+state={
+	id=227
+	name="STATE_227"
+	provinces={
+		203 633 655 660 926 1012 1090 1202 2106 2889 3043 4046 5239 5291 5353 5961 5970 5977 5999 6020 6021 6033 6051 6053 6071 
+	}
+	resources = {
+		coal = 4
+		gunpowder = 1
+		iron = 2
+	}
+	history = {
+		victory_points = { 2889 3 }
+		owner = SRF
+		add_core_of = F11
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=100000
+	state_category=town
+}

@@ -1,0 +1,25 @@
+state={
+	id=245
+	name="STATE_245"
+	provinces={
+		1185 1314 1341 1800 3366 4286 4484 4614 4636 5099 5236 5463 5485 6060 6078 6082 6123 6129 6140 6143 6159 6245 
+	}
+	resources = {
+		coal = 4
+		wood = 4
+		iron = 3
+	}
+	history = {
+		victory_points = { 6129 5 }
+		owner = F11
+		add_core_of = F11
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 1
+		}
+	}
+	manpower=1100000
+	state_category=town
+}

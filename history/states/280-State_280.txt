@@ -1,0 +1,22 @@
+state={
+	id=280
+	name="STATE_280"
+	provinces={
+		535 641 687 2037 2437 2897 3589 3866 4814 6318 6355 6529 6549 6580 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 6529 5 }
+		owner = F16
+		add_core_of = F16
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}
