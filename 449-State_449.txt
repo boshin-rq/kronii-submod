@@ -1,0 +1,22 @@
+state={
+	id=449
+	name="STATE_449"
+	provinces={
+		29 820 1625 1922 2698 3422 3827 4264 4648 4836 8463 8535 8540 8578 8584 
+	}
+	history = {
+		victory_points = { 2698 5 }
+		owner = SWL
+		add_core_of = SWL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			2698 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

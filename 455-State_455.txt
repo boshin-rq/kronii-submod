@@ -1,0 +1,19 @@
+state={
+	id=455
+	name="STATE_455"
+	provinces={
+		11 122 431 1536 2245 2710 3117 3534 3946 4427 5486 8472 8521 8546 8555 8574 8577 8588 
+	}
+	history = {
+		victory_points = { 1536 3 }
+		owner = SWL
+		add_core_of = SWL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

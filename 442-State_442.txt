@@ -1,0 +1,23 @@
+state={
+	id=442
+	name="STATE_442"
+	provinces={
+		1607 1770 1778 1941 2292 2476 2561 2622 2818 2887 3612 4119 4437 4454 5219 8107 8198 8217 8249 8267 8341 8405 8480 
+	}
+	resources = {
+		wood = 8
+		gunpowder = 7
+	}
+	history = {
+		victory_points = { 2622 3 }
+		owner = VN8
+		add_core_of = VN8
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

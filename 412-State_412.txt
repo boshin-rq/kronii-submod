@@ -1,0 +1,19 @@
+state={
+	id=412
+	name="STATE_412"
+	provinces={
+		92 598 1903 2004 2257 2731 3233 3427 3828 5362 5507 5523 8084 8108 8134 8139 8154 8158 8179 8202 8246 8256 8259 8260 8309 8344 
+	}
+	history = {
+		victory_points = { 5362 1 }
+		owner = FKE
+		add_core_of = FKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=500000
+	state_category=town
+}

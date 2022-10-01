@@ -1,0 +1,23 @@
+state={
+	id=413
+	name="STATE_413"
+	provinces={
+		1342 1897 2178 2266 2597 3186 3657 3712 3899 4629 4646 4953 5093 5120 5584 7742 7784 7788 7794 7819 7857 7866 7910 7925 7972 7984 7985 8017 8025 8032 8039 8070 8071 8079 8117 
+	}
+	resources = {
+		gunpowder = 8
+	}
+	history = {
+		victory_points = { 2266 1 }
+		owner = FKE
+		add_core_of = FKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

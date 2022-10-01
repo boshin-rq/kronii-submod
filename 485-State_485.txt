@@ -1,0 +1,25 @@
+state={
+	id=485
+	name="STATE_485"
+	provinces={
+		8 599 754 1737 2033 2196 2400 3332 3365 4665 4965 8609 8636 8641 8665 8671 8708 8725 
+	}
+	resources = {
+		wood = 28
+	}
+	history = {
+		victory_points = { 2400 3 }
+		owner = SWL
+		add_core_of = SWL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			2400 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

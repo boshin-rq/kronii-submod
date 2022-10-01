@@ -1,0 +1,25 @@
+state={
+	id=432
+	name="STATE_432"
+	provinces={
+		441 1150 4002 4508 4555 4810 5138 8146 8166 8174 8190 8197 8229 8239 8265 8281 8286 8332 8364 8381 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 4555 3 }
+		owner = M26
+		add_core_of = M26
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

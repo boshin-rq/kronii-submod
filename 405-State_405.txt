@@ -1,0 +1,27 @@
+state={
+	id=405
+	name="STATE_405"
+	provinces={
+		108 567 826 1386 1685 2366 2773 3212 3381 3772 3832 4068 4419 5153 5426 7587 7608 7634 7654 7682 7696 7707 7713 7757 7761 7798 7799 7836 7849 7878 7894 7914 7952 7965 
+	}
+	resources = {
+		coal = 4
+		iron = 4
+		gunpowder = 4
+	}
+	history = {
+	owner = TVC
+	add_core_of = SHE
+	victory_points = {
+		3381 5
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

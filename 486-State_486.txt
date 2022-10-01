@@ -1,0 +1,18 @@
+state={
+	id=486
+	name="STATE_486"
+	provinces={
+		209 976 1670 1678 2108 2397 2729 3041 4099 5015 8938 9124 
+	}
+	history={
+		victory_points = { 9124 3 }
+		owner = EPH
+		add_core_of = EPH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

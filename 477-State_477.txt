@@ -1,0 +1,19 @@
+state={
+	id=477
+	name="STATE_477"
+	provinces={
+		157 729 1540 3720 3919 5447 8729 8831 
+	}
+	history={
+		victory_points = { 3919 5 }
+		owner = NEM
+		add_core_of = NEM
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=500000
+	state_category = rural
+}

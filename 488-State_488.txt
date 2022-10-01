@@ -1,0 +1,17 @@
+state={
+	id=488
+	name="STATE_488"
+	provinces={
+		1545 4122 4146 8161 8680 8707 
+	}
+	history={
+		victory_points = { 8680 3 }
+		owner = LAS
+		add_core_of = LAS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

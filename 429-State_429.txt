@@ -1,0 +1,29 @@
+state={
+	id=429
+	name="STATE_429"
+	provinces={
+		334 592 2434 2589 2830 3032 3282 3579 3724 3746 4377 4394 4445 4470 4525 4770 4949 5130 5280 5453 8195 8203 8263 8290 8311 8388 8409 8428 8429 8487 8510 9295 9298 
+	}
+	resources = {
+		wood = 6
+	}
+	history = {
+	owner = OMN
+	add_core_of = OMN
+	add_core_of = TVC
+	victory_points = {
+		8388 1
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			8388 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

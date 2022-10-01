@@ -1,0 +1,26 @@
+state={
+	id=459
+	name="STATE_459"
+	provinces={
+		1115 2749 3309 3654 3732 4332 4534 8466 8543 8544 8597 8624 8644 8647 8672 
+	}
+	resources={
+		coal=6
+		iron=8
+	}
+	history={
+		victory_points = { 8544 1 }
+		owner = FKE
+		add_core_of = FKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			8544 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=500000
+	state_category=town
+}

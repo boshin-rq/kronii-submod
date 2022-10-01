@@ -1,0 +1,31 @@
+state={
+	id=424
+	name="STATE_424"
+	provinces={
+		1209 1262 1305 1332 1657 2587 3108 3116 3237 3252 3319 4080 4150 4173 4824 5074 5163 8065 8086 8087 8119 8129 8212 8213 8225 8241 8262 8295 8356 
+	}
+	resources = {
+		coal = 1
+		wood = 6
+	}
+	history = {
+	owner = TVC
+	add_core_of = OMN
+	add_core_of = TVC
+	victory_points = {
+		5074 5
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			1209 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

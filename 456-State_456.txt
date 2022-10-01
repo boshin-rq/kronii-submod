@@ -1,0 +1,18 @@
+state={
+	id=456
+	name="STATE_456"
+	provinces={
+		158 1137 1232 2230 2894 3808 3898 3965 4736 5180 5363 5381 8370 8399 8431 8437 8475 8476 8495 8516 8538 8539 8559 8593 8599 8639 
+	}
+	history = {
+		victory_points = { 8593 3 }
+		owner = SN4
+		add_core_of = SN4
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

@@ -1,0 +1,26 @@
+state={
+	id=406
+	name="STATE_406"
+	provinces={
+		764 1183 1667 2593 2676 2847 3055 3240 3910 4389 7699 7734 7755 7765 7772 7781 7802 7814 7838 7853 7860 7885 7890 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 7802 5 }
+		owner = M25
+		add_core_of = M25
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

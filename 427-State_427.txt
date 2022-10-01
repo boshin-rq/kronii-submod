@@ -1,0 +1,18 @@
+state={
+	id=427
+	name="STATE_427"
+	provinces={
+		939 1490 2237 2861 2900 3021 3382 3462 3874 4337 5060 8387 8392 8396 8445 8450 8492 8512 8545 
+	}
+	history = {
+		victory_points = { 2900 3 }
+		owner = LKR
+		add_core_of = LKR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

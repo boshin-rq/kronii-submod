@@ -1,0 +1,28 @@
+state={
+	id=420
+	name="STATE_420"
+	provinces={
+		1127 1243 1418 2148 2391 2602 3583 3921 4160 5008 5512 8037 8093 8191 8287 8334 8375 
+	}
+	resources={
+		coal=10
+		redstone=18
+		iron=14
+		diamonds=4
+	}
+	history={
+		victory_points = { 8287 10 }
+		owner = VN8
+		add_core_of = VN8
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			8287 = {
+				bunker = 2
+			}
+		}
+	}
+	manpower=324000
+	state_category=town
+}

@@ -1,0 +1,18 @@
+state={
+	id=482
+	name="STATE_482"
+	provinces={
+		410 571 1876 3690 4918 4925 8877 9166 9196 9206 
+	}
+	history={
+		victory_points = { 571 3 }
+		owner = BAP
+		add_core_of = BAP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

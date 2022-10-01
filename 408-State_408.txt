@@ -1,0 +1,23 @@
+state={
+	id=408
+	name="STATE_408"
+	provinces={
+		1164 3884 3988 4426 4546 5481 5489 5499 7675 7717 7783 7834 7920 7934 7971 7999 8022 
+	}
+	resources = {
+		wood = 8
+		gunpowder = 5
+	}
+	history = {
+		victory_points = { 1164 3 }
+		owner = VNX
+		add_core_of = VNX
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

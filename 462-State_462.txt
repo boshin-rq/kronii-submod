@@ -1,0 +1,15 @@
+state={
+	id=462
+	name="STATE_462"
+	provinces={
+		4 434 1280 2342 2680 3843 4041 5139 8279 
+	}
+	history={
+		owner = TSL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category = wasteland
+}

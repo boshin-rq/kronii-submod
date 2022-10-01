@@ -1,0 +1,17 @@
+state={
+	id=489
+	name="STATE_489"
+	provinces={
+		254 636 1916 2403 2604 3619 4151 4589 7756 
+	}
+	history={
+		victory_points = { 1916 1 }
+		owner = SPC
+		add_core_of = SPC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

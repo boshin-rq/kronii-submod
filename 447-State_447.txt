@@ -1,0 +1,22 @@
+state={
+	id=447
+	name="STATE_447"
+	provinces={
+		483 647 1548 1752 1892 1980 2514 2538 2726 2763 2786 2903 3923 4202 4388 4410 4906 5233 5478 5487 7874 7903 7918 7924 7929 7949 7968 7976 7988 8001 8067 8114 8163 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 1892 3 }
+		owner = F54
+		add_core_of = F54
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

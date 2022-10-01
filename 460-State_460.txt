@@ -1,0 +1,19 @@
+state={
+	id=460
+	name="STATE_460"
+	provinces={
+		47 1085 1272 2673 2679 3060 3585 4240 4610 5268 8436 8532 8568 8596 8610 8622 8637 
+	}
+	history = {
+		victory_points = { 8568 5 }
+		owner = F47
+		add_core_of = F47
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

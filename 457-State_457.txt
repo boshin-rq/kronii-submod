@@ -1,0 +1,19 @@
+state={
+	id=457
+	name="STATE_457"
+	provinces={
+		66 458 564 1005 1250 1470 1768 2097 2357 2371 2643 3376 4166 4751 5185 8312 8362 8416 8430 8479 8525 
+	}
+	history = {
+		victory_points = { 5185 5 }
+		owner = LKR
+		add_core_of = LKR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

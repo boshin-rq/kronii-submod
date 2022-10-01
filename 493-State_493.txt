@@ -1,0 +1,22 @@
+state={
+	id=493
+	name="STATE_493"
+	provinces={
+		325 1494 2162 2213 2496 2626 2806 3380 3635 4346 4675 5161 5514 8822 8851 8852 8861 
+	}
+	history = {
+		victory_points = { 8861 5 }
+		owner = F56
+		add_core_of = F56
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			8861 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

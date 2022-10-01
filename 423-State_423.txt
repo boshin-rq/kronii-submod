@@ -1,0 +1,19 @@
+state={
+	id=423
+	name="STATE_423"
+	provinces={
+		708 896 990 1196 1413 1961 2466 2583 2829 2998 3179 3525 3644 4137 4290 4433 4446 4763 5237 5445 7680 7693 7712 7730 7739 7759 7782 7809 7823 7898 7908 7933 7958 7989 8011 8020 8031 8036 8043 8063 8069 
+	}
+	history = {
+		victory_points = { 4763 5 }
+		owner = SN4
+		add_core_of = SN4
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,18 @@
+state={
+	id=439
+	name="STATE_439"
+	provinces={
+		472 702 808 1110 2526 2682 3194 3952 4159 4345 4653 4672 4818 4980 5084 5409 5491 8091 8124 8164 8167 8201 8216 8275 8282 8305 8323 8333 8348 8390 
+	}
+	history = {
+		victory_points = { 1110 3 }
+		owner = SN4
+		add_core_of = SN4
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

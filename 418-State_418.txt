@@ -1,0 +1,19 @@
+state={
+	id=418
+	name="STATE_418"
+	provinces={
+		133 710 713 766 901 1467 1973 2099 4100 5181 
+	}
+	history={
+		victory_points = { 1973 5 }
+		owner = BAP
+		add_core_of = BAP
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=400000
+	state_category = town
+}

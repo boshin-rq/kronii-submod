@@ -1,0 +1,22 @@
+state={
+	id=483
+	name="STATE_483"
+	provinces={
+		942 1962 2267 2398 2784 2976 3075 3348 4067 5298 8735 8763 8818 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 8763 3 }
+		owner = F56
+		add_core_of = F56
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

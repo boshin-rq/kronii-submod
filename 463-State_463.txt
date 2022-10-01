@@ -1,0 +1,18 @@
+state={
+	id=463
+	name="STATE_463"
+	provinces={
+		259 1324 1339 2980 3091 3140 4764 8676 
+	}
+	history={
+		victory_points = { 259 3 }
+		owner = LAS
+		add_core_of = LAS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

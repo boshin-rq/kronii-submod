@@ -1,0 +1,22 @@
+state={
+	id=497
+	name="STATE_497"
+	provinces={
+		384 459 502 628 1387 1746 2105 3975 4530 8836 8842 8847 8860 8865 8866 8886 8887 8891 8910 
+	}
+	history = {
+		victory_points = { 8886 3 }
+		owner = F56
+		add_core_of = F56
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			8886 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

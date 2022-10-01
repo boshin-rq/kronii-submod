@@ -1,0 +1,18 @@
+state={
+	id=468
+	name="STATE_468"
+	provinces={
+		1241 2110 2216 2481 3106 4228 4276 4317 4943 4962 5117 5495 8562 8582 8604 8606 8634 8635 
+	}
+	history = {
+		victory_points = { 2110 3 }
+		owner = LKR
+		add_core_of = LKR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

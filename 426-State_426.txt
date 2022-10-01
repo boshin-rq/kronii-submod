@@ -1,0 +1,18 @@
+state={
+	id=426
+	name="STATE_426"
+	provinces={
+		684 686 2656 2744 2804 3845 4721 5142 9168 
+	}
+	history={
+		victory_points = { 2656 3 }
+		owner = TWH
+		add_core_of = TWH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

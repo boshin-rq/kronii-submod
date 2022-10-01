@@ -1,0 +1,18 @@
+state={
+	id=451
+	name="STATE_451"
+	provinces={
+		293 1296 1729 2648 2738 3455 3897 4258 5027 5212 8141 8227 8231 8236 8280 8319 8327 8369 
+	}
+	history = {
+		victory_points = { 3455 3 }
+		owner = LKR
+		add_core_of = LKR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

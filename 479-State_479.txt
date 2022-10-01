@@ -1,0 +1,19 @@
+state={
+	id=479
+	name="STATE_479"
+	provinces={
+		834 1284 1588 2012 2712 3812 4072 4536 4832 8699 8723 8730 8742 8765 8768 8777 8798 
+	}
+	history = {
+		victory_points = { 8765 3 }
+		owner = F56
+		add_core_of = F56
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

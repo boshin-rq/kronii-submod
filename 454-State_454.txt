@@ -1,0 +1,19 @@
+state={
+	id=454
+	name="STATE_454"
+	provinces={
+		81 402 470 891 1177 3410 3816 3834 4147 4170 4175 4621 4651 4797 4803 5318 5502 5530 7937 7948 7987 8030 8076 8112 8186 8237 8296 
+	}
+	history = {
+		victory_points = { 81 5 }
+		owner = SKU
+		add_core_of = SKU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

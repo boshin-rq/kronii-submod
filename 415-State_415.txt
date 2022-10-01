@@ -1,0 +1,23 @@
+state={
+	id=415
+	name="STATE_415"
+	provinces={
+		2875 3143 3219 3399 3599 3863 4324 4886 5024 7907 7919 7932 7970 8010 8019 8024 8048 8054 8055 8062 8099 8123 8156 
+	}
+	resources = {
+		coal = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		owner = M26
+		add_core_of = M26
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category=wasteland
+	impassable = yes
+}

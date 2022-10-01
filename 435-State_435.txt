@@ -1,0 +1,24 @@
+state={
+	id=435
+	name="STATE_435"
+	provinces={
+		251 531 1408 1459 1991 2655 3056 3157 4600 4627 4791 4865 4978 5206 5238 5518 5549 8204 8272 8304 8340 8410 8451 8473 
+	}
+	resources = {
+		coal = 4
+		gunpowder = 12
+		iron = 8
+	}
+	history = {
+		victory_points = { 8410 3 }
+		owner = SWL
+		add_core_of = SWL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

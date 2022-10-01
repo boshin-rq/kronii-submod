@@ -1,0 +1,25 @@
+state={
+	id=446
+	name="STATE_446"
+	provinces={
+		119 1054 3086 4451 4662 4833 5126 5150 5383 8406 8447 8452 8484 8528 
+	}
+	resources = {
+		coal = 8
+		redstone = 20
+		iron = 15
+		diamonds = 3
+	}
+	history = {
+		victory_points = { 4451 3 }
+		owner = VN8
+		add_core_of = VN8
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

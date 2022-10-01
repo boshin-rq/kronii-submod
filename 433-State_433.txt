@@ -1,0 +1,23 @@
+state={
+	id=433
+	name="STATE_433"
+	provinces={
+		1309 1608 2081 2714 2810 3532 4246 4617 4914 5160 8175 8222 8244 8274 8300 8328 8365 8374 8389 8393 8398 8427 
+	}
+	resources = {
+		coal = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		owner = M26
+		add_core_of = M26
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=1
+	state_category=wasteland
+	impassable = yes
+}

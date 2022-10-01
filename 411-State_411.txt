@@ -1,0 +1,29 @@
+state={
+	id=411
+	name="STATE_411"
+	provinces={
+		733 821 998 1368 2186 3554 4549 5227 5270 7800 7859 7899 7913 7926 7927 7956 
+	}
+	resources = {
+		gunpowder = 10
+	}
+	history = {
+		owner = VN2
+		add_core_of = VN2
+		add_core_of = SHE
+		victory_points = {
+			5270 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			7913 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

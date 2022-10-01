@@ -1,0 +1,23 @@
+
+state={
+	id=475
+	name="STATE_475"
+	impassable = yes
+	
+	history = {
+		owner = EPH
+		add_core_of = EPH
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+
+	provinces={
+		40 691 1674 8509 8564 8611 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+}

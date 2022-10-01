@@ -1,0 +1,19 @@
+state={
+	id=453
+	name="STATE_453"
+	provinces={
+		83 715 1713 2244 3433 3647 3767 4044 4616 4694 4778 5018 5168 5402 5560 8308 8338 8438 8458 8459 8489 8496 8533 8553 8585 8602 8614 8619 8651 
+	}
+	history = {
+		victory_points = { 4778 5 }
+		owner = SN5
+		add_core_of = SN5
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

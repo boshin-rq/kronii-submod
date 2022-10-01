@@ -1,0 +1,26 @@
+state={
+	id=407
+	name="STATE_407"
+	provinces={
+		1300 2264 2777 3651 5359 5851 
+	}
+	resources = {
+		coal = 5
+		wood = 2
+		lazurite = 2
+		iron = 8
+		redstone = 2
+	}
+	history = {
+		victory_points = { 5359 3 }
+		owner = ICE
+		add_core_of = ICE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=243612
+	state_category=town
+}

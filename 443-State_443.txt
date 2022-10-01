@@ -1,0 +1,29 @@
+state={
+	id=443
+	name="STATE_443"
+	provinces={
+		515 2043 2444 3797 3948 3979 5379 5386 5573 5590 8355 8434 8474 8483 8507 8522 8523 8527 8557 8592 8598 8616 8618 8629 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 8618 5 }
+		owner = M26
+		add_core_of = M26
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			8618 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}
