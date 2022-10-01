@@ -1,0 +1,464 @@
+add_namespace = kronii_kronii
+
+#Korone and Sora?
+news_event = {
+	id = kronii_kronii.1
+	title = kronii_kronii.1.t
+	desc = kronii_kronii.1.d
+
+	picture = kronii_korone_and_sora-88231
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.10.1
+
+			date < 648.10.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Player Supremacy
+news_event = {
+	id = kronii_kronii.2
+	title = kronii_kronii.2.t
+	desc = kronii_kronii.2.d
+
+	picture = kronii_player_supremacy-88220
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 649.4.1
+
+			date < 649.4.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = {
+		name = kronii_kronii.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = kronii_kronii.2.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Hololive 5th Gen Building
+news_event = {
+	id = kronii_kronii.3
+	title = kronii_kronii.3.t
+	desc = kronii_kronii.3.d
+
+	picture = kronii_hololive_5th_gen_building-88229
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.2.1
+
+			date < 648.2.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.3.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Remembering 7th March 646
+news_event = {
+	id = kronii_kronii.4
+	title = kronii_kronii.4.t
+	desc = kronii_kronii.4.d
+
+	picture = kronii_remembering_7th_march_646-88212
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.3.1
+	
+			date < 648.3.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.4.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Death of Joseph
+news_event = {
+	id = kronii_kronii.5
+	title = kronii_kronii.5.t
+	desc = kronii_kronii.5.d
+
+	picture = kronii_death_of_joseph-88217
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 649.5.24
+	
+			date < 649.5.30
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.5.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Rushia Rushia!
+news_event = {
+	id = kronii_kronii.6
+	title = kronii_kronii.6.t
+	desc = kronii_kronii.6.d
+
+	picture = kronii_rushia_rushia-88218
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 649.7.1
+	
+			date < 649.7.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.6.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Nothing Major Happened.
+news_event = {
+	id = kronii_kronii.7
+	title = kronii_kronii.7.t
+	desc = kronii_kronii.7.d
+
+	picture = kronii_nothing_major_happened-88203
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.5.1
+	
+			date < 648.5.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.7.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Increase in Extremism
+news_event = {
+	id = kronii_kronii.8
+	title = kronii_kronii.8.t
+	desc = kronii_kronii.8.d
+
+	picture = kronii_increase_in_extremism-88204
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 649.10.24
+	
+			date < 649.10.30
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.8.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Haachama and Ai Haato spotted
+news_event = {
+	id = kronii_kronii.9
+	title = kronii_kronii.9.t
+	desc = kronii_kronii.9.d
+
+	picture = kronii_haachama_and_ai_haato_spotted-88211
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.9.1
+	
+			date < 648.9.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.9.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Slavery and Pekora
+news_event = {
+	id = kronii_kronii.10
+	title = kronii_kronii.10.t
+	desc = kronii_kronii.10.d
+
+	picture = kronii_slavery_and_pekora-88201
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.7.1
+	
+			date < 648.7.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.10.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 9 }
+		add_political_power = 50
+		add_opinion_modifier = { 
+		target = F11
+		modifier = small_increase
+		}
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = kronii_kronii.10.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_opinion_modifier = { 
+			target = F11
+			modifier = small_decrease
+		}
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Hololive Resurgence
+news_event = {
+	id = kronii_kronii.11
+	title = kronii_kronii.11.t
+	desc = kronii_kronii.11.d
+
+	picture = kronii_hololive_resurgence-87757
+	fire_only_once = yes
+	trigger = {
+		tag = F11
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.11.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Death of Moona
+news_event = {
+	id = kronii_kronii.12
+	title = kronii_kronii.12.t
+	desc = kronii_kronii.12.d
+
+	picture = kronii_death_of_moona-88199
+	fire_only_once = yes
+	trigger = {
+
+		tag = F11
+
+		AND = {
+
+			date > 648.4.1
+	
+			date < 648.4.7
+
+		}
+
+	}
+	mean_time_to_happen = { days = 1 }
+	timeout_days = 180
+	major = yes
+	option = {
+		name = kronii_kronii.12.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}

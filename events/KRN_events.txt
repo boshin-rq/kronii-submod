@@ -1,0 +1,1205 @@
+###########################
+# Kronii Events
+###########################
+
+add_namespace = f11.event
+
+country_event = { # 
+	id = f11.event.1
+	title = f11.event.1.t
+	desc = f11.event.1.desc
+	picture = GFX_report_event_red_port
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.1.a
+	}
+}
+
+country_event = { # There are No Friends
+	id = f11.event.2
+	title = f11.event.2.t
+	desc = f11.event.2.desc
+	picture = GFX_report_event_red_crowd
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.2.a
+	}
+}
+
+country_event = { # One Man Choice
+	id = f11.event.3
+	title = f11.event.3.t
+	desc = f11.event.3.desc
+	picture = GFX_report_event_red_siege
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { # Loyal to Crafter
+		name = f11.event.3.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 100
+				OR = {
+					has_country_flag = F11_AI_RANDOM_NEUTRALITY
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = NEUTRALITY
+					}
+					has_country_flag = F11_AI_RANDOM_MONARCHIST
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = MONARCHIST
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = F11_ai_behavior
+							option = DEFAULT
+						}	
+					}
+					has_country_flag = F11_AI_RANDOM_VILLAGIST
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = VILLAGIST
+					}
+					has_country_flag = F11_AI_RANDOM_SUPREMACIST 
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = SUPREMACIST
+					}
+				}
+			}
+		}
+		remove_ideas = disorganised_economy
+		add_popularity = {  
+			ideology = villagism
+			popularity = -0.1
+		}
+		add_popularity = {  
+			ideology = supremacism
+			popularity = -0.1
+		}
+		remove_country_leader_trait = incompetent_leader
+		complete_national_focus = F11_loyal_to_the_crafter
+		hidden_effect = {
+			set_country_flag = F11_revenge_1_flag
+			set_global_flag = F11_polski_crafter_flag
+		}
+	}
+	
+	option = { # Rally the Blue Shirts
+		name = f11.event.3.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = F11_AI_RANDOM_NEUTRALITY
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = NEUTRALITY
+					}
+					has_country_flag = F11_AI_RANDOM_MONARCHIST
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = MONARCHIST
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = F11_ai_behavior
+							option = DEFAULT
+						}	
+					}
+					has_country_flag = F11_AI_RANDOM_VILLAGIST
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = VILLAGIST
+					}
+					has_country_flag = F11_AI_RANDOM_SUPREMACIST 
+					has_game_rule = {
+						rule = F11_ai_behavior
+						option = SUPREMACIST
+					}
+				}
+			}
+		}
+		remove_ideas = disorganised_economy
+		kill_country_leader = yes
+		add_popularity = {  
+			ideology = villagism
+			popularity = 0.1
+		}
+		add_popularity = {  
+			ideology = supremacism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = villagism
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		complete_national_focus = F11_rally_the_blue_shirts
+		hidden_effect = {
+			set_country_flag = F11_revenge_2_flag
+		}
+	}
+}
+
+country_event = { # True Face
+	id = f11.event.4
+	title = f11.event.4.t
+	desc = f11.event.4.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.4.a
+		add_stability = -0.1
+		add_war_support = 0.05
+		add_manpower = 135000
+	}
+}
+
+country_event = { # Monarch is needed
+	id = f11.event.5
+	title = f11.event.5.t
+	desc = f11.event.5.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			retire_ideology_leader = neutrality
+			create_country_leader = {
+				name = "Queen Kronii"
+				desc = ""
+				picture = "Portrait_Kronii.dds"
+				ideology = constitutional_monarchy
+				traits = {
+					hedonist
+				}
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = F11_king_polski_crafter_party
+				name = F11_king_polski_crafter_party
+			}
+		}
+	}
+	
+	option = {
+		name = f11.event.5.a
+		add_political_power = 100
+		add_stability = 0.05
+		add_manpower = 140000
+	}
+}
+
+country_event = { # Village Union
+	id = f11.event.6
+	title = f11.event.6.t
+	desc = f11.event.6.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.6.a
+		add_political_power = 100
+		add_manpower =110000
+		add_stability = 0.05
+		add_popularity = {  
+			ideology = villagism
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { # Puzonekk is elected
+	id = f11.event.7
+	title = f11.event.7.t
+	desc = f11.event.7.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.7.a
+		add_popularity = {  
+			ideology = supremacism
+			popularity = 0.1
+		}
+		add_political_power = 100
+		add_manpower = 130000
+		every_unit_leader = {
+			limit = {
+				has_id = 21
+				is_field_marshal = no
+			}
+			promote_leader = yes
+		}
+	}
+}
+
+country_event = { # Union needs Reforms
+	id = f11.event.8
+	title = f11.event.8.t
+	desc = f11.event.8.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.8.a
+		add_political_power = 50
+	}
+}
+
+country_event = { # Crazy Adventure is in our Hearts
+	id = f11.event.9
+	title = f11.event.9.t
+	desc = f11.event.9.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.9.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { # Monster Clans
+	id = f11.event.10
+	title = f11.event.10.t
+	desc = f11.event.10.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.10.a
+		add_stability = -0.05
+		add_political_power = -50
+	}
+}
+
+country_event = { # Monster Day
+	id = f11.event.11
+	title = f11.event.11.t
+	desc = f11.event.11.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.11.a
+		add_stability = 0.1
+		add_political_power = 100
+		every_state = {
+			limit = {
+				has_dynamic_modifier = { modifier = F11_ja_hol_resistance_modifier }
+			}
+			remove_dynamic_modifier = { modifier = F11_ja_hol_resistance_modifier }
+		}
+		add_named_threat = { threat = 2.5 name = F11_pass_monster_rights_act }
+		create_corps_commander = {
+			name = "Sapling Commander"
+			id = 24
+			picture = "Portrait_Red_Rose_Kubusiek.dds"
+			traits = {
+				politically_connected
+				infantry_leader
+				ambusher
+				trait_RED_monster_clans
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+}
+
+country_event = { # Enough is Enough
+	id = f11.event.12
+	title = f11.event.12.t
+	desc = f11.event.12.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.12.a
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+}
+
+country_event = { # New Fatherland
+	id = f11.event.13
+	title = f11.event.13.t
+	desc = f11.event.13.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.13.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { # Scared Monopolies
+	id = f11.event.14
+	title = f11.event.14.t
+	desc = f11.event.14.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.14.a
+		add_ideas = F11_question_of_free_market_idea
+	}
+}
+
+country_event = { # Unions' Protest
+	id = f11.event.15
+	title = f11.event.15.t
+	desc = {
+		text = f11.event.15.desc_a
+		trigger = { 
+			has_completed_focus = F11_dictatorship
+		} 
+	}
+	desc = {
+		text = f11.event.15.desc_b
+		trigger = { 
+			NOT = { 
+				has_completed_focus = F11_dictatorship
+			} 
+		} 
+	}
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.15.a
+		add_stability = 0.05
+	}
+}
+
+country_event = { # Reversed Long March
+	id = f11.event.16
+	title = f11.event.16.t
+	desc = f11.event.16.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.16.a
+		swap_ideas = {
+			remove_idea = F11_legacy_of_the_march_idea
+			add_idea = F11_new_march_idea
+		}
+	}
+}
+
+country_event = { # Red Rose Union seeks improving Relations with Us
+	id = f11.event.17
+	title = f11.event.17.t
+	desc = f11.event.17.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.17.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_completed_focus = F11_militarize_union
+				factor = 0
+			}
+		}
+		FROM = {
+			country_event = f11.event.18
+		}
+	}
+	
+	option = {
+		name = f11.event.17.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_completed_focus = F11_militarize_union
+				factor = 100
+			}
+		}
+		FROM = {
+			country_event = f11.event.19
+		}
+	}
+}
+
+country_event = { # FROM accepted our Offer
+	id = f11.event.18
+	title = f11.event.18.t
+	desc = f11.event.18.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.18.a
+		puppet = FV8
+		hidden_effect = {
+			set_country_flag = F11_DWI_accepted_flag
+		}
+	}
+}
+
+country_event = { # FROM rejected our Offer
+	id = f11.event.19
+	title = f11.event.19.t
+	desc = f11.event.19.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.19.a
+		hidden_effect = {
+			set_country_flag = F11_DWI_rejected_flag
+		}
+	}
+}
+
+country_event = { # Red Rose Union sent an Ultimatum
+	id = f11.event.20
+	title = f11.event.20.t
+	desc = f11.event.20.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.20.a
+		ai_chance = {
+			base = 10
+		}
+		FROM = {
+			country_event = f11.event.21
+		}
+	}
+	
+	option = {
+		name = f11.event.20.b
+		ai_chance = {
+			base = 90
+		}
+		FROM = {
+			country_event = f11.event.22
+		}
+	}
+}
+
+country_event = { # FROM accepted our Offer
+	id = f11.event.21
+	title = f11.event.18.t
+	desc = f11.event.18.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.18.a
+		annex_country = { 
+			target = FROM 
+			transfer_troops = no
+		}
+	}
+}
+
+country_event = { # FROM rejected our Offer
+	id = f11.event.22
+	title = f11.event.19.t
+	desc = f11.event.19.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.19.a
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+country_event = { # Annexation of Free Endermen's Clan
+	id = f11.event.23
+	title = f11.event.23.t
+	desc = f11.event.23.desc
+	picture = GFX_report_event_f11_monster_girls #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.23.a
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.05
+		add_war_support = -0.1
+		add_political_power = -50
+		every_state = {
+			limit = {
+				OR = {
+					state = 593
+					state = 594
+					state = 242
+				}
+			}
+			add_core_of = ROOT
+		}
+		set_province_name = { id = 5986 name = "Ina City" }
+	}
+	
+	option = {
+		name = f11.event.23.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.05
+		add_war_support = 0.1
+		every_state = {
+			limit = {
+				is_core_of = FV9
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+			FV9 = {
+				transfer_state = PREV
+			}
+		}
+		puppet = FV9
+		hidden_effect = {
+			FV9 = {
+				set_country_flag = F11_FV9_subject_flag
+				set_cosmetic_tag = FV9_occupied
+				if = {
+					limit = {
+						has_government = socialism
+					}
+					create_country_leader = {
+						name = "Ina"
+						desc = ""
+						picture = "gfx/leaders/F11/Portrait_Ina.dds"
+						ideology = village_socialism
+						traits = {
+							dictator
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = villagism
+					}
+					create_country_leader = {
+						name = "Ina"
+						desc = ""
+						picture = "gfx/leaders/F11/Portrait_Ina.dds"
+						ideology = social_villagism
+						traits = {
+							dictator
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = supremacism
+					}
+					create_country_leader = {
+						name = "Ina"
+						desc = ""
+						picture = "gfx/leaders/F11/Portrait_Ina.dds"
+						ideology = fascism_ideology
+						traits = {
+							dictator
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = neutrality
+					}
+					create_country_leader = {
+						name = "Ina"
+						desc = ""
+						picture = "gfx/leaders/F11/Portrait_Ina.dds"
+						ideology = oligarchism
+						traits = {
+							dictator
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_government = monster
+					}
+					create_country_leader = {
+						name = "Ina"
+						desc = ""
+						picture = "gfx/leaders/F11/Portrait_Ina.dds"
+						ideology = pro_monster_government
+						traits = {
+							dictator
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+add_namespace = f11.foreign.event
+
+country_event = { # 
+	id = f11.foreign.event.1
+	title = f11.foreign.event.1.t
+	desc = {
+		trigger = {
+			IMP = {
+				exists = yes
+				NOT = { tag = IMR }
+			}
+			country_exists = ZAC
+			country_exists = VAE
+		}
+		text = f11.foreign.event.1.desc_a
+	}
+	desc = {
+		trigger = {
+			IMP = {
+				exists = yes
+				NOT = { tag = IMR }
+			}
+			country_exists = ZAC
+			NOT = {
+				country_exists = VAE
+			}
+		}
+		text = f11.foreign.event.1.desc_b
+	}
+	desc = {
+		trigger = {
+			IMP = {
+				exists = yes
+				NOT = { tag = IMR }
+			}
+			country_exists = VAE
+			NOT = {
+				country_exists = ZAC
+			}
+		}
+		text = f11.foreign.event.1.desc_c
+	}
+	desc = {
+		trigger = {
+			IMP = {
+				exists = no
+				NOT = { tag = IMR }
+			}
+			country_exists = ZAC
+			country_exists = VAE
+		}
+		text = f11.foreign.event.1.desc_d
+	}
+	desc = {
+		trigger = {
+			IMP = {
+				exists = yes
+				NOT = { tag = IMR }
+			}
+			NOT = {
+				country_exists = ZAC
+				country_exists = VAE
+			}
+		}
+		text = f11.foreign.event.1.desc_e
+	}
+	desc = {
+		trigger = {
+			country_exists = ZAC
+			IMP = {
+				exists = no
+				NOT = { tag = IMR }
+			}
+			NOT = {
+				country_exists = VAE
+			}
+		}
+		text = f11.foreign.event.1.desc_f
+	}
+	desc = {
+		trigger = {
+			country_exists = VAE
+			IMP = {
+				exists = no
+				NOT = { tag = IMR }
+			}
+			NOT = {
+				country_exists = ZAC
+			}
+		}
+		text = f11.foreign.event.1.desc_g
+	}
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.foreign.event.1.a
+		trigger = {
+			IMP = {
+				exists = yes
+				NOT = {
+					tag = IMR
+				}
+			}
+		}
+		ai_chance = { base = 33 }
+		add_manpower = -20000
+		send_equipment = { target = IMP type = infantry_equipment amount = 2000 }
+		every_unit_leader = {
+			limit = {
+				has_id = 24
+			}
+			set_nationality = IMP
+		}
+		IMP = {
+			country_event = f11.foreign.event.2
+			add_manpower = 20000
+			hidden_effect = {
+				set_country_flag = F11_volunteers_sent_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = F11_volunteers_sent_from_flag
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.1.b
+		trigger = {
+			country_exists = ZAC
+		}
+		ai_chance = { base = 33 }
+		add_manpower = -20000
+		send_equipment = { target = IMP type = infantry_equipment amount = 2000 }
+		every_unit_leader = {
+			limit = {
+				has_id = 24
+			}
+			set_nationality = ZAC
+		}
+		ZAC = {
+			country_event = f11.foreign.event.2
+			add_manpower = 20000
+			hidden_effect = {
+				set_country_flag = F11_volunteers_sent_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = F11_volunteers_sent_from_flag
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.1.c
+		trigger = {
+			country_exists = VAE
+		}
+		ai_chance = { base = 33 }
+		add_manpower = -20000
+		send_equipment = { target = IMP type = infantry_equipment amount = 2000 }
+		every_unit_leader = {
+			limit = {
+				has_id = 24
+			}
+			set_nationality = VAE
+		}
+		VAE = {
+			country_event = f11.foreign.event.2
+			add_manpower = 20000
+			hidden_effect = {
+				set_country_flag = F11_volunteers_sent_flag
+			}
+		}
+		hidden_effect = {
+			set_country_flag = F11_volunteers_sent_from_flag
+		}
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.2
+	title = f11.foreign.event.2.t
+	desc = f11.foreign.event.2.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.foreign.event.2.a
+		custom_effect_tooltip = f11_foreign_event_2_tt
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.3
+	title = f11.foreign.event.3.t
+	desc = f11.foreign.event.3.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				every_unit_leader = {
+					limit = {
+						has_id = 24
+					}
+					set_nationality = ROOT
+				}
+			}
+			set_country_flag = F11_imperian_volunteers_back_flag
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.3.a
+		trigger = {
+			FROM = {
+				exists = no
+			}
+		}
+		add_political_power = 50
+		army_experience = 15
+		add_manpower = 12436
+		FROM = {
+			add_manpower = -12436
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.3.b
+		trigger = {
+			FROM = {
+				exists = yes
+			}
+		}
+		add_political_power = 100
+		army_experience = 30
+		add_manpower = 18124
+		FROM = {
+			add_manpower = -18124
+		}
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.4
+	title = f11.foreign.event.4.t
+	desc = f11.foreign.event.4.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = F11_volunteers_sent_from_flag
+				}
+				country_event = { id = f11.foreign.event.5 days = 30 }
+			}
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.4.a
+		add_manpower = -19462
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.5
+	title = f11.foreign.event.3.t
+	desc = f11.foreign.event.3.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				every_unit_leader = {
+					limit = {
+						has_id = 24
+					}
+					set_nationality = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.3.b
+		add_manpower = 19462
+		army_experience = 10
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.6
+	title = f11.foreign.event.6.t
+	desc = f11.foreign.event.6.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.foreign.event.6.a
+		ai_chance = { base = 80 }
+		FROM = {
+			country_event = f11.foreign.event.7
+		}
+	}
+	
+	option = {
+		name = f11.foreign.event.6.b
+		ai_chance = { base = 20 }
+		FROM = {
+			country_event = f11.foreign.event.8
+		}
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.7
+	title = f11.event.18.t
+	desc = f11.foreign.event.7.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.18.a
+		if = {
+			limit = {
+				ENH = {
+					is_faction_leader = yes
+				}
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+					NOT = {
+						is_subject_of = ROOT
+					}
+				}
+				ENH = {
+					add_to_faction = PREV
+				}
+			}
+			dismantle_faction = yes
+			ENH = {
+				add_to_faction = ROOT
+				add_to_war = { targeted_alliance = ROOT enemy = SPE hostility_reason = ally }
+			}
+			else = {
+				add_to_faction = ENH
+				ENH = {
+					add_to_war = { targeted_alliance = ROOT enemy = SPE hostility_reason = ally }
+				}
+			}
+		}
+	}
+}
+
+country_event = { # 
+	id = f11.foreign.event.8
+	title = f11.event.19.t
+	desc = f11.foreign.event.8.desc
+	picture = GFX_report_event_f11_port #TODO
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.foreign.event.9.a
+	}
+}
+
+add_namespace = F11.event
+
+country_event = { # Warlords Meeting
+	id = F11.event.1
+	title = F11.event.1.t
+	desc = F11.event.1.desc
+	picture = GFX_report_event_f11_port
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = F11.event.1.a
+	}
+}
+
+country_event = { # New Order
+	id = F11.event.2
+	title = F11.event.2.t
+	desc = F11.event.2.desc
+	picture = GFX_report_event_f11_port
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = f11.event.8.a
+	}
+}
+
+
+country_event = { 
+	id = hl.event.aqua
+	title = hl.event.aqua.t
+	desc = hl.event.aqua.desc
+	picture = GFX_report_event_red_port
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = hl.event.aqua.a
+	}
+}
+
+add_namespace = hl_hololive
+
+#A New Dawn
+country_event = {
+	id = hl_hololive.1
+	title = hl_hololive.1.t
+	desc = hl_hololive.1.d
+
+	picture = hl_a_new_dawn-87762
+	fire_only_once = yes
+	trigger = {
+		
+
+	}
+	option = {
+		name = hl_hololive.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
