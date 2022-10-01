@@ -1,0 +1,74 @@
+spriteTypes = {
+ 
+	SpriteType = { 
+		name = "GFX_focus_F11_loyaltokronii"
+		texturefile = "gfx/interface/goals/focus_F11_loyaltokronii.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_pekorastate"
+		texturefile = "gfx/interface/goals/focus_F11_pekorastate.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_kroneland"
+		texturefile = "gfx/interface/goals/focus_F11_kroneland.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_F11_mumeivillagism"
+		texturefile = "gfx/interface/goals/focus_F11_mumeivillagism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_banner"
+		texturefile = "gfx/interface/goals/focus_F11_banner.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_fallofkronii"
+		texturefile = "gfx/interface/goals/focus_F11_fallofkronii.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_fauna"
+		texturefile = "gfx/interface/goals/focus_F11_fauna.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_kdf"
+		texturefile = "gfx/interface/goals/focus_F11_kdf.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_bunkeronii"
+		texturefile = "gfx/interface/goals/focus_F11_bunkeronii.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_gura"
+		texturefile = "gfx/interface/goals/focus_F11_gura.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_kiara"
+		texturefile = "gfx/interface/goals/focus_F11_kiara.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_hm"
+		texturefile = "gfx/interface/goals/focus_F11_hm.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_transport"
+		texturefile = "gfx/interface/goals/focus_F11_transport.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_F11_usaken"
+		texturefile = "gfx/interface/goals/focus_F11_usaken.dds"
+	}
+
+}
+ 

@@ -1,0 +1,102 @@
+﻿l_russian:
+ NATIONAL_UNITY:0 "Национальное единство"
+ СТАБИЛЬНОСТЬ:0 "Стабильность"
+ WAR_SUPPORT:0 "Поддержка войны"
+ NATIONAL_UNITY_DESC:0 "Национальное единство представляет собой готовность людей в верхах вести войну до конца. Чем выше это значение, тем дольше они будут сражаться, прежде чем задумаются о капитуляции".
+ STABILITY_DESC:0 "Стабильность представляет собой поддержку народом нынешнего правительства. Высокая стабильность облегчает проведение политических изменений и помогает экономике работать без сбоев."
+ WAR_SUPPORT_DESC:0 "Поддержка войны представляет собой готовность народа вести войну до конца. Принятие многих законов и эффективная подготовка нации к войне требуют высокой поддержки войны."
+ STABILITY_WAR_FACTOR:0 "В состоянии войны: $VALUE|+2%$".
+ STABILITY_POPULARITY_FACTOR:0 "Популярность правящей партии: $VALUE|=+2%$"
+ STABILITY_EFFECT_TITLE:0 "\n§HEffects from our current Stability:§!\n"
+ STABILITY_PROPAGANDA:0 "£operative_mission_icons_small|8£ Иностранная пропаганда: $VALUE|+=2%$"
+ WAR_SUPPORT_EFFECT_TITLE:0 "\n§HEffects from our current War Support:§!\n"
+ WAR_SUPPORT_AT_OFFENSIVE_WAR:0 "Наступательная война: $VALUE|+=2%$"
+ WAR_SUPPORT_AT_DEFENSIVE_WAR:0 "Оборонительная война: $VALUE|+=2%$"
+ WAR_SUPPORT_TENSION:0 "Мировая напряженность: $VALUE|+=2%$"
+ WAR_SUPPORT_BEING_BOMBED:0 "Бомбардировка противника: $VALUE|+=2%$"
+ WAR_SUPPORT_INTERCEPTION:0 "Перехват: $VALUE|+=2%$"
+ WAR_SUPPORT_HEROES_BEING_KILLED:0 "Герои войны убиты: $VALUE|+=2%$"
+ WAR_SUPPORT_CONVOYS_BEING_RAIDED:0 "Торговые конвои подвергаются набегам: $VALUE|+=2%$"
+ WAR_SUPPORT_PROPAGANDA:0 "£operative_mission_icons_small|8£ Иностранная пропаганда: $VALUE|+=2%$"
+ POLITICAL_POWER:0 "Политическая власть"
+ POLITICAL_POWER_DESC:0 "Сколько политической власти имеют лидеры этой страны".
+ MANPOWER:0 "Сила игрока"
+ SERVICE_MANPOWER:1 "£manpower_texticon Service Playerpower:"
+ SERVICE_MANPOWER_DESC:0 "Сервисная мощность игрока используется различными типами оборудования для поддержания его функциональности."
+ MAX_MANPOWER:0 "Максимальная мощность игрока:"
+ EXILE_COUNTRY_NORMAL_MANPOWER_DAILY_GROWTH:0 "\n Ежедневный прирост от §HLegitimacy§!: $AMOUNT|H^$"
+ MANPOWER_TOTAL:0 "Общая сила игрока: $MAX|0H*$"
+ MANPOWER_USAGE:2 "Free Playerpower: $FREE|^2H$$EXILE$\nUsused Playerpower:\nArmy: $ARMY|^2H$\n - In the Field: $FIELD|^2H$\n - In Training: $TRAINING|^2H$\nAir: $AIR|^2H$\nNavy: $NAVAL|^2H$\nGarrison: $GARRISON|^2H$"
+ MANPOWER_USAGE_FOREIGN_GARRISON:0 "Иностранный гарнизон: $GARRISON|^2H$"
+ MANPOWER_CURRENT:0 "Total Playerpower: $TOTAL|^2H$\n$PERC|2%H$ of Eligible Core Population available ($ELIGIBLE|^H$)"
+ MANPOWER_CURRENT_MOBILIZATION:0 "Total Playerpower: $TOTAL|^2H$\n$PERC|2%H$ (около $MOB|+3%$ мобилизуется в день) Eligible Core Population available ($ELIGIBLE|^H$)".
+ MANPOWER_NON_CORE:0 "$NC_PERC|3%H$ приемлемого неосновного населения ($NC_ELIGIBLE|^H$)"
+ MANPOWER_GROWTH:0 "§Ежемесячный рост в штатах§!\nRecruitable: $RECRUITABLE|^G$\nCivilian: $CIVILIAN|^G$"
+ MANPOWER_VALUE:3 "$USAGE$\n\n$CURRENT$\n$GROWTH$"
+ MANPOWER_DESC:0 "Призывные солдаты в этой стране. Принять более строгие законы о призыве для увеличения".
+ MANPOWER_DIVISION:0 "Сила игрока дивизии"
+ MANPOWER_DIVISION_DESC:0 "§Количество солдат в этой §дивизии§! Когда солдаты умирают, они получают подкрепление из §HPlayerpower§ пула вашей страны!".
+ MANPOWER_DIVISION_SIZE_DESC:0 "§Эта §HDivision§! содержит $AMOUNT|G$ войск. Когда солдаты умирают, они получают подкрепление из пула §HPlayerpower§ вашей страны.§!".
+ MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TTЭто §HDivision§! содержит $AMOUNT|G$ войск. Она имеет силу игрока от:§!".
+ MANPOWER_GARRISON_BREAKDOWN_ENTRY:0 "$NUMBER|H*$ from $COUNTRY|H$"
+ MANPOWER_BREAKDOWN_ENTRY:0 "$FLAG$ $COUNTRY|H$: $CURRENT|H$/$MAX|H$"
+ MANPOWER_BREAKDOWN_ENTRY_FULL:0 "$FLAG$ $COUNTRY|H$: $CURRENT|G$/$MAX|G$"
+ MANPOWER_SHIP:0 "Корабль, обслуживающий игрока"
+ MANPOWER_SHIP_DESC:0 "§TTThis §HShip§! требует $AMOUNT|G$ service playerpower.§!".
+ MANPOWER_AIRWING:0 "Сила игрока, обслуживающего воздушное крыло"
+ MANPOWER_AIRWING_DESC:0 "§TThis §HAIR Wing§! требует $AMOUNT|G$ service playerpower.§!"
+ CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC:0 "\nЭффективная общая сила игрока изменена на $VAL|-%0$ из-за\n"
+ EQUIPMENT_DIVISION:0 "Коэффициент оснащения дивизиона"
+ EQUIPMENT_DIVISION_DESC:0 "Показывает, насколько дивизия заполнена необходимым оборудованием."
+ DIVISION_IN_TEMPLATE_TRANSFER:0 "Подразделение в настоящее время реорганизуется из шаблона $OLD|H$ в шаблон $NEW|H$. Реорганизация будет завершена, когда будет доставлено первое необходимое оборудование, а старое оборудование будет возвращено на склад."
+ MANPOWER_MONTHLY_TOTAL:2 "Ежемесячный прирост доступной силы игрока: $VALUE|^+1$($PERC|2%H$)\nОбщий рост населения: $MAX|^2H$($FACTOR|2%H$ от общего населения)\n\nБазовый темп роста: $RATIO|%H$"
+ MANPOWER_MODIFIER_APPLIED:0 "Применены модификаторы:\n$MODIFIERS$"
+ MANPOWER_MONTHLY_BASE:0 "Базовое значение: $VALUE|*Y0$"
+ MANPOWER_MONTHLY_TECH_FACTOR:0 "От технологий: $VALUE|+%$"
+ MANPOWER_PROVINCE_TOOLTIP:0 "Сила игрока: $VAL|*Y$"
+ INDUSTRIAL_CAPACITY:0 "Фабрики"
+ INDUSTRIAL_CAPACITY_DESC:0 "Существует три различных типа фабрик, каждый из которых имеет свое назначение."
+ INDUSTRIAL_CAPACITY_DESC_OCCUPATION:0 "Количество фабрик, которые вы получаете от оккупированных государств, зависит от вашей оккупационной политики."
+ ARMY_EXPERIENCE:0 "Опыт армии"
+ ARMY_EXPERIENCE_GAIN_TRAINING:1 "Из §HArmy Exercises§!: $VALUE|=+3$ ежедневно"
+ ARMY_EXPERIENCE_DESC:0 "По мере того, как ваше снаряжение используется в бою, вы получаете армейский опыт. Это означает, что вы можете получить армейский опыт, когда ваши §HDдивизии§! вступают в бой или если вы §HLend-Leased§! передали технику в войну вашим союзникам.\nВы также получаете опыт от проведения §HArmy Exercises§! с войсками, которые имеют уровень не ниже $UNIT_TRAINING_LEVEL|Y$ и от определенных §HNational Focuses§! Некоторые §HMinisters§! могут увеличить полученный опыт.\n\nАрмейский опыт необходим для создания и изменения ваших §HDivision Templates§!".
+ NAVY_EXPERIENCE:0 "Опыт ВМФ"
+ NAVY_EXPERIENCE_GAIN_TRAINING:0 "От §Навальных учений§!: $VALUE|=+3$ ежедневно"
+ NAVY_EXPERIENCE_DESC:0 "По мере использования ваших кораблей в бою и в §Навигационных учениях§! вы получаете опыт ВМФ. Определенные §Национальные фокусы§! дают дополнительный опыт, а некоторые §Министры§! могут увеличить полученный опыт.\n\nВоенно-морской опыт используется для разработки лучших вариантов существующих кораблей."
+ AIR_EXPERIENCE:0 "Воздушный опыт"
+ AIR_EXPERIENCE_GAIN_TRAINING:0 "От §HAircraft Exercises§!: $VALUE|=+3$ ежедневно".
+ AIR_EXPERIENCE_DESC:0 "Когда ваши самолеты сражаются с врагом в миссиях или тренируются в §HAircraft Exercises§!, вы получаете воздушный опыт. Это означает, что вы можете получить воздушный опыт, когда ваши §HAir Wings§! участвуют в бою или если вы §HLend-Leased§! оборудование для войн ваших союзников.\nОпределенные §HNational Focuses§! дают дополнительный опыт, а некоторые §HMinisters§! могут увеличить полученный опыт.\n\nAir Experience используется для разработки лучших вариантов существующих самолетов."
+ COMMAND_POWER:0 "Командная мощь"
+ COMMAND_POWER_DESC:0 "§HCommand Power§! используется для различных военных операций и продвижения генералов. Она может быть потрачена на разовые операции или выделена для постоянных операций. Рост и максимальная мощность §HCommand Power§! могут быть увеличены различными доктринами и национальными духами."
+ CURRENT_COMMAND_POWER_TOPBAR:0 "§TCurrent Command Power: $VALUE|G1$§!"
+ COMMAND_POWER_GAIN:0 "§Дневной прирост: $VALUE|Y2$§!"
+ MAX_COMMAND_POWER_TEXT:1 "Текущий максимум: $VALUE|Y0$!
+ COMMAND_POWER_ALLOCATED:1 "Выделено: $VALUE|R1$"
+ COMMAND_POWER_ALLOCATED_TOOLTIP_ENTRY:1 " - $NAME|0$: $VALUE|R0$"
+ COMMAND_POWER_TOOLTIP_PREFIX:0 " - "
+ COMMAND_POWER_TOOLTIP_AIR_MISSION:0 "$MISSION_TYPE$ ($WING_NAME|H$ on $LOCATION|H$)"
+ COMMAND_POWER_TOOLTIP_AIR_MISSION_UNASSIGNED:0 "$MISSION_TYPE$ ($WING_NAME|H$)"
+ MANPOWER_IN_USE:0 "Сила игрока на поле"
+ MANPOWER_IN_USE_DESC:0 "§TAколичество солдат на поле. Когда солдаты умирают, они получают подкрепление из §HPlayerpower§ вашей страны! pool.§!".
+ EQUIPMENT_IN_USE:0 "Коэффициент использования оборудования в поле"
+ EQUIPMENT_IN_USE_DESC:0 "Показывает, как дивизии заполнены необходимым оборудованием."
+ MANPOWER_IN_USE_GARRISON:0 "Мощность игрока в гарнизоне"
+ MANPOWER_IN_USE_GARRISON_DESC:0 "§Количество солдат в гарнизоне. Когда солдаты умирают, они получают подкрепление из §HPlayerpower§ вашей страны! pool.§!".
+ EQUIPMENT_IN_USE_GARRISON:0 "Коэффициент использования оборудования в гарнизоне"
+ EQUIPMENT_IN_USE_GARRISON_DESC:0 "Показывает, как гарнизоны заполнены необходимым оборудованием."
+ NAVY_EQUIPMENT_TOTAL:0 "Общее количество кораблей"
+ NAVY_EQUIPMENT_TOTAL_DESC:0 "Показывает, сколько всего кораблей у нас есть".
+ NAVAL_SERVICE_MANPOWER_DESC:0 "Сервисная игровая мощь используется нашим флотом для поддержания его функциональности."
+ AIR_EQUIPMENT_TOTAL:0 "Общее количество самолетов"
+ AIR_EQUIPMENT_TOTAL_DESC:0 "Показывает, сколько всего у нас самолетов".
+ AIR_EQUIPMENT_IN_USE:0 "Соотношение самолетов в поле"
+ AIR_EQUIPMENT_IN_USE_DESC:0 "Показывает, насколько авиакрылья заполнены необходимым оборудованием".
+ AIR_SERVICE_MANPOWER_DESC:0 "Служебная игровая сила используется нашими воздушными силами для поддержания их функциональности."
+ EQUIPMENT_IN_USE_HEADER:0 "Оборудование в поле"
+ EQUIPMENT_IN_GARRISON_HEADER:0 "Оборудование в гарнизоне"
+ EQUIPMENT_VARIANTS_TOGGLE_ON:0 "§GClick to show details§!"
+ EQUIPMENT_VARIANTS_TOGGLE_OFF:0 "§GClick to hide details§!"
+ CURRENT_EXPERIENCE_TOPBAR:0 "§Текущий опыт: $VALUE|Y2$§!"
+ EXPERIENCE_FROM_ATTACHES:0 "Наши атташе в $COUNTRIES$ дают нам $XPSHARE|H%0$ своего военного опыта".
+ RULES_TITLE:0 "§Сводка правил:§!"
+ RULES_DESC:0 "Правила вашей страны контролируются вашей идеологией, идеологией вашей фракции и вашим национальным духом".

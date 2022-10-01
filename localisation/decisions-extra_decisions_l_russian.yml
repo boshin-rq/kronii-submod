@@ -1,0 +1,13 @@
+﻿l_russian:
+ extra_decisions:0 "Дополнительные решения"
+ extra_decisions_desc:0 "Другие решения, которые нужно принять".
+ rally_the_population:0 "Сплотить население"
+ rally_the_population_desc:0 "Поднять страну. Настало время войны".
+ propaganda_against_miko_village:0 "Пропаганда против деревни Мико"
+ propaganda_against_miko_village_desc:0 "Вы находитесь в состоянии войны с деревней Мико. Сделайте пропаганду против них!".
+ provide_arms_to_saheritan_rebels:0 "Предоставить оружие повстанцам Сахеритан"
+ provide_arms_to_saheritan_rebels_desc:0 "Оказывать иностранную помощь".
+ reopen_hololive_jp_server:0 "Заново открыть Hololive JP Server"
+ reopen_hololive_jp_server_desc:0 "Вновь открывает Hololive JP Server".
+ send_volunteers_to_imperia:0 "Отправить добровольцев в Империю"
+ send_volunteers_to_imperia_desc:0 "Отправить добровольцев вашему доброму другу, Империи".

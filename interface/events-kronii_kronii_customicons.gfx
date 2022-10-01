@@ -1,0 +1,75 @@
+spriteTypes = { 
+	##Icon For: Korone and Sora?
+	SpriteType = { 
+		name = "kronii_korone_and_sora-88231"
+		texturefile = "gfx/interface/events/kronii-event/kronii_korone_and_sora-88231.dds"
+	}
+
+	##Icon For: Player Supremacy
+	SpriteType = { 
+		name = "kronii_player_supremacy-88220"
+		texturefile = "gfx/interface/events/kronii-event/kronii_player_supremacy-88220.dds"
+	}
+
+	##Icon For: Hololive 5th Gen Building
+	SpriteType = { 
+		name = "kronii_hololive_5th_gen_building-88229"
+		texturefile = "gfx/interface/events/kronii-event/kronii_hololive_5th_gen_building-88229.dds"
+	}
+
+	##Icon For: Remembering 7th March 646
+	SpriteType = { 
+		name = "kronii_remembering_7th_march_646-88212"
+		texturefile = "gfx/interface/events/kronii-event/kronii_remembering_7th_march_646-88212.dds"
+	}
+
+	##Icon For: Death of Joseph
+	SpriteType = { 
+		name = "kronii_death_of_joseph-88217"
+		texturefile = "gfx/interface/events/kronii-event/kronii_death_of_joseph-88217.dds"
+	}
+
+	##Icon For: Rushia Rushia!
+	SpriteType = { 
+		name = "kronii_rushia_rushia-88218"
+		texturefile = "gfx/interface/events/kronii-event/kronii_rushia_rushia-88218.dds"
+	}
+
+	##Icon For: Nothing Major Happened.
+	SpriteType = { 
+		name = "kronii_nothing_major_happened-88203"
+		texturefile = "gfx/interface/events/kronii-event/kronii_nothing_major_happened-88203.dds"
+	}
+
+	##Icon For: Increase in Extremism
+	SpriteType = { 
+		name = "kronii_increase_in_extremism-88204"
+		texturefile = "gfx/interface/events/kronii-event/kronii_increase_in_extremism-88204.dds"
+	}
+
+	##Icon For: Haachama and Ai Haato spotted
+	SpriteType = { 
+		name = "kronii_haachama_and_ai_haato_spotted-88211"
+		texturefile = "gfx/interface/events/kronii-event/kronii_haachama_and_ai_haato_spotted-88211.dds"
+	}
+
+	##Icon For: Slavery and Pekora
+	SpriteType = { 
+		name = "kronii_slavery_and_pekora-88201"
+		texturefile = "gfx/interface/events/kronii-event/kronii_slavery_and_pekora-88201.dds"
+	}
+
+	##Icon For: Hololive Resurgence
+	SpriteType = { 
+		name = "kronii_hololive_resurgence-87757"
+		texturefile = "gfx/interface/events/kronii-event/kronii_hololive_resurgence-87757.dds"
+	}
+
+	##Icon For: Death of Moona
+	SpriteType = { 
+		name = "kronii_death_of_moona-88199"
+		texturefile = "gfx/interface/events/kronii-event/kronii_death_of_moona-88199.dds"
+	}
+
+ 
+ }

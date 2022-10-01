@@ -1,0 +1,14 @@
+﻿l_russian:
+ FV9:0 "Деревня Мико"
+
+
+###########
+##Фокусы#
+###########
+
+ FV9_build_weaponsmith:0 "Создать оружейника"
+ FV9_village_defense_foundations:0 "Оборона деревни"
+ FV9_pillager_roundups:0 "Округление пилигримов"
+ FV9_invite_players_to_the_village:0 "Приглашать игроков в деревню"
+ FV9_treaty_with_player_empire:0 "Договор с империями игроков"
+

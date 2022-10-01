@@ -1,0 +1,123 @@
+spriteTypes = {
+ 
+	spriteType = {
+		name = "GFX_idea_F11_mio"
+		texturefile = "gfx/interface/ideas/idea_F11_mio.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_fauna"
+		texturefile = "gfx/interface/ideas/idea_F11_fauna.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_ina"
+		texturefile = "gfx/interface/ideas/idea_F11_ina.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_mori"
+		texturefile = "gfx/interface/ideas/idea_F11_mori.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_sora"
+		texturefile = "gfx/interface/ideas/idea_F11_sora.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_gura"
+		texturefile = "gfx/interface/ideas/idea_F11_gura.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_flare"
+		texturefile = "gfx/interface/ideas/idea_F11_flare.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_korone"
+		texturefile = "gfx/interface/ideas/idea_F11_korone.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_aqua"
+		texturefile = "gfx/interface/ideas/idea_F11_aqua.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_F11_pekora"
+		texturefile = "gfx/interface/ideas/idea_F11_pekora.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_F11_boshin"
+		texturefile = "gfx/interface/ideas/idea_F11_boshin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_F11_usaken"
+		texturefile = "gfx/interface/ideas/idea_F11_usaken.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_F11_aqukin"
+		texturefile = "gfx/interface/ideas/idea_F11_aqukin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_F11_oozora"
+		texturefile = "gfx/interface/ideas/idea_F11_oozora.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_F11_aki"
+		texturefile = "gfx/interface/ideas/idea_F11_aki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_azki"
+		texturefile = "gfx/interface/ideas/idea_F11_azki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_haachama"
+		texturefile = "gfx/interface/ideas/idea_F11_haachama.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_lamy"
+		texturefile = "gfx/interface/ideas/idea_F11_lamy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_matsuri"
+		texturefile = "gfx/interface/ideas/idea_F11_matsuri.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_melfissa"
+		texturefile = "gfx/interface/ideas/idea_F11_melfissa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_moona"
+		texturefile = "gfx/interface/ideas/idea_F11_moona.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_polka"
+		texturefile = "gfx/interface/ideas/idea_F11_polka.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_risu"
+		texturefile = "gfx/interface/ideas/idea_F11_risu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_F11_shion"
+		texturefile = "gfx/interface/ideas/idea_F11_shion.dds"
+	}
+
+}

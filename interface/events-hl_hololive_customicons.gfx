@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: A New Dawn
+	SpriteType = { 
+		name = "hl_a_new_dawn-87762"
+		texturefile = "gfx/interface/events/hololive-event/hl_a_new_dawn-87762.dds"
+	}
+
+ 
+ }
