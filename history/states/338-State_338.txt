@@ -1,0 +1,25 @@
+state={
+	id=338
+	name="STATE_338"
+	provinces={
+		90 267 1777 1786 3493 3868 4282 4369 4404 4568 5075 6908 6971 7007 7019 7035 7061 7093 7149 7160 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 4404 3 }
+		owner = M21
+		add_core_of = M21
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

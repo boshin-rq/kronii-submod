@@ -1,0 +1,23 @@
+state={
+	id=304
+	name="STATE_304"
+	provinces={
+		1141 2541 3037 3787 4247 5429 6576 6607 6684 6685 6731 6795 6849 6855 
+	}
+	resources = {
+		gunpowder = 8
+		wood = 6
+	}
+	history = {
+		victory_points = { 6731 3 }
+		owner = TUL
+		add_core_of = TUL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

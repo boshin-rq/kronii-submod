@@ -1,0 +1,16 @@
+state={
+	id=362
+	name="STATE_362"
+	provinces={
+		199 508 1357 1635 3028 3667 
+	}
+	impassable = yes
+	history={
+		owner = TSL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category = wasteland
+}

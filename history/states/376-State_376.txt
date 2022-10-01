@@ -1,0 +1,26 @@
+state={
+	id=376
+	name="STATE_376"
+	provinces={
+		454 1488 2821 3082 3090 3611 3819 4310 4596 5012 5091 7393 7422 7430 7448 7449 7489 7525 7574 
+	}
+	resources = {
+		wood = 2
+	}
+	history = {
+		owner = VN1
+		add_core_of = VN1
+		add_core_of = SHE
+		victory_points = {
+			7489 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

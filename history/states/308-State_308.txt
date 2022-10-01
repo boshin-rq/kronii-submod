@@ -1,0 +1,22 @@
+state={
+	id=308
+	name="STATE_308"
+	provinces={
+		349 2082 2751 2912 3424 3576 4533 5299 5307 6473 6474 6510 6578 6610 6611 6639 6694 6718 6742 
+	}
+	resources = {
+		wood = 2
+	}
+	history = {
+		victory_points = { 2751 1 }
+		owner = VN4
+		add_core_of = VN4
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

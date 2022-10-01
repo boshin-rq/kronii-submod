@@ -1,0 +1,22 @@
+state={
+	id=365
+	name="STATE_365"
+	provinces={
+		162 371 637 1552 2620 2765 3207 4475 4682 4816 5382 7402 7481 7497 7514 7563 7585 7640 
+	}
+	resources = {
+		wood = 6
+		gunpowder = 5
+	}
+	history = {
+		victory_points = { 2765 3 }
+		owner = CRH
+		add_core_of = CRH
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=218240
+	state_category=rural
+}

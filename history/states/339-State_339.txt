@@ -1,0 +1,22 @@
+state={
+	id=339
+	name="STATE_339"
+	provinces={
+		977 1452 2906 3397 3536 3739 4110 4134 4312 4913 5184 5591 6873 6895 6925 6930 6944 6969 6981 7005 7018 7028 7054 7080 7122 7178 
+	}
+	history = {
+		victory_points = { 7178 3 }
+		owner = VN3
+		add_core_of = VN3
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			7178 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

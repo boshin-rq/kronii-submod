@@ -1,0 +1,17 @@
+state={
+	id=385
+	name="STATE_385"
+	provinces={
+		962 1257 1541 3809 4716 5316 7464 7492 7516 7527 7531 7546 7586 7590 7638 7641 7647 7659 7692 
+	}
+	history = {
+		owner = SN1
+		add_core_of = SN1
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category=wasteland
+	impassable = yes
+}

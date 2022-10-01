@@ -1,0 +1,21 @@
+state={
+	id=349
+	name="STATE_349"
+	provinces={
+		307 1794 2051 2212 2651 3752 3773 4192 4215 4505 7058 7117 7138 7194 7244 
+	}
+	resources = {
+		wood = 20
+	}
+	history = {
+		victory_points = { 307 3 }
+		owner = TUL
+		add_core_of = TUL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

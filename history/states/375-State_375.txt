@@ -1,0 +1,23 @@
+state={
+	id=375
+	name="STATE_375"
+	provinces={
+		1345 1380 2243 2279 3268 3516 3628 5152 5254 5356 5439 5462 7294 7343 7368 7441 7503 7510 7573 7622 
+	}
+	resources = {
+		coal = 6
+		redstone = 12
+		iron = 18
+	}
+	history = {
+		victory_points = { 1345 3 }
+		owner = TUL
+		add_core_of = TUL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

@@ -1,0 +1,22 @@
+state={
+	id=336
+	name="STATE_336"
+	provinces={
+		663 890 2003 2325 2442 4129 4333 4752 5057 5288 6964 7024 7051 7099 7105 7195 7198 7199 
+	}
+	resources = {
+		wood = 24
+	}
+	history = {
+		victory_points = { 7105 3 }
+		owner = TUL
+		add_core_of = TUL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,25 @@
+state={
+	id=313
+	name="STATE_313"
+	provinces={
+		511 1716 2385 2880 3684 4279 4921 5063 6623 6634 6637 6660 6671 6672 6700 6741 6748 6790 
+	}
+	resources = {
+		gunpowder = 8
+	}
+	history = {
+		owner = VN4
+		add_core_of = VN4
+		victory_points = {
+			6671 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

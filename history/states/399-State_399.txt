@@ -1,0 +1,28 @@
+state={
+	id=399
+	name="STATE_399"
+	provinces={
+		1041 1189 3094 3227 4990 5815 5852 5857 5858 5872 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 5857 3 }
+		owner = MC1
+		add_core_of = MC1
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			5857 = {
+				naval_base= 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

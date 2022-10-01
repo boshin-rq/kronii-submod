@@ -1,0 +1,19 @@
+state={
+	id=331
+	name="STATE_331"
+	provinces={
+		2073 2500 3174 3608 4199 4490 5286 6891 6911 6917 6955 6959 6995 6996 7036 7037 7069 7107 
+	}
+	history = {
+		victory_points = { 6996 1 }
+		owner = VN3
+		add_core_of = VN3
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

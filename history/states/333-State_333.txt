@@ -1,0 +1,25 @@
+state={
+	id=333
+	name="STATE_333"
+	provinces={
+		387 392 1469 2497 2716 3314 3355 4579 4823 5188 5569 6939 7002 7048 7063 7088 7134 7219 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 3355 3 }
+		owner = M15
+		add_core_of = M15
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

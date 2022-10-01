@@ -1,0 +1,22 @@
+state={
+	id=350
+	name="STATE_350"
+	provinces={
+		524 621 651 1219 2079 2480 3178 3768 4574 4643 4681 4941 8751 8762 8791 8821 8826 8841 
+	}
+	history = {
+		victory_points = { 2079 3 }
+		owner = F56
+		add_core_of = F56
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			2079 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

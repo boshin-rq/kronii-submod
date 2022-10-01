@@ -1,0 +1,19 @@
+state={
+	id=347
+	name="STATE_347"
+	provinces={
+		991 1529 1828 2298 2585 3706 3989 4030 4195 4353 4660 5157 6921 6966 6978 7016 7033 7050 7078 7087 7098 7116 7130 7260 
+	}
+	history = {
+		victory_points = { 4660 5 }
+		owner = SN2
+		add_core_of = SN2
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

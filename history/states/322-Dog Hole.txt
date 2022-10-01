@@ -1,0 +1,25 @@
+state={
+	id=322
+	name="STATE_322"
+	provinces={
+		3 102 464 696 1273 1503 1860 1910 2972 3544 3968 4745 5196 5314 6711 6846 6847 6863 6885 6957 
+	}
+	resources = {
+		wood = 11
+		iron = 4
+		diamonds = 1
+	}
+	history = {
+		victory_points = { 464 5 }
+		owner = DOG
+		add_core_of = DOG
+		add_claim_by = CAT
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=1903658
+	state_category=town
+}

@@ -1,0 +1,23 @@
+state={
+	id=346
+	name="STATE_346"
+	provinces={
+		101 1795 2142 2606 3149 3966 4449 4473 4659 4820 7074 7121 7133 7147 7161 7247 7248 
+	}
+	history = {
+		victory_points = { 7147 1 }
+		owner = SPE
+		add_core_of = SPE
+		add_core_of = TBR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			7147 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

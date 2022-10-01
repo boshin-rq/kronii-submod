@@ -1,0 +1,17 @@
+state={
+	id=388
+	name="STATE_388"
+	provinces={
+		7 667 2330 2488 2990 3630 5460 8293 
+	}
+	history = {
+		victory_points = { 5460 1 }
+		owner = EPH
+		add_core_of = EPH
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

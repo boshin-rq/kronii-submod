@@ -1,0 +1,18 @@
+state={
+	id=361
+	name="STATE_361"
+	provinces={
+		139 338 1310 2119 2321 2378 2430 2507 2757 3145 3175 3255 3502 3753 3777 3980 4083 4222 4476 4497 4670 4787 5294 5404 7163 7217 7322 7335 7377 7403 7438 7458 7465 7474 7483 7502 7521 7523 7564 7578 7579 7619 7631 7681 7703 7744 
+	}
+	history = {
+		victory_points = { 7474 3 }
+		owner = SN3
+		add_core_of = SN3
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

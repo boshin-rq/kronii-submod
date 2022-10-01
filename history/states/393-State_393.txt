@@ -1,0 +1,23 @@
+state={
+	id=393
+	name="STATE_393"
+	provinces={
+		161 186 1175 2591 3484 3649 3792 4028 4050 5071 5082 7541 7559 7575 7611 7612 7706 7828 
+	}
+	resources = {
+		gunpowder = 1
+	}
+	history = {
+		victory_points = { 4050 1 }
+		owner = VN2
+		add_core_of = VN2
+		add_core_of = SHE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

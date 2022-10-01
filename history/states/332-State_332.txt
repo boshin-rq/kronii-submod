@@ -1,0 +1,25 @@
+state={
+	id=332
+	name="STATE_332"
+	provinces={
+		118 2190 4398 4838 5050 6867 6937 6960 6983 6999 7034 7076 7109 
+	}
+	resources = {
+		iron = 8
+		wood = 2
+		coal = 4
+	}
+	history = {
+		victory_points = { 6999 5 }
+		owner = SAB
+		add_core_of = SAB
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

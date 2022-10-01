@@ -1,0 +1,25 @@
+state={
+	id=378
+	name="STATE_378"
+	provinces={
+		124 447 512 749 1118 2202 2828 2859 5821 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 2202 3 }
+		owner = MC4
+		add_core_of = MC4
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

@@ -1,0 +1,28 @@
+state={
+	id=360
+	name="STATE_360"
+	provinces={
+		974 1245 1870 2351 3518 5065 7129 7180 7237 7251 7252 7286 7334 7365 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 7252 3 }
+		owner = M22
+		add_core_of = M22
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			7252 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

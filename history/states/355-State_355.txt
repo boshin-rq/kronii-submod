@@ -1,0 +1,18 @@
+state={
+	id=355
+	name="STATE_355"
+	provinces={
+		188 1231 1445 2402 3588 4052 4065 4101 4654 4714 4760 4837 5218 8400 8493 8494 8506 8529 8537 8548 8571 8572 8590 8607 8617 8621 
+	}
+	history = {
+		victory_points = { 4101 3 }
+		owner = LKR
+		add_core_of = LKR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

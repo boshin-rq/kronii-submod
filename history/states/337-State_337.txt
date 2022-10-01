@@ -1,0 +1,22 @@
+state={
+	id=337
+	name="STATE_337"
+	provinces={
+		32 238 941 1112 1182 2302 2901 2919 3793 3945 4268 4395 5141 5155 6805 6809 6810 6941 6970 6988 6998 7057 7084 7102 7143 7156 
+	}
+	history = {
+		victory_points = { 4395 3 }
+		owner = F12
+		add_core_of = F12
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			7156 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

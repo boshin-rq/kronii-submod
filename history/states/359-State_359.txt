@@ -1,0 +1,23 @@
+state={
+	id=359
+	name="STATE_359"
+	provinces={
+		344 1769 2419 2425 2665 3050 3193 3148 4013 4719 7249 7255 7256 7262 7276 7287 7288 7290 7331 7332 7338 7341 7345 7363 7371 
+	}
+	resources = {
+		wood = 2
+	}
+	history = {
+		victory_points = { 7345 1 }
+		owner = VN1
+		add_core_of = VN1
+		add_core_of = SHE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

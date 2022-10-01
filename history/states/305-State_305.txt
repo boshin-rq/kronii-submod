@@ -1,0 +1,20 @@
+state={
+	id=305
+	name="STATE_305"
+	provinces={
+		336 662 1953 2275 2475 3125 4357 4431 4761 5125 5331 6687 6707 6729 6784 6797 6813 6838 6843 6875 6888 6929 
+	}
+	history = {
+		victory_points = { 6813 1 }
+		owner = SPE
+		add_core_of = SPE
+		add_core_of = TBR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

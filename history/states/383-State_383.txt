@@ -1,0 +1,24 @@
+state={
+	id=383
+	name="STATE_383"
+	provinces={
+		650 3678 3887 4093 4216 5009 5191 5534 7532 7569 7570 7593 7620 7632 7648 7685 7735 7741 
+	}
+	resources = {
+		coal = 8
+		redstone = 11
+		iron = 13
+	}
+	history = {
+		victory_points = { 4216 5 }
+		owner = VNX
+		add_core_of = VNX
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+	manpower=549000
+	state_category=town
+}

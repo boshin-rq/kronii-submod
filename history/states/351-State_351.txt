@@ -1,0 +1,23 @@
+state={
+	id=351
+	name="STATE_351"
+	provinces={
+		210 228 1565 1568 2080 2448 2988 3127 4516 4947 5053 5068 5176 5235 5256 5493 7006 7070 7159 7166 7202 7203 7210 7234 7240 7269 7278 7301 
+	}
+	resources = {
+		gunpowder = 12
+	}
+	history = {
+		victory_points = { 4516 3 }
+		owner = FV1
+		add_core_of = SHE
+		add_core_of = FV1
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

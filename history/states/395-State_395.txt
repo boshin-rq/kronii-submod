@@ -1,0 +1,25 @@
+state={
+	id=395
+	name="STATE_395"
+	provinces={
+		1940 3742 3781 4169 4383 4506 4512 4931 5062 5081 5403 7606 7649 7661 7775 
+	}
+	resources={
+		gunpowder=5
+	}
+	history={
+		victory_points = { 4383 1 }
+		owner = FKE
+		add_core_of = FKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			4383 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

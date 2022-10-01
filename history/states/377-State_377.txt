@@ -1,0 +1,25 @@
+state={
+	id=377
+	name="STATE_377"
+	provinces={
+		709 1224 1547 2420 2685 2954 3754 4939 5118 5326 5528 7281 7308 7330 7361 7372 7404 7415 7416 7446 7518 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 5326 3 }
+		owner = M15
+		add_core_of = M15
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=371
+	name="STATE_371"
+	provinces={
+		221 253 481 829 1779 2095 2208 2574 2961 3582 3972 4091 5076 7169 7189 7267 7289 7303 7321 7348 7349 7389 7390 7420 7457 7486 7558 7591 
+	}
+	history = {
+		victory_points = { 2095 5 }
+		owner = SN1
+		add_core_of = SN1
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

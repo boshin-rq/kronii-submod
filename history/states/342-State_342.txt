@@ -1,0 +1,18 @@
+state={
+	id=342
+	name="STATE_342"
+	provinces={
+		348 1819 1906 2701 3573 4381 5123 6913 6948 6962 7001 7015 7072 7082 7153 7192 
+	}
+	history = {
+		victory_points = { 7015 3 }
+		owner = SN1
+		add_core_of = SN1
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

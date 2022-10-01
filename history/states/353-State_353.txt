@@ -1,0 +1,26 @@
+state={
+	id=353
+	name="STATE_353"
+	provinces={
+		927 2007 2412 2607 2885 3337 3414 3920 3936 4544 7040 7086 7094 7126 7150 7230 7253 7274 7312 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 4544 5 }
+		owner = M22
+		add_core_of = M22
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

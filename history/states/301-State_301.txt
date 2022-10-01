@@ -1,0 +1,18 @@
+state={
+	id=301
+	name="STATE_301"
+	provinces={
+		99 3067 4762 5375 9159 9173 
+	}
+	history={
+		victory_points = { 9159 3 }
+		owner = TWH
+		add_core_of = TWH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

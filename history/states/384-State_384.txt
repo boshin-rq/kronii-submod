@@ -1,0 +1,25 @@
+state={
+	id=384
+	name="STATE_384"
+	provinces={
+		143 471 904 1229 1382 1882 1995 4078 5890 5903 5917 5950 6007 6039 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 143 3 }
+		owner = MC6
+		add_core_of = MC6
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

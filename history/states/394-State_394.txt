@@ -1,0 +1,22 @@
+state={
+	id=394
+	name="STATE_394"
+	provinces={
+		868 996 1862 3756 3861 3883 3939 4306 4780 5103 5277 7687 7705 7718 7736 7773 7774 7785 7803 7810 7820 7827 7839 7867 7886 7951 7955 
+	}
+	resources = {
+		gunpowder = 7
+	}
+	history = {
+		victory_points = { 1862 1 }
+		owner = FKE
+		add_core_of = FKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=300000
+	state_category=town
+}

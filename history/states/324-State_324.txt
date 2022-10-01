@@ -1,0 +1,22 @@
+state={
+	id=324
+	name="STATE_324"
+	provinces={
+		876 893 1108 1334 1366 3039 3488 5344 6709 6769 6817 6840 6936 6986 6987 
+	}
+	history = {
+		victory_points = { 6987 5 }
+		owner = F12
+		add_core_of = F12
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			6987 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

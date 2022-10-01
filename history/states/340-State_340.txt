@@ -1,0 +1,18 @@
+state={
+	id=340
+	name="STATE_340"
+	provinces={
+		735 761 1442 2272 2748 3505 3930 8810 9097 9123 
+	}
+	history = {
+		victory_points = { 1442 3 }
+		owner = EPH
+		add_core_of = EPH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category = rural
+}

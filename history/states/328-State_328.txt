@@ -1,0 +1,37 @@
+state={
+	id=328
+	name="STATE_328"
+	provinces={
+		167 1159 2118 2560 2943 3217 3270 4882 4982 6740 6856 6928 6958 6990 7008 7089 
+	}
+	resources = {
+		wood = 18
+		lazurite = 4
+		iron = 7
+		redstone = 5
+		diamonds = 1
+		netherite = 1
+	}
+	history = {
+		victory_points = { 2560 20 }
+		victory_points = { 6928 1 }
+		victory_points = { 167 5 }
+		owner = TUL
+		add_core_of = TUL
+		add_core_of = PLC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 1
+			industrial_complex = 2
+			167 = {
+				naval_base = 1
+			}
+			2560 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=2000000
+	state_category=metropolis
+}

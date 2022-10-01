@@ -1,0 +1,23 @@
+state={
+	id=367
+	name="STATE_367"
+	provinces={
+		149 417 931 2691 2739 4542 4692 4693 5115 5517 7358 7398 7427 7432 7470 7504 7511 7550 
+	}
+	resources = {
+		gunpowder = 8
+	}
+	history = {
+		victory_points = { 417 1 }
+		owner = VN1
+		add_core_of = VN1
+		add_core_of = SHE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

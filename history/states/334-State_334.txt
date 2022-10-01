@@ -1,0 +1,25 @@
+state={
+	id=334
+	name="STATE_334"
+	provinces={
+		263 665 855 959 1026 1473 1594 1734 2040 2873 3033 3068 4773 6901 6935 6943 6975 7026 7027 7043 7053 7079 7120 
+	}
+	resources = {
+		coal = 4
+		iron = 4
+		wood = 36
+	}
+	history = {
+		victory_points = { 665 1 }
+		owner = SPE
+		add_core_of = SPE
+		add_core_of = TBR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

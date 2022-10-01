@@ -1,0 +1,19 @@
+state={
+	id=319
+	name="STATE_319"
+	provinces={
+		59 1765 1792 2046 2268 2974 3286 3722 4959 5266 6695 6743 6766 6781 6806 6830 
+	}
+	history = {
+		victory_points = { 2268 3 }
+		owner = F16
+		add_core_of = F16
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

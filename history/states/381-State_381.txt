@@ -1,0 +1,27 @@
+state={
+	id=381
+	name="STATE_381"
+	provinces={
+		256 339 854 979 1268 1757 1993 2937 3305 4223 4529 4807 5324 5547 5558 7662 7708 7709 7714 7720 7743 7753 7762 7790 7807 7815 7829 7850 7879 7880 
+	}
+	history = {
+	owner = OMN
+	add_core_of = OMN
+	add_core_of = TVC
+	victory_points = {
+		979 1
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			5558 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,31 @@
+state={
+	id=372
+	name="STATE_372"
+	provinces={
+		1584 2187 2328 2360 2725 2982 3510 3707 3855 4193 4231 4591 5083 7326 7364 7374 7394 7409 7428 7433 7444 7445 7450 7452 7467 7485 7490 7495 7512 7536 
+	}
+	resources = {
+		gunpowder = 18
+		wood = 2
+	}
+	history = {
+		owner = VN2
+		add_core_of = SHE
+		add_core_of = VN2
+		victory_points = {
+			4591 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			7326 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,25 @@
+state={
+	id=382
+	name="STATE_382"
+	provinces={
+		150 226 312 960 1573 1873 4673 5888 
+	}
+	resources = {
+		coal = 4
+		wood = 2
+		lazurite = 1
+		iron = 6
+		redstone = 1
+	}
+	history = {
+		victory_points = { 1573 1 }
+		owner = ICE
+		add_core_of = ICE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=123254
+	state_category=rural
+}

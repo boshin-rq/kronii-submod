@@ -1,0 +1,25 @@
+state={
+	id=310
+	name="STATE_310"
+	provinces={
+		462 722 922 1123 1996 2129 3287 3300 3569 3764 5017 6794 6816 6851 6882 6904 6919 6927 6945 6977 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 6794 3 }
+		owner = FV3
+		add_core_of = FV3
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			6794 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

@@ -1,0 +1,25 @@
+state={
+	id=389
+	name="STATE_389"
+	provinces={
+		177 589 1084 2438 2489 4058 4239 4615 7462 7491 7498 7522 7553 7577 7598 7637 7655 7656 7674 7729 7748 7771 
+	}
+	resources = {
+		wood = 2
+		iron = 2
+		gunpowder = 15
+		diamonds = 1
+	}
+	history = {
+		victory_points = { 7577 5 }
+		owner = CRH
+		add_core_of = CRH
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=512986
+	state_category=town
+}

@@ -1,0 +1,29 @@
+state={
+	id=311
+	name="STATE_311"
+	provinces={
+		285 603 807 894 1242 2096 2708 3019 3671 5418 6590 6615 6665 6734 6853 
+	}
+	resources = {
+		coal = 3
+		wood = 6
+		lazurite = 15
+		iron = 2
+		gunpowder = 1
+		redstone = 2
+		diamonds = 1
+	}
+	history = {
+		victory_points = { 2708 5 }
+		owner = CAT
+		add_core_of = CAT
+		add_claim_by = DOG
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=1903658
+	state_category=town
+}

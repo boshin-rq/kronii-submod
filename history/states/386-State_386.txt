@@ -1,0 +1,22 @@
+state={
+	id=386
+	name="STATE_386"
+	provinces={
+		794 1574 1689 2827 2841 3002 3236 3614 3691 3879 4611 4744 4998 5085 5111 5572 7387 7414 7431 7472 7478 7519 7562 7589 7617 7618 7626 7636 7671 7678 7716 7728 7758 
+	}
+	resources = {
+		wood = 1
+	}
+	history = {
+		victory_points = { 3236 3 }
+		owner = F52
+		add_core_of = F52
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}
