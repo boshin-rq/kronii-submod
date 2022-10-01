@@ -1,0 +1,23 @@
+state={
+	id=153
+	name="STATE_153"
+	provinces={
+		175 187 768 1925 2259 2721 2884 3755 4048 4521 4852 4930 5554 8253 8270 8303 8325 8354 8357 8373 8376 8408 8421 8461 8462 8467 
+	}
+	resources = {
+		wood = 4
+	}
+	history = {
+		victory_points = { 187 1 }
+		owner = TVC
+		add_core_of = OMN
+		add_core_of = TVC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=400000
+	state_category=town
+}

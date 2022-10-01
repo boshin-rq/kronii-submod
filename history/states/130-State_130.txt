@@ -1,0 +1,22 @@
+state={
+	id=130
+	name="STATE_130"
+	provinces={
+		1249 1710 2152 3048 3604 3970 4687 7419 7423 7453 7460 7468 7499 7505 7542 7581 7595 9275 9276 
+	}
+	resources = {
+		gunpowder = 4
+	}
+	history = {
+		victory_points = { 7542 1 }
+		owner = TVC
+		add_core_of = SHE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

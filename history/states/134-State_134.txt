@@ -1,0 +1,25 @@
+state={
+	id=134
+	name="STATE_134"
+	provinces={
+		290 1129 1462 1958 2623 2688 2831 4071 4457 5166 5576 6518 6553 6616 6622 6659 6693 6727 
+	}
+	resources = {
+		wood = 6
+	}
+	history={
+		owner = SPE
+		add_core_of = SPE
+		victory_points = {
+			6693 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

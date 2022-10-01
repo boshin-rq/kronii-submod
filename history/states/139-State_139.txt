@@ -1,0 +1,18 @@
+state={
+	id=139
+	name="STATE_139"
+	provinces={
+		76 106 242 5043 5340 5348 7614 7664 7665 7698 7710 7721 7738 7750 9288 
+	}
+	history = {
+		victory_points = { 9288 3 }
+		owner = ROT
+		add_core_of = ROT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

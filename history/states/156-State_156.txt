@@ -1,0 +1,25 @@
+state={
+	id=156
+	name="STATE_156"
+	provinces={
+		1087 2159 2582 3271 3990 4155 8468 8515 8556 8613 8631 9300 
+	}
+	resources = {
+		gunpowder = 6
+	}
+	history = {
+		victory_points = { 2582 3 }
+		owner = SWL
+		add_core_of = SWL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			2582 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

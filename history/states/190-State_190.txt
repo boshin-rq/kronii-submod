@@ -1,0 +1,25 @@
+state={
+	id=190
+	name="STATE_190"
+	provinces={
+		642 717 792 2801 3130 3955 4032 5195 5697 5721 5745 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 3130 3 }
+		owner = MC2
+		add_core_of = MC2
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

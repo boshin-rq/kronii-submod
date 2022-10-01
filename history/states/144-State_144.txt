@@ -1,0 +1,20 @@
+state={
+	id=144
+	name="STATE_144"
+	provinces={
+		1971 4008 4420 8051 8074 8082 8097 8105 8135 8155 8159 
+	}
+	history = {
+		victory_points = { 8097 1 }
+		owner = TVC
+		add_core_of = OMN
+		add_core_of = TVC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

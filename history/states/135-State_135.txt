@@ -1,0 +1,19 @@
+state={
+	id=135
+	name="STATE_135"
+	provinces={
+		306 1371 1672 2294 2778 3500 4728 4777 5192 7010 7038 7044 7060 7124 7167 7177 7214 7279 7339 7386 9284 
+	}
+	history = {
+		victory_points = { 7279 3 }
+		owner = F15
+		add_core_of = F15
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

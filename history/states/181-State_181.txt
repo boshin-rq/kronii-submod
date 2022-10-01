@@ -1,0 +1,13 @@
+
+state={
+	id=181
+	name="STATE_181"
+	impassable = yes
+	
+	provinces={
+		9469 9536 10163 10380 10423 10545 10822 11225 11467 12200 12637 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+}

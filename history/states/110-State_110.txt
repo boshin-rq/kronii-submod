@@ -1,0 +1,19 @@
+state={
+	id=110
+	name="STATE_110"
+	provinces={
+		55 578 892 1362 1883 2346 2713 3013 4328 4588 4879 4900 5413 6589 6638 6654 6655 6703 6708 6738 6753 6754 6778 6793 
+	}
+	history = {
+		victory_points = { 6753 3 }
+		owner = FV3
+		add_core_of = FV3
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

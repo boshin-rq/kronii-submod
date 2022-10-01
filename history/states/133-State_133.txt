@@ -1,0 +1,19 @@
+state={
+	id=133
+	name="STATE_133"
+	provinces={
+		1157 2131 3507 3584 4458 4509 4851 5357 5425 7333 7342 7376 7382 7413 9282 
+	}
+	history = {
+		victory_points = { 2131 5 }
+		owner = F52
+		add_core_of = F52
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

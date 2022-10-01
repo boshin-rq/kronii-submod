@@ -1,0 +1,27 @@
+state={
+	id=148
+	name="STATE_148"
+	provinces={
+		1327 1411 1419 2251 2631 4260 4566 4733 4911 5337 5367 8023 8050 8096 8110 8215 9291 9292 
+	}
+	history = {
+	owner = TVC
+	add_core_of = OMN
+	add_core_of = TVC
+	victory_points = {
+		2631 1
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 2
+			2631 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

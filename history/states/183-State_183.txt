@@ -1,0 +1,18 @@
+state={
+	id=183
+	name="STATE_183"
+	provinces={
+		190 1033 1624 2927 3095 4669 5595 9211 
+	}
+	history = {
+		victory_points = { 5595 5 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=121901
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+state={
+	id=200
+	name="STATE_200"
+	provinces={
+		929 1676 2088 2248 2984 3591 5786 5802 5818 5819 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 929 3 }
+		owner = MC4
+		add_core_of = MC4
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

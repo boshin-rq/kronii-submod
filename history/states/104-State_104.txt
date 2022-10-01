@@ -1,0 +1,21 @@
+state={
+	id=104
+	name="STATE_104"
+	provinces={
+		529 1166 3074 3385 4729 6115 6144 6149 6192 6193 6194 6201 6207 9259 
+	}
+	history = {
+		victory_points = { 3385 3 }
+		owner = SN7
+		add_core_of = SN7
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			3385 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

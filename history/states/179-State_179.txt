@@ -1,0 +1,19 @@
+state={
+	id=179
+	name="STATE_179"
+	provinces={
+		1446 1514 3144 3776 8500 
+	}
+	history={
+		victory_points = { 3776 5 }
+		owner = CRB
+		add_core_of = CRC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=300000
+	state_category = town
+}

@@ -1,0 +1,23 @@
+state={
+	id=145
+	name="STATE_145"
+	provinces={
+		9293 
+	}
+	history = {
+		victory_points = { 9293 1 }
+		owner = OMN
+		add_core_of = OMN
+		add_core_of = TVC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			9293 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

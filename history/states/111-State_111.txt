@@ -1,0 +1,18 @@
+state={
+	id=111
+	name="STATE_111"
+	provinces={
+		5361 6431 9263 9264 9268 
+	}
+	history = {
+		victory_points = { 9264 3 }
+		owner = ROS
+		add_core_of = PN1
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

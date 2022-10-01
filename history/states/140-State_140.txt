@@ -1,0 +1,18 @@
+state={
+	id=140
+	name="STATE_140"
+	provinces={
+		1976 2535 2618 2928 4105 4206 4259 4277 5038 7663 7715 7777 7791 7871 7936 7980 9289 
+	}
+	history = {
+		victory_points = { 4105 3 }
+		owner = DDC
+		add_core_of = DDC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=rural
+}

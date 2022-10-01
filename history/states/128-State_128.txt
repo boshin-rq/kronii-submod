@@ -1,0 +1,18 @@
+state={
+	id=128
+	name="STATE_128"
+	provinces={
+		350 703 716 2246 2558 3329 3386 3673 4034 4185 4565 4724 5029 5371 7115 7148 7179 7215 7218 7225 7242 7285 9277 9278 9279 
+	}
+	history = {
+		owner = F51
+		add_core_of = F51
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

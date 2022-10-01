@@ -1,0 +1,17 @@
+state={
+	id=113
+	name="STATE_113"
+	provinces={
+		302 780 1617 1623 2350 2598 4038 4878 5555 6351 6368 6396 6436 9265 
+	}
+	history = {
+		victory_points = { 302 3 }
+		owner = SN7
+		add_core_of = SN7
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=200000
+	state_category=wasteland
+}

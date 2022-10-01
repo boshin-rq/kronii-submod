@@ -1,0 +1,22 @@
+state={
+	id=174
+	name="STATE_174"
+	provinces={
+		853 1449 1776 9109 9313 9314 
+	}
+	history = {
+		victory_points = { 9109 3 }
+		victory_points = { 1776 5 }
+		owner = HER
+		add_core_of = HER
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			1776 = {
+				naval_base = 2
+			}
+		}
+	}
+	manpower=26000
+	state_category=town
+}

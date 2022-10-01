@@ -1,0 +1,17 @@
+state={
+	id=187
+	name="STATE_187"
+	provinces={
+		545 699 1702 1830 1994 2427 2746 4740 5622 5628 
+	}
+	history = {
+		victory_points = { 5628 2 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=42131
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=199
+	name="STATE_199"
+	provinces={
+		1396 1631 3904 4235 4329 5440 5756 5765 5781 5783 5797 
+	}
+	history = {
+		victory_points = { 1631 3 }
+		owner = TKE
+		add_core_of = TKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

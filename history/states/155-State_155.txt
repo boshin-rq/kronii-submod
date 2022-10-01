@@ -1,0 +1,23 @@
+state={
+	id=155
+	name="STATE_155"
+	provinces={
+		1493 2252 2723 3615 4227 4938 8477 8481 8503 8531 8549 8550 8563 
+	}
+	history = {
+		victory_points = { 8549 3 }
+		owner = FKE
+		add_core_of = FKE
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 2
+			8549 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=500000
+	state_category=town
+}

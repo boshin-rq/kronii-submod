@@ -1,0 +1,25 @@
+state={
+	id=127
+	name="STATE_127"
+	provinces={
+		174 563 1461 1812 1954 2797 3046 3552 3785 3977 4060 4365 4631 4849 5242 5448 6961 7029 7039 7046 7085 7097 7103 7128 7152 7197 7205 7235 7243 
+	}
+	resources = {
+		coal = 2
+		wood = 2
+		lazurite = 2
+		iron = 2
+		gunpowder = 2
+	}
+	history = {
+		victory_points = { 3785 3 }
+		owner = M27
+		add_core_of = M27
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	manpower=200000
+	state_category=town
+}

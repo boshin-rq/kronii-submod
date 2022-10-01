@@ -1,0 +1,19 @@
+state={
+	id=170
+	name="STATE_170"
+	provinces={
+		71 898 988 2258 2545 4149 4855 8737 8792 8806 8894 9155 
+	}
+	history = {
+		victory_points = { 8737 5 }
+		owner = EPH
+		add_core_of = EPH
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=1000000
+	state_category = town
+}

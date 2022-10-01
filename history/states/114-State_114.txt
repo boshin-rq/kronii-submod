@@ -1,0 +1,22 @@
+state={
+	id=114
+	name="STATE_114"
+	provinces={
+		42 626 1620 3009 4125 4517 6297 6298 6350 6428 9266 
+	}
+	history = {
+		victory_points = { 6297 3 }
+		owner = ROS
+		add_core_of = F20
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			6350 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	state_category=town
+}

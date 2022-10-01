@@ -1,0 +1,19 @@
+state={
+	id=186
+	name="STATE_186"
+	provinces={
+		760 1146 1639 1908 2991 5616 5626 9222 9223 9225 
+	}
+	history = {
+		victory_points = { 2991 5 }
+		owner = TWN
+		add_core_of = TWN
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+	manpower=151256
+	state_category=town
+}

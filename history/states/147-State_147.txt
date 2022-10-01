@@ -1,0 +1,27 @@
+state={
+	id=147
+	name="STATE_147"
+	provinces={
+		544 1227 3087 3404 3794 3906 4284 8456 8478 8511 8536 9294 9297 
+	}
+	history = {
+	owner = OMN
+	add_core_of = OMN
+	add_core_of = TVC
+	victory_points = {
+		544 25
+	}
+	buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 3
+			544 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

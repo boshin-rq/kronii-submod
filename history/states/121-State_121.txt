@@ -1,0 +1,24 @@
+state={
+	id=121
+	name="STATE_121"
+	provinces={
+		3944 4115 4607 4644 6862 9272 9273 
+	}
+	history = {
+		victory_points = { 4607 5 }
+		owner = TAH
+		add_core_of = TAH
+		add_core_of = PN1
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			4607 = {
+				naval_base = 3
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

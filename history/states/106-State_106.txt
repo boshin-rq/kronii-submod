@@ -1,0 +1,21 @@
+state={
+	id=106
+	name="STATE_106"
+	provinces={
+		2262 2992 5346 9260 9261 9262 
+	}
+	history = {
+		victory_points = { 5346 3 }
+		owner = ROS
+		add_core_of = ROS
+		buildings = {
+			infrastructure = 2
+			5346 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
